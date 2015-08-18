@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Бухгалтерский успех - Главная</title>
   <link rel="stylesheet" href="css/all.css">
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,12 +13,14 @@
   <!--[if gt IE 8]>
     <link rel="stylesheet" href="css/all.css">
   <![endif]-->
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).ready(function(){
+
+  });
+  </script>
 </head>
 <body>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus error tenetur iusto non culpa repellendus aliquam placeat aperiam alias, fugiat, recusandae quaerat, dicta aliquid incidunt. Iusto vitae natus cum, ut!</p>
-  <p>и немного по-русски</p>
-  <p><strong>и немного по-русски</strong></p>
-  <p class="light">и немного по-русски</p>
-  <p><i>и немного по-русски</i></p>
+  
 </body>
 </html>

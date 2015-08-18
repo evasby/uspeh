@@ -31,31 +31,100 @@ module.exports = function(grunt) {
                 }
             }
         },
-        ftp_upload: {
+        /*ftp_upload: {
             build: {
                 auth: {
                     host: 'wfs.by',
                     port: 21,
                     authKey: 'key1'
                 },
-                src: ['css/all.css', 'css/all-old-ie.css'],
-                dest: 'home/evasby/www/wfs.by/css',
+                src: ['php/index.php', 'css/all.css', 'css/all-old-ie.css'],
+                dest: ['home/evasby/www/wfs.by/css'],
                 exclusions: ['.gitignore', '.ftppass']
             }
-        },       
+        },*/
+        ftp_push: {
+			    css: {
+                    options: {
+                        authKey: 'key1',
+                        host: 'wfs.by',
+                        dest: '/home/evasby/www/wfs.by',
+                        port: 21
+                    },
+                    files: [
+                        {
+                            expand: true,
+                            cwd: '.',
+                            src: [
+                                'css/all.css',
+                                'css/all-old-ie.css',
+                            ]
+                        }
+                    ]
+			    },
+                php: {
+                    options: {
+                        authKey: 'key1',
+                        host: 'wfs.by',
+                        dest: '/home/evasby/www/wfs.by',
+                        port: 21
+                    },
+                    files: [
+                        {
+                            expand: true,
+                            cwd: '.',
+                            src: [
+                                '*.php'
+                            ]
+                        }
+                    ]
+                },
+                js: {
+                    options: {
+                        authKey: 'key1',
+                        host: 'wfs.by',
+                        dest: '/home/evasby/www/wfs.by',
+                        port: 21
+                    },
+                    files: [
+                        {
+                            expand: true,
+                            cwd: '.',
+                            src: [
+                                'js/*.php'
+                            ]
+                        }
+                    ]
+                }
+			  },
         watch: {
             css: {
-                files: ['sass/*.scss', '*.php'],
-                tasks: ['sass', 'ftp_upload'],
-                //tasks: ['sass'],
+                files: ['sass/*.scss'],
+                tasks: ['sass', 'ftp_push:css'],
                 options: {
                     spawn: false,
                 }
             },
+            php: {
+                files: ['*.php'],
+                tasks: ['ftp_push:php'],
+                options: {
+                    spawn: false,
+                }
+            },
+            js: {
+                files: ['js/*.js'],
+                tasks: ['ftp_push:js'],
+                options: {
+                    spawn: false,
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-upload');
-    grunt.registerTask('default', ['sass', 'ftp_upload', 'watch']);
+    grunt.loadNpmTasks('grunt-ftp-push');
+    grunt.registerTask('default', ['sass', 'ftp_push', 'watch']);
+    //grunt.registerTask('default', ['sass', 'watch']);
 };
