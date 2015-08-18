@@ -1,0 +1,65 @@
+﻿$font: proximanova;
+$bold: proximanova_bold;
+$light: proximanova_light;
+$italic: proximanova_italic;
+$font_size: 18px;
+@import "mymix";
+@import "fonts";
+//**********************************************************/
+//**********************************************************/
+body{
+  font-family: $font;
+  font-size: $font_size;
+}
+p{
+  
+}
+strong, b{
+  font-family: $bold;
+}
+i{
+  font-family: $italic;
+}
+.light{
+  font-family: $light;
+}
+a{
+  @include link(#f69c39, #f8a43d);
+  &:focus{
+    outline: none;
+  }
+}
+pre{
+  white-space: normal;
+}
+h1, h2, h3, h4, h5, h6{
+  
+}
+input::-moz-placeholder {
+
+}
+textarea::-moz-placeholder {
+
+}
+input::-webkit-input-placeholder{
+
+}
+textarea::-webkit-input-placeholder{
+
+}
+input{
+  &:focus{
+    outline: none;
+  }
+}
+textarea{
+   &:focus{
+    outline: none;
+  }
+}
+.hide{
+  display: none;
+}
+//**********************************************************/
+//**********************************************************/
+//@import "houses";
