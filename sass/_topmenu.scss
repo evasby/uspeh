@@ -1,0 +1,133 @@
+.topmenu{
+  background-color: #19254b;
+  &_wrap{
+    background-color: #19254b;
+    border-top: 6px solid #fff;
+    padding: 27px 0px 45px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    left: 0px;
+    width: 100%;
+    visibility: hidden;
+    max-height: 0px;
+    //opacity: 0;
+    @include def-transition(all, 0.2s);
+  }
+  &_list{
+    display: table;
+    width: 100%;
+    &__l2{   
+      width: 1000px;
+      //padding: 0px 0px 0px 20px;
+      margin: 0 auto;    
+    }
+  }
+  &_item{ 
+    vertical-align: top; 
+    width: 1%;
+    white-space: nowrap;
+    display: table-cell;  
+    @include old-ie{
+      *width: auto;
+      *display: inline;
+      *zoom: 1;
+    }
+    &__l2{
+      float: left;
+      width: 26%;
+      &:nth-child(4n){
+        width: 22%;
+      }
+      @include old-ie{
+        width: 25%;
+      }
+    }
+    &:hover{
+      & .topmenu_wrap{
+        visibility: visible;
+        max-height: 200px;
+        //opacity: 1;
+      }
+      & .topmenu_link:before, & .before{
+        visibility: visible;
+      }
+    }
+  }
+  &_link{
+    font-size: $font_size16;
+    line-height: 1;
+    text-transform: uppercase;
+    @include link(#fefefe, #fefefe);
+    display: block;
+    height: 36px;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 12px 0px 12px;
+    border-top: 3px solid #19254b;
+    @include def-transition(border-color, 0.2s);
+    &__active{
+      border-top: 3px solid #3498db;
+    }
+    &__l2{
+      font-family: $light;
+      font-size: $font_size18;
+      line-height: 1.7;
+      @include link(#ffffff, #ffffff);
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    position: relative;
+    z-index: 2;
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      left: 40%;
+      bottom: -17px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 11px 12.5px 0 12.5px;
+      border-color: #ffffff transparent transparent transparent;
+      visibility: hidden;
+    }
+    &:hover{
+      border-top: 3px solid #3498db;
+    }
+    @include old-ie{
+      &:before{
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        border: none;
+        left: 40%;
+        bottom: -17px;
+        width: 25px;
+        height: 11px;
+        background: url('../image/triangle.png') no-repeat;
+        visibility: hidden;
+      }
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="before"
+      );
+      .before{
+        display: block;
+        position: absolute;
+        z-index: 23;
+        border: none;
+        left: 40%;
+        bottom: -17px;
+        width: 25px;
+        height: 11px;
+        background: url('../image/triangle.png') no-repeat;
+        visibility: hidden;
+      }
+    }
+  }
+}

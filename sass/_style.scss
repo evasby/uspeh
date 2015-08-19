@@ -2,14 +2,16 @@
 $bold: proximanova_bold;
 $light: proximanova_light;
 $italic: proximanova_italic;
-$font_size: 18px;
+$font_size18: 18px;
+$font_size14: 14px;
+$font_size16: 16px;
 @import "mymix";
 @import "fonts";
 //**********************************************************/
 //**********************************************************/
 body{
   font-family: $font;
-  font-size: $font_size;
+  font-size: $font_size18;
 }
 p{
   
@@ -24,7 +26,9 @@ i{
   font-family: $light;
 }
 a{
-  @include link(#f69c39, #f8a43d);
+  //@include link(#373737, #373737);
+  //font-family: $italic;
+  //font-size: $font_size14;
   &:focus{
     outline: none;
   }
@@ -62,4 +66,6 @@ textarea{
 }
 //**********************************************************/
 //**********************************************************/
-//@import "houses";
+@import "header";
+@import "container";
+@import "topmenu";

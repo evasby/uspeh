@@ -120,26 +120,15 @@
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value*100});
 }
 //*********************************************************************************/
-@mixin def-clearfix {
-  display: inline-block;
+@mixin clearfix {
   &:after {
-    content: " ";
+    clear: both;
+    content: ".";
     display: block;
     height: 0;
-    clear: both;
-    visibility: hidden;
-  }
-  * html & { height: 1px }
-}
-// слегка доработанный, универсальный clearfix хак
-@mixin def-clearfix2 {
-  &:after {
-    visibility: hidden;
-    display: block;
     font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    line-height: 0;
+    visibility: hidden;
   }
   display: inline-table;
   /* Прячем стили от IE для mac \*/
