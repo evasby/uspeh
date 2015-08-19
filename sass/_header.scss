@@ -1,3 +1,9 @@
 .header{
   position: relative;
+  &_bottom{
+		@include clearfix();
+  }
+  &_section{
+  	float: left;
+  }
 }

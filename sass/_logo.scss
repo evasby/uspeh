@@ -1,0 +1,17 @@
+.logo{
+	margin: 33px 50px 0px 0px;
+	&_link{
+		display: block;
+		margin: 0px 0px 4px 0px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 221px;
+		height: 70px;
+		background: url('../image/logo.png') no-repeat;
+	}
+	&_text{
+		color: #373737;
+		font-size: $font_size13;
+	}
+}

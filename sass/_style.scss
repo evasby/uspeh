@@ -4,6 +4,7 @@ $light: proximanova_light;
 $italic: proximanova_italic;
 $font_size18: 18px;
 $font_size14: 14px;
+$font_size13: 13px;
 $font_size16: 16px;
 @import "mymix";
 @import "fonts";
@@ -66,6 +67,9 @@ textarea{
 }
 //**********************************************************/
 //**********************************************************/
+@import "button";
 @import "header";
 @import "container";
 @import "topmenu";
+@import "logo";
+@import "address";

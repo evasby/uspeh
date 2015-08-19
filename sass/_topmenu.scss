@@ -1,20 +1,26 @@
 .topmenu{
   background-color: #19254b;
+  min-width: 1000px;
+  &_inner{
+  	//width: 960px;
+  }
   &_wrap{
     background-color: #19254b;
     border-top: 6px solid #fff;
-    padding: 27px 0px 45px 0px;
+    padding: 0px;
     position: absolute;
     z-index: 1;
     top: 55px;
     left: 0px;
     width: 100%;
-    visibility: hidden;
+    min-width: 1000px;
     max-height: 0px;
-    //opacity: 0;
+    visibility: hidden;
+    @include def-opacity(0.5);
     @include def-transition(all, 0.2s);
   }
   &_list{
+  	//padding: 0px 20px 0px 20px;
     display: table;
     width: 100%;
     &__l2{   
@@ -44,10 +50,14 @@
       }
     }
     &:hover{
-      & .topmenu_wrap{
+      .topmenu_wrap{
         visibility: visible;
         max-height: 200px;
-        //opacity: 1;
+        padding: 27px 0px 45px 0px;
+        @include def-opacity(1);
+      }
+      .topmenu_link{
+      	border-top: 3px solid #3498db;
       }
       & .topmenu_link:before, & .before{
         visibility: visible;
@@ -65,7 +75,7 @@
     text-decoration: none;
     padding: 16px 12px 0px 12px;
     border-top: 3px solid #19254b;
-    @include def-transition(border-color, 0.2s);
+    //@include def-transition(border-color, 0.2s);
     &__active{
       border-top: 3px solid #3498db;
     }
@@ -94,9 +104,6 @@
       border-width: 11px 12.5px 0 12.5px;
       border-color: #ffffff transparent transparent transparent;
       visibility: hidden;
-    }
-    &:hover{
-      border-top: 3px solid #3498db;
     }
     @include old-ie{
       &:before{
