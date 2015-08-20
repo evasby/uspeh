@@ -13,12 +13,14 @@
   <!--[if gt IE 8]>
     <link rel="stylesheet" href="css/all.css">
   <![endif]-->
+  <!--<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/yamap.js"></script>-->
+  <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script>
-  $(document).ready(function(){
-
-  });
-  </script>
+  <script src="js/script.js"></script>
+  <script src="js/gmap.js"></script>
+  
 </head>
 <body>
   <header class="header">
@@ -118,5 +120,9 @@
       </div>
     </div>
   </header>
+  <footer class="footer">
+    <!--<div class="yamap" id="yamap"></div>-->
+    <div class="gmap" id="gmap"></div>
+  </footer>
 </body>
 </html>

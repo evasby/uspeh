@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                             expand: true,
                             cwd: '.',
                             src: [
-                                'js/*.php'
+                                'js/*.js'
                             ]
                         }
                     ]

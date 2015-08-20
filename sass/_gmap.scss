@@ -1,0 +1,23 @@
+.gmap{
+  height: 469px;
+  &_title{
+    text-transform: uppercase;
+    font-size: 30px;
+    border-left: 3px solid #ffffff;
+    padding-left: 19px;
+    margin: 30px 0px 0px 35px;
+    color: #ffffff;
+  }
+  /*&_info{
+    width: 280px;
+    height: 170px;
+  }*/
+  &_text{
+    margin: 27px 0px 0px 58px;
+    p{
+      margin-bottom: 7px;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+}

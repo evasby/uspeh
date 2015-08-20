@@ -251,6 +251,7 @@ textarea:focus {
   min-width: 960px;
   padding: 0px 20px 0px 20px;
   margin: 0 auto;
+  *width: 965px;
 }
 
 .topmenu {
@@ -278,6 +279,8 @@ textarea:focus {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  visibility: visible;
+  display: none;
 }
 .topmenu_list {
   display: table;
@@ -312,6 +315,7 @@ textarea:focus {
   -moz-opacity: 1;
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  display: block;
 }
 .topmenu_item:hover .topmenu_link {
   border-top: 3px solid #3498db;
@@ -486,6 +490,35 @@ textarea:focus {
   width: 13px;
   height: 15px;
   background: url("../image/phone.png") -13px 0px no-repeat;
+}
+
+.gmap {
+  height: 469px;
+  /*&_info{
+    width: 280px;
+    height: 170px;
+  }*/
+}
+.gmap_title {
+  text-transform: uppercase;
+  font-size: 30px;
+  border-left: 3px solid #ffffff;
+  padding-left: 19px;
+  margin: 30px 0px 0px 35px;
+  color: #ffffff;
+}
+.gmap_text {
+  margin: 27px 0px 0px 58px;
+}
+.gmap_text p {
+  margin-bottom: 7px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.yamap {
+  height: 469px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=all-old-ie.css.map */
