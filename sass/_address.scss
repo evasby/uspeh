@@ -5,6 +5,13 @@
 		color: #373737;
 		font-size: $font_size18;
 	}
+  &__footer{
+    p{
+      color: #ffffff;
+      font-size: $font_size16;
+      margin: 0px 0px 5px 0px;
+    }
+  }
 	span{
 		letter-spacing: 1.5px;
 	}
@@ -24,6 +31,15 @@
       height: 15px;
       background: url('../image/phone.png') no-repeat;
 		}
+    &__footer{
+      padding: 0px 32px 0px 21px;
+      margin: 0px 31px 0px 0px;
+      border-right: 3px solid #ffffff;
+      &:before{
+        background-position: -40px 0px;
+        top: 1px;
+      }
+    }
 	}
 	&_right{
 		float: left;
@@ -39,5 +55,12 @@
       height: 15px;
       background: url('../image/phone.png') -13px 0px no-repeat;
 		}
+    &__footer{
+      padding: 0px 0px 0px 21px;
+      &:before{
+        background-position: -26px 0px;
+        top: 0px;
+      }
+    }
 	}
 }

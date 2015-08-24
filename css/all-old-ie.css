@@ -145,6 +145,34 @@ textarea:focus {
   display: none;
 }
 
+.title {
+  min-width: 1000px;
+  min-height: 259px;
+  padding: 61px 0px 61px 0px;
+}
+.title__info {
+  background: url("../image/title-info-1920.jpg") 50% no-repeat;
+  background-size: cover;
+}
+.title_h1 {
+  font-family: proximanova_bold;
+  font-size: 38px;
+  padding: 0px 0px 0px 33px;
+  margin: 0px 0px 45px 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-left: 5px solid #ffffff;
+  line-height: 0.77;
+  height: 26px;
+}
+.title_descr {
+  color: #ffffff;
+  font-size: 20px;
+  width: 480px;
+  padding: 0px 0px 0px 38px;
+  line-height: 1.2;
+}
+
 .button {
   display: block;
   text-decoration: none;
@@ -416,7 +444,10 @@ textarea:focus {
 }
 
 .logo {
-  margin: 33px 50px 0px 0px;
+  margin: 33px 50px 37px 0px;
+}
+.logo__footer {
+  margin: 33px 65px 0px 0px;
 }
 .logo_link {
   display: block;
@@ -427,6 +458,9 @@ textarea:focus {
   width: 221px;
   height: 70px;
   background: url("../image/logo.png") no-repeat;
+}
+.logo_link__footer {
+  background: url("../image/logo-f.png") no-repeat;
 }
 .logo_text {
   color: #373737;
@@ -456,6 +490,11 @@ textarea:focus {
   color: #373737;
   font-size: 18px;
 }
+.address__footer p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0px 0px 5px 0px;
+}
 .address span {
   letter-spacing: 1.5px;
 }
@@ -476,6 +515,15 @@ textarea:focus {
   height: 15px;
   background: url("../image/phone.png") no-repeat;
 }
+.address_left__footer {
+  padding: 0px 32px 0px 21px;
+  margin: 0px 31px 0px 0px;
+  border-right: 3px solid #ffffff;
+}
+.address_left__footer:before {
+  background-position: -40px 0px;
+  top: 1px;
+}
 .address_right {
   float: left;
   padding: 0px 0px 0px 17px;
@@ -491,8 +539,48 @@ textarea:focus {
   height: 15px;
   background: url("../image/phone.png") -13px 0px no-repeat;
 }
+.address_right__footer {
+  padding: 0px 0px 0px 21px;
+}
+.address_right__footer:before {
+  background-position: -26px 0px;
+  top: 0px;
+}
+
+.footer {
+  background-color: #373737;
+  min-width: 1000px;
+}
+.footer_wrap {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+}
+.footer_wrap:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+* html .footer_wrap {
+  height: 1%;
+}
+.footer_section {
+  float: left;
+}
+.footer_copyright {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 34px 0px 24px 0px;
+  float: left;
+}
 
 .gmap {
+  background-color: #ffffff;
   height: 469px;
   /*&_info{
     width: 280px;
@@ -519,6 +607,77 @@ textarea:focus {
 .yamap {
   height: 469px;
   width: 100%;
+}
+
+.social {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+  margin: 40px 0px 0px 64px;
+  width: 174px;
+}
+.social:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+* html .social {
+  height: 1%;
+}
+.social_link {
+  display: block;
+  float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 39px;
+  height: 39px;
+  background: url("../image/social.png") 39px 0px no-repeat;
+  margin: 0px 0px 0px 6px;
+}
+.social_link:first-child {
+  margin: 0px;
+}
+.social_link__vk {
+  background-position: 0px 0px;
+}
+.social_link__vk:hover {
+  background-position: 0px -39px;
+}
+.social_link__fb {
+  background-position: -39px 0px;
+}
+.social_link__fb:hover {
+  background-position: -39px -39px;
+}
+.social_link__tt {
+  background-position: -78px 0px;
+}
+.social_link__tt:hover {
+  background-position: -78px -39px;
+}
+.social_link__ok {
+  background-position: -117px 0px;
+}
+.social_link__ok:hover {
+  background-position: -117px -39px;
+}
+
+.dev {
+  display: block;
+  margin: 21px 6px 0px 0px;
+  width: 108px;
+  height: 23px;
+  float: right;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("../image/dev.png") no-repeat;
 }
 
 /*# sourceMappingURL=all-old-ie.css.map */

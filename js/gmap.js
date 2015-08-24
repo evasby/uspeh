@@ -5,12 +5,12 @@ var infoboxcoord = new google.maps.LatLng(53.909318, 27.443461);
 function initialize() {
   var mapOptions = {
     zoom: 16,
-    center: center,
+    center: center
   };
   map = new google.maps.Map(document.getElementById('gmap'),
       mapOptions);
   var marker = new google.maps.Marker({
-      position: myLatlng,
+      position: myLatlng
   });
   // To add the marker to the map, call setMap();
   marker.setMap(map);
@@ -50,13 +50,13 @@ function initialize() {
     path: google.maps.SymbolPath.FORWARD_OPEN_ARROW,
     strokeColor: '#3498db',
     fillColor: '#3498db',
-    strokeWeight: 4,
+    strokeWeight: 4
   };
   var lineSymbol2 = {
     path: google.maps.SymbolPath.FORWARD_OPEN_ARROW,
     strokeColor: '#29c333',
     fillColor: '#29c333',
-    strokeWeight: 4,
+    strokeWeight: 4
   };
 
 

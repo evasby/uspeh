@@ -1,0 +1,18 @@
+.footer{
+  background-color: #373737;
+  min-width: 1000px;
+  &_bottom{
+  }
+  &_wrap{
+    @include clearfix();
+  }
+  &_section{
+    float: left;
+  }
+  &_copyright{
+    color: #ffffff;
+    font-size: $font_size12;
+    margin: 34px 0px 24px 0px;
+    float: left;
+  }
+}

@@ -1,5 +1,8 @@
 .logo{
-	margin: 33px 50px 0px 0px;
+	margin: 33px 50px 37px 0px;
+	&__footer{
+		margin: 33px 65px 0px 0px;
+	}
 	&_link{
 		display: block;
 		margin: 0px 0px 4px 0px;
@@ -9,6 +12,9 @@
 		width: 221px;
 		height: 70px;
 		background: url('../image/logo.png') no-repeat;
+		&__footer{
+			background: url('../image/logo-f.png') no-repeat;
+		}
 	}
 	&_text{
 		color: #373737;

@@ -1,0 +1,28 @@
+.title{
+  min-width: $min_width;
+  min-height: 259px;
+  //background-size: cover;
+  padding: 61px 0px 61px 0px;
+  &__info{
+    background: url('../image/title-info-1920.jpg') 50% no-repeat;
+    background-size: cover;
+  }
+  &_h1{
+    font-family: $bold;
+    font-size: $font_size_h1;
+    padding: 0px 0px 0px 33px; 
+    margin: 0px 0px 45px 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 5px solid #ffffff;
+    line-height: 0.77;
+    height: 26px;
+  }
+  &_descr{
+    color: #ffffff;
+    font-size: $font_size20;
+    width: 480px;
+    padding: 0px 0px 0px 38px; 
+    line-height: 1.2;
+  }
+}
