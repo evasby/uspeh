@@ -18,6 +18,7 @@ $font_size_h1: 38px;
 body{
   font-family: $font;
   font-size: $font_size18;
+  min-width: $min_width;
 }
 p{
   
@@ -32,7 +33,7 @@ i{
   font-family: $light;
 }
 a{
-  //@include link(#373737, #373737);
+  @include link(#373737, #373737);
   //font-family: $italic;
   //font-size: $font_size14;
   &:focus{
@@ -89,6 +90,8 @@ textarea{
 @import "main1";
 @import "main2";
 @import "calc-tax";
+@import "calc-extra";
+@import "calc-slider";
 
 @import "footer";
 @import "gmap";

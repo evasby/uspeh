@@ -1,0 +1,49 @@
+.calc-extra{
+	margin: 0px 0px 40px 0px;
+	&_wrap{
+		@include clearfix();
+	}
+	&_item{
+		float: left;
+		width: 50%;
+		text-align: center;
+	}
+	&_title{
+		font-family: $bold;
+		font-size: 16px;
+		color: #ffffff;
+		text-align: center;
+		text-transform: uppercase;
+		height: 34px;
+		padding: 16px 0px 0px 0px;
+		margin: 0px 0px 32px 0px;
+		background-color: #19254b;
+		position: relative;
+		&:before{
+			content: "";
+    	display: inline-block;
+			position: absolute;
+			bottom: -10px;
+			left: 223px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 13px 18px 0 18px;
+			border-color: #19254b transparent transparent transparent;
+		}
+		&__left{
+			border-right: 1px solid #ffffff;
+		}
+		&__right{
+			border-left: 1px solid #ffffff;
+		}
+	}
+	&_link{
+		//@include link(#373737, #373737);
+		font-size: 16px;
+		line-height: 1;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}

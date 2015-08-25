@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
   <title>Бухгалтерский успех - Главная</title>
   <link rel="stylesheet" href="css/all.css">
@@ -16,6 +17,7 @@
   <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script src="js/script.js"></script>
   <!--<script src="js/gmap.js"></script>-->
@@ -195,19 +197,56 @@
       <div class="main2_descr">Рассчитайте стоимость обслуживания под ваши нужды</div>
       <div class="calc-tax">
         <div class="calc-tax_head">Система налогооблажения</div>
+        <div class="calc-tax_lines">
+          <div class="calc-tax_left"></div><div class="calc-tax_right"></div>
+        </div>
         <div class="calc-tax_wrap">
           <div class="calc-tax_item">
             <input id="rfirst" type="radio" name="radio" checked hidden />
-            <label for="rfirst">Checked radio</label>
+            <label for="rfirst">
+              <div class="calc-tax_title">УСН</div>
+              <div class="calc-tax_descr">Упрощённая система налогообложения</div>
+            </label>
           </div>
           <div class="calc-tax_item">
             <input id="rsecond" type="radio" name="radio" hidden />
-            <label for="rsecond">Unchecked radio</label>
+            <label for="rsecond">
+              <div class="calc-tax_title">УСН с НДС</div>
+              <div class="calc-tax_descr">Упрощённая система налогообложения с уплатой налога на добавленную стоимость</div>
+            </label>
           </div>
           <div class="calc-tax_item">
             <input id="rthird" type="radio" name="radio" hidden />
-            <label for="rthird">Disabled radio</label>
+            <label for="rthird">
+              <div class="calc-tax_title">ОСН</div>
+              <div class="calc-tax_descr">Общая система налогообложения</div>
+            </label>
           </div>
+        </div>
+      </div>
+      <div class="calc-extra container">
+        <div class="calc-extra_wrap">
+          <div class="calc-extra_item">
+            <div class="calc-extra_title calc-extra_title__left">Скидки и бонусы</div>
+            <a href="" class="calc-extra_link">Выберите скидки и бонусы</a>
+          </div>
+          <div class="calc-extra_item">
+            <div class="calc-extra_title calc-extra_title__right">Дополнительные услуги</div>
+            <a href="" class="calc-extra_link">Выберите повышающий коэффициент</a>
+          </div>
+        </div>
+      </div>
+      <div class="calc-slider container">
+        <div class="calc-slider_title"><span>Количество обрабатываемых документов в месяц</span></div>
+        <div class="calc-slider_rules">
+          <div class="calc-slider_rule1"></div><div class="calc-slider_rule2"></div><div class="calc-slider_rule3"></div><div class="calc-slider_rule4"></div><div class="calc-slider_rule5"></div><div class="calc-slider_rule6"></div>
+        </div>
+        <div class="calc-slider_slider">
+          <div class="calc-slider_curent"><input id="calc-curent" type="text" value="10"></div>
+          <div id="calc" class="calc-slider_main"></div>
+        </div>
+        <div class="calc-slider_rules">
+          <div class="calc-slider_rule1 calc-slider_rule1__num"></div><div class="calc-slider_rule2 calc-slider_rule2__num"></div><div class="calc-slider_rule3 calc-slider_rule3__num"></div><div class="calc-slider_rule4 calc-slider_rule4__num"></div><div class="calc-slider_rule5 calc-slider_rule5__num"></div><div class="calc-slider_rule6 calc-slider_rule6__num"></div>
         </div>
       </div>
     </div>

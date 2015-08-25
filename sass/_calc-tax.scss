@@ -1,4 +1,5 @@
 .calc-tax{
+  margin: 0px 0px 41px 0px;
   &_wrap{
     @include clearfix();
   }
@@ -20,6 +21,13 @@
     border: 3px solid #7f7f7f;
     position: relative;
     @include def-transition(border-color, 0.2s);
+    background-color: #ffffff;
+    &:hover{
+			border-color: #3498db;
+			&:before{
+				background-color: #3498db;
+			}
+    }
   }
   input[type="radio"] + label::before {
     content: "";
@@ -30,13 +38,54 @@
     top: 0px;
     left: 0px;
     background-color: #7f7f7f;
-    background-position: 100% 100%;
-    @include def-transition(background-position, 0.2s);
+    background-position: 46% -46%;
+    //@include def-transition(background-position, 0.2s);
   }
   input[type="radio"]:checked + label {
     border-color: #3498db;
   }
   input[type="radio"]:checked + label::before {
     background: url('../image/calc-check.png') no-repeat 46% 46% #3498db;
+  }
+  &_head{
+  	font-family: $bold;
+  	color: #373737;
+  	font-size: 16px;
+  	text-transform: uppercase;
+  	text-align: center;
+  	margin: 0px 0px 19px 0px;
+  }
+  &_title{
+  	color: #373737;
+  	font-size: 18px;
+		margin: 17px 0px 6px 0px;
+		padding: 0px 10px 0px 60px;
+  }
+  &_descr{
+  	font-family: $light;
+  	color: #373737;
+  	font-size: 14px;
+  	padding: 0px 10px 0px 60px;
+  }
+  &_lines{
+  	@include clearfix();
+  	width: 668px;
+  	margin: 0 auto;
+  	height: 26px;
+  	border-top: 3px solid #7f7f7f;
+  }
+  &_left{
+  	width: 329px;
+  	height: 100%;
+  	float: left;
+  	border-left: 3px solid #7f7f7f;
+  	border-right: 2px solid #7f7f7f;
+  }
+  &_right{
+  	width: 330px;
+  	height: 100%;
+  	float: left;
+  	border-right: 3px solid #7f7f7f;
+  	border-left: 1px solid #7f7f7f;
   }
 }
