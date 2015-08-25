@@ -1,0 +1,36 @@
+.main1{
+  &_head{
+    font-size: 30px;
+    color: #373737;
+    text-transform: uppercase;
+    border-left: 3px solid #373737;
+    height: 20px;
+    line-height: 0.74;
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px 44px 0px;
+  }
+  &_wrap{
+    @include clearfix();
+  }
+  &_item{
+    width: 25%;
+    float: left;
+  }
+  &_title{
+    height: 60px;
+    font-family: $bold;
+    font-size: 16px;
+    color: #373737;
+    text-transform: uppercase;
+  }
+  &_image{
+    margin: 0px 0px 23px 0px;
+  }
+  &_text{
+    font-family: $light;
+    color: #373737;
+    font-size: 14px;
+    padding: 0px 15px 0px 0px;
+    margin: 0px 0px 36px 0px;
+  }
+}

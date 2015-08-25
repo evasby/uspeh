@@ -1,0 +1,22 @@
+.main2{
+  padding: 40px 0px 40px 0px;
+  border-top: 1px solid #dfdddd;
+  background: url(../image/main2-bac.jpg);
+  &_head{
+    width: $min_width;
+    margin: 0 auto 17px auto;
+    padding: 22px 0px 21px 0px;
+    @include def-h-gradient(#09245a, #2e88c9);
+    span{
+      display: block;
+      font-size: 30px;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-left: 3px solid #ffffff;
+      height: 20px;
+      line-height: 0.74;
+      padding: 0px 0px 0px 15px;
+      margin: 0px 0px 0px 20px;
+    }
+  }
+}

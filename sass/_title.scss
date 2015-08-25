@@ -1,8 +1,17 @@
 .title{
   min-width: $min_width;
   min-height: 259px;
-  //background-size: cover;
   padding: 61px 0px 61px 0px;
+  &_wrap{
+    position: relative;
+  }
+  &__main{
+    height: 319px;
+    border-bottom: 1px solid #ededee;
+    padding: 43px 0px 43px 0px;
+    background: url('../image/title-main-1920.jpg') 50% no-repeat;
+    background-size: cover;
+  }
   &__info{
     background: url('../image/title-info-1920.jpg') 50% no-repeat;
     background-size: cover;
@@ -17,12 +26,31 @@
     border-left: 5px solid #ffffff;
     line-height: 0.77;
     height: 26px;
+    &__main{
+      width: 640px;
+      border: none;
+      padding: 0px 0px 0px 9px;
+      margin: 0px 0px 87px 0px;
+      line-height: 1.2;
+    }
   }
   &_descr{
-    color: #ffffff;
-    font-size: $font_size20;
     width: 480px;
-    padding: 0px 0px 0px 38px; 
-    line-height: 1.2;
+    padding: 0px 0px 0px 38px;
+    p{
+      color: #ffffff;
+      font-size: $font_size20;
+      line-height: 1.2;
+    }
+    &__main{
+      width: 630px;
+      padding: 0px 0px 0px 26px; 
+      border-left: 3px solid #ffffff;
+      p{
+        font-size: $font_size24;
+        line-height: 0.6;
+        margin: 0px 0px 15px 0px;
+      }
+    }
   }
 }

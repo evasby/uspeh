@@ -1,0 +1,42 @@
+.calc-tax{
+  &_wrap{
+    @include clearfix();
+  }
+  &_item{
+    float: left;
+    margin: 0px 0px 0px 30px;
+    &:first-child{
+      margin: 0px;
+    }
+  }
+  input[type="radio"] {
+    display:none;            
+  }
+  input[type="radio"] + label {
+    cursor: pointer;
+    display: block;
+    width: 294px;
+    height: 94px;
+    border: 3px solid #7f7f7f;
+    position: relative;
+    @include def-transition(border-color, 0.2s);
+  }
+  input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #7f7f7f;
+    background-position: 100% 100%;
+    @include def-transition(background-position, 0.2s);
+  }
+  input[type="radio"]:checked + label {
+    border-color: #3498db;
+  }
+  input[type="radio"]:checked + label::before {
+    background: url('../image/calc-check.png') no-repeat 46% 46% #3498db;
+  }
+}

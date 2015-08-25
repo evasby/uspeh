@@ -5,6 +5,7 @@ $italic: proximanova_italic;
 $min_width: 1000px;
 $font_size18: 18px;
 $font_size20: 20px;
+$font_size24: 24px;
 $font_size14: 14px;
 $font_size13: 13px;
 $font_size12: 12px;
@@ -71,6 +72,7 @@ textarea{
 }
 //**********************************************************/
 //**********************************************************/
+@import "placeholder";
 @import "title";
 
 @import "button";
@@ -79,6 +81,14 @@ textarea{
 @import "topmenu";
 @import "logo";
 @import "address";
+
+@import "form-discount";
+@import "main-descr";
+
+@import "arrow-bb";
+@import "main1";
+@import "main2";
+@import "calc-tax";
 
 @import "footer";
 @import "gmap";

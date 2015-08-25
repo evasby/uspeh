@@ -1,0 +1,32 @@
+.main-descr{
+  width: 300px;
+  height: 176px;
+  position: absolute;
+  top: 186px;
+  right: 320px;
+  background-color: #3498db;
+  &_title{
+    margin: 35px 0px 0px 0px;
+    padding: 0px 20px 0px 26px;
+    font-size: 36px; 
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 6px;
+      width: 14px;
+      height: 25px;
+      background: url('../image/arrow-r.png') no-repeat;
+    }
+  }
+  &_descr{
+    padding: 11px 20px 0px 26px;
+    font-size: 17px; 
+    color: #ffffff;
+    line-height: 1.2;
+  }
+}
