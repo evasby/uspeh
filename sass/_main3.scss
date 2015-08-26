@@ -3,6 +3,7 @@
   background: url('../image/action-1920.jpg') 50% 50% no-repeat;
   background-size: cover;
   padding: 38px 0px 0px 0px;
+  margin: 0px 0px 40px 0px;
   &_wrap{
     @include clearfix();
   }

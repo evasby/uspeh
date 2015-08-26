@@ -7,13 +7,33 @@
     height: 20px;
     line-height: 0.74;
     padding: 0px 0px 0px 15px;
-    margin: 0px 0px 44px 0px;
+    margin: 0px 0px 58px 0px;
   }
   &_wrap{
     @include clearfix();
   }
   &_item{
+    height: 146px;
     width: 33.33%;
     float: left;
+    @include clearfix();
+  }
+  &_image{
+    float: left;
+    width: 68px;
+  }
+  &_title{
+    font-family: $bold;
+    color: #373737;
+    font-size: 18px;
+    padding: 0px 24px 0px 68px;
+    margin: 0px 0px 15px 0px;
+  }
+  &_text{
+    font-family: $light;
+    color: #373737;
+    font-size: 14px;
+    padding: 0px 24px 0px 68px;
+    line-height: 1.1;
   }
 }

@@ -1,10 +1,11 @@
 .button{
 	display: block;
 	text-decoration: none;
-	font-size: $font_size18;
+	font-size: 18;
 	font-family: $bold;
 	@include link(#ffffff, #ffffff);
 	&__calcinfo{
+		font-family: $font;
     font-size: 16px;
     float: right;
     width: 181px;
@@ -24,7 +25,6 @@
     }
   }
   &__calcorder{
-    font-size: 16px;
     float: right;
     width: 158px;
     height: 33px;

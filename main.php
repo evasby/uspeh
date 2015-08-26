@@ -20,7 +20,7 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script src="js/script.js"></script>
-  <!--<script src="js/gmap.js"></script>-->
+  <script src="js/gmap.js"></script>
   
 </head>
 <body>
@@ -292,51 +292,132 @@
     <div class="main4_head">Преимущества работы с ООО "Бухгалтерский успех"</div>
     <div class="main4_wrap">
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-1.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-1.png" alt=""></div>
         <div class="main4_title">Профессиональная ответственность</div>
         <div class="main4_text">Программа ответственности застрахована на 500 млн. рублей.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-2.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-2.png" alt=""></div>
         <div class="main4_title">Лицензионая программа 1С "Бухгалтерия"</div>
         <div class="main4_text">Качественная программа без багов.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-3.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-3.png" alt=""></div>
         <div class="main4_title">Удаленная работа с 1С "Бухгалтерия"</div>
         <div class="main4_text">Возможность при работе использовать удаленно бухгалтерию 1С на наших серверах.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-4.png" alt=""></div>
         <div class="main4_title">Значительный опыт бухгалтеров</div>
         <div class="main4_text">Сотрудники имеют большой опыт работы главными бухгалтерами и имеют постояную возможность обмена опытом с коллегами.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-5.png" alt=""></div>
         <div class="main4_title">Использование нормативно-правовых баз</div>
         <div class="main4_text">Имеем огромную базу различных правовых документов: бухгалтерский консультант и т.д.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-6.png" alt=""></div>
         <div class="main4_title">Бесплатная консультация клиентов</div>
         <div class="main4_text">Подстроимся под потребности даже самых изощренных потребителей.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-7.png" alt=""></div>
         <div class="main4_title">Оптимизация налогов организаций</div>
         <div class="main4_text">Бухгалтеры на период отпусков и больничных.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-8.png" alt=""></div>
         <div class="main4_title">Минимизация расходов на бухгалтерию</div>
         <div class="main4_text">Возможность при работе использовать удаленно бухгалтерию 1С на наших серверах.</div>
       </div>
       <div class="main4_item">
-        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_image"><img src="image/down/main4-9.png" alt=""></div>
         <div class="main4_title">Индивидуальный подход к клиенту </div>
         <div class="main4_text">Помощь в консультациях в разных гос. учреждениях, таких как налоговая, исполком, ФСЗН.</div>
       </div>
     </div>
+  </div>
+
+  <div id="main5" class="main5">
+    <div class="main5_wrap container">
+      <div class="main5_head">Схема работы с нами</div>
+      <div class="main5_item main5_item__1">
+        <div class="main5_image"><img src="image/main5-1.png" alt=""></div>
+        <a href="" class="main5_link">Ознакомление с вашими документами</a>
+      </div>
+      <div class="main5_item main5_item__2">
+        <div class="main5_image"><img src="image/main5-2.png" alt=""></div>
+        <a href="" class="main5_link">Подбор оптимального тарифного плана</a>
+      </div>
+      <div class="main5_item main5_item__3">
+        <div class="main5_image"><img src="image/main5-3.png" alt=""></div>
+        <a href="" class="main5_link">Заключение договора на оказание услуг</a>
+      </div>
+      <div class="main5_item main5_item__4">
+        <div class="main5_image"><img src="image/main5-4.png" alt=""></div>
+        <a href="" class="main5_link">Получение эффекта в первом месяце работы</a>
+      </div>
+      <div class="main5_item main5_item__5">
+        <div class="main5_image"><img src="image/main5-5.png" alt=""></div>
+        <a href="" class="main5_link">Мы занимаемся Вашей бухгалтерией, Вы - своим бизнесом!</a>
+      </div>
+      <div class="main5_lines"></div>
+    </div>
+  </div>
+
+  <div id="main6" class="main6 container">
+    <div class="main6_head">Отзывы о работе</div>
+    <div class="main6_slider">
+      <div class="main6_item">
+        <div class="main6_text">Мы благодарны специалистам ООО “Бухгалтерский успех” за оперативную помощь в восстановлении бухучета. Директор нашей компании вышел в оставку, и нужно было срочно решить возникшие в связи с этим сложности. Приглашенный специалист помог в кратчайшее время навести порядок в документах и подготовить их для проверки, проанализировал и дал эффективные рекомендации по решению спорных вопросов. В итоге мы справились намного быстрее и легче, чем если бы занимались всем самостоятельно.</div>
+        <div class="main6_info">
+          <a href="" class="main6_link">Смотреть оригинал отзыва</a>
+          <div class="main6_author"><span>Сергей Павлович</span>, директор компании "Гвозди и молотки"</div>
+        </div>
+      </div>
+      <!--<div class="main6_item">
+        <div class="main6_text">Мы благодарны специалистам ООО “Бухгалтерский успех” за оперативную помощь в восстановлении бухучета. Директор нашей компании вышел в оставку, и нужно было срочно решить возникшие в связи с этим сложности. Приглашенный специалист помог в кратчайшее время навести порядок в документах и подготовить их для проверки, проанализировал и дал эффективные рекомендации по решению спорных вопросов. В итоге мы справились намного быстрее и легче, чем если бы занимались всем самостоятельно.</div>
+        <div class="main6_info">
+          <a href="" class="main6_link">Смотреть оригинал отзыва</a>
+          <div class="main6_author"><span>Сергей Павлович</span>, директор компании "Гвозди и молотки"</div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+
+  <div id="main7" class="main3">
+    <div class="main3_wrap container">
+      <div class="main3_item">
+        <div class="action">
+          <div class="action_title">Акция!</div>
+          <div class="action_descr">Оплатите услуги за 2 месяца и получите <span>скидку 25%</span></div>
+        </div>
+      </div>
+      <div class="main3_item">
+        <div class="form-action">
+          <div class="form-action_wrap">
+            <form action="#">
+              <div class="form-action_inner">
+                <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваше имя">
+              </div>
+              <div class="form-action_inner">
+                <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваш телефон">
+              </div>
+              <div class="form-action_button">
+                <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Получить" name="op">
+              </div>
+              <div class="form-action_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main8 "class="main8 container">
+    <div class="main8_head">Наши партнеры, которым мы доверяем</div>
+    <div class="main8_slider"></div>
   </div>
 
   <footer class="footer">

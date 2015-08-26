@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+  $('.main5_wrap').mousemove(function(e){
+    // положение элемента
+    var pos = $(this).offset();
+    var elem_left = pos.left;
+    var elem_top = pos.top;
+    // положение курсора внутри элемента
+    var Xinner = e.pageX - elem_left;
+    var Yinner = e.pageY - elem_top;
+    console.log("X: " + Xinner + " Y: " + Yinner); // вывод результата в консоль
+  });
+  
 	var curent;
   var slider = $( "#calc" ).slider({
     value: 10,

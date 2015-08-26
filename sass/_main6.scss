@@ -1,0 +1,68 @@
+.main6{
+	height: 319px;
+	padding: 41px 0px 0px 0px;
+	overflow: hidden;
+	&_head{
+    font-size: 30px;
+    color: #373737;
+    text-transform: uppercase;
+    border-left: 3px solid #373737;
+    height: 20px;
+    line-height: 0.74;
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px 58px 0px;
+  }
+  &_item{
+  	
+  }
+  &_text{
+  	padding: 0px 0px 0px 87px;
+  	margin: 0px 0px 23px 0px;
+  	font-family: $light;
+  	color: #373737;
+  	font-size: 16px;
+  	position: relative;
+  	line-height: 1.1;
+  	&:before{
+  		content: " ";
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 1px;
+      width: 41px;
+      height: 35px;
+      background: url('../image/quote.png') no-repeat;
+  	}
+  }
+  &_info{
+  	@include clearfix();
+  	padding: 0px 0px 0px 87px;
+  }
+  &_link{
+  	display: block;
+  	padding: 0px 16px 0px 0px;
+  	float: right;
+  	font-family: $italic;
+  	font-size: 14px;
+  	@include link(#373737, #373737);
+  	position: relative;
+  	&:before{
+  		content: " ";
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 1px;
+      width: 13px;
+      height: 14px;
+      background: url('../image/arrow-link.png') no-repeat;
+  	}
+  }
+  &_author{
+  	color: #373737;
+  	font-size: 16px;
+  	span{
+  		font-family: $bold;
+  		text-transform: uppercase;
+  	}
+  }
+}

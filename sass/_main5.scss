@@ -1,0 +1,73 @@
+.main5{
+	height: 912px;
+	background: url('../image/main5-1920.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	&_head{
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 3px solid #ffffff;
+    height: 20px;
+    line-height: 0.74;
+    padding: 0px 0px 0px 15px;
+    margin: 0px 0px 58px 0px;
+  }
+  &_wrap{
+  	padding: 41px 0px 0px 0px;
+  	position: relative;
+  	height: 100%;
+  }
+  &_item{
+  	position: absolute;
+		width: 230px;
+		&__1{
+			top: 104px;
+			left: 303px;
+		}
+		&__2{
+			top: 490px;
+			left: 120px;
+		}
+		&__3{
+			top: 295px;
+			left: 550px;
+		}
+		&__4{
+			top: 555px;
+			left: 592px;
+		}
+		&__5{
+			top: 652px;
+			left: 341px;
+			width: 355px;
+		}
+  }
+  &_lines{
+  	width: 281px;
+  	height: 311px;
+  	position: absolute;
+  	top: 324px;
+		left: 342px;
+		background: url('../image/main5-lines.png') no-repeat;
+  }
+  &_image{
+  	width: 134px;
+  	height: 134px;
+  	margin: 0 0 15px 40px;
+  	.main5_item__5 &{
+  		margin: 0 0 15px 100px;
+  	}
+  }
+  &_link{
+  	font-size: 20px;
+  	@include link(#ffffff, #ffffff);
+  	display: block;
+  	width: 100%;
+  	text-align: center;
+  	text-decoration: none;
+  	line-height: 1.2;
+  	&:hover{
+  		text-decoration: underline;
+  	}
+  }
+}
