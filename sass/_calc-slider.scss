@@ -1,4 +1,5 @@
 .calc-slider{
+	margin: 0px 0px 87px 0px;
 	&_title{
 		text-align: center;
 		margin: 0px 0px 46px 0px;
@@ -27,6 +28,7 @@
 	&_slider{
 		padding: 0px 0px 0px 68px;
 		margin: 9px 0px 8px 0px;
+		@include clearfix();
 	}
 	&_curent{
 		float: right;

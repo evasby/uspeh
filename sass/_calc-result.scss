@@ -1,0 +1,35 @@
+.calc-result{
+  &_wrap{
+    @include clearfix();
+  }
+  &_result{
+    float: left;  
+    border-bottom: 3px solid #3498db;
+    position: relative;
+    padding: 10px 0px 0px 62px;
+    height: 35px;
+    font-size: 22px;
+    color: #373737;
+    text-transform: uppercase;
+    &:before{
+      content: "";
+      display: inline-block;
+      height: 45px;
+      width: 48px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background: url('../image/dollar.png') no-repeat 55% 60% #3498db;
+    }
+  }
+  &_price{
+    font-family: $bold;
+    font-size: 26px;
+    color: #3498db;
+  }
+  &_curr{
+    font-size: 16px;
+    color: #373737;
+    text-transform: none;
+  }
+}

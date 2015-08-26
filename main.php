@@ -224,7 +224,7 @@
           </div>
         </div>
       </div>
-      <div class="calc-extra container">
+      <div class="calc-extra">
         <div class="calc-extra_wrap">
           <div class="calc-extra_item">
             <div class="calc-extra_title calc-extra_title__left">Скидки и бонусы</div>
@@ -236,7 +236,7 @@
           </div>
         </div>
       </div>
-      <div class="calc-slider container">
+      <div class="calc-slider">
         <div class="calc-slider_title"><span>Количество обрабатываемых документов в месяц</span></div>
         <div class="calc-slider_rules">
           <div class="calc-slider_rule1"></div><div class="calc-slider_rule2"></div><div class="calc-slider_rule3"></div><div class="calc-slider_rule4"></div><div class="calc-slider_rule5"></div><div class="calc-slider_rule6"></div>
@@ -248,6 +248,93 @@
         <div class="calc-slider_rules">
           <div class="calc-slider_rule1 calc-slider_rule1__num"></div><div class="calc-slider_rule2 calc-slider_rule2__num"></div><div class="calc-slider_rule3 calc-slider_rule3__num"></div><div class="calc-slider_rule4 calc-slider_rule4__num"></div><div class="calc-slider_rule5 calc-slider_rule5__num"></div><div class="calc-slider_rule6 calc-slider_rule6__num"></div>
         </div>
+      </div>
+      <div class="calc-result">
+        <div class="calc-result_wrap">
+          <a class="button button__calcorder" href="/">Заказать тариф</a>
+          <a class="button button__calcinfo" href="/">Что входит в стоимость</a>
+          <div class="calc-result_result">Стоимость = <span class="calc-result_price">560 000</span><span class="calc-result_curr"> бел.руб.\месяц</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main3" class="main3">
+    <div class="main3_wrap container">
+      <div class="main3_item">
+        <div class="action">
+          <div class="action_title">Акция!</div>
+          <div class="action_descr">Оплатите услуги за 2 месяца и получите <span>скидку 25%</span></div>
+        </div>
+      </div>
+      <div class="main3_item">
+        <div class="form-action">
+          <div class="form-action_wrap">
+            <form action="#">
+              <div class="form-action_inner">
+                <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваше имя">
+              </div>
+              <div class="form-action_inner">
+                <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваш телефон">
+              </div>
+              <div class="form-action_button">
+                <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Получить" name="op">
+              </div>
+              <div class="form-action_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main4" class="main4 container">
+    <div class="main4_head">Преимущества работы с ООО "Бухгалтерский успех"</div>
+    <div class="main4_wrap">
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-1.png" alt=""></div>
+        <div class="main4_title">Профессиональная ответственность</div>
+        <div class="main4_text">Программа ответственности застрахована на 500 млн. рублей.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-2.png" alt=""></div>
+        <div class="main4_title">Лицензионая программа 1С "Бухгалтерия"</div>
+        <div class="main4_text">Качественная программа без багов.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-3.png" alt=""></div>
+        <div class="main4_title">Удаленная работа с 1С "Бухгалтерия"</div>
+        <div class="main4_text">Возможность при работе использовать удаленно бухгалтерию 1С на наших серверах.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_title">Значительный опыт бухгалтеров</div>
+        <div class="main4_text">Сотрудники имеют большой опыт работы главными бухгалтерами и имеют постояную возможность обмена опытом с коллегами.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_title">Использование нормативно-правовых баз</div>
+        <div class="main4_text">Имеем огромную базу различных правовых документов: бухгалтерский консультант и т.д.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_title">Бесплатная консультация клиентов</div>
+        <div class="main4_text">Подстроимся под потребности даже самых изощренных потребителей.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_title">Оптимизация налогов организаций</div>
+        <div class="main4_text">Бухгалтеры на период отпусков и больничных.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_title">Минимизация расходов на бухгалтерию</div>
+        <div class="main4_text">Возможность при работе использовать удаленно бухгалтерию 1С на наших серверах.</div>
+      </div>
+      <div class="main4_item">
+        <div class="main4_image"><img src="image/down/main1-4.png" alt=""></div>
+        <div class="main4_title">Индивидуальный подход к клиенту </div>
+        <div class="main4_text">Помощь в консультациях в разных гос. учреждениях, таких как налоговая, исполком, ФСЗН.</div>
       </div>
     </div>
   </div>

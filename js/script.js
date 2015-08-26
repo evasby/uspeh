@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var curent;
-  $( "#calc" ).slider({
+  var slider = $( "#calc" ).slider({
     value: 10,
     orientation: "horizontal",
     range: "min",
@@ -8,13 +8,6 @@ $(document).ready(function(){
     min: 1,
     max: 1000,
     slide: function( event, ui ) {
-    	/*if (ui.value < 283) {
-    		$( "#calc-curent" ).val(ui.value/5.66);
-      	$( "#calc-curent2" ).val(ui.value);
-    	} else{
-    		$( "#calc-curent" ).val(ui.value/3.9);
-      	$( "#calc-curent2" ).val(ui.value);
-    	}*/
     	curent = ui.value;
     	if (curent <= 50) {
     		$( "#calc-curent" ).val(10);
@@ -35,6 +28,24 @@ $(document).ready(function(){
     	else{
     		$( "#calc-curent2" ).val(curent);
     	}
+    }
+  });
+  $( "#calc-curent" ).keyup(function() {
+    if ($(this).val() <= 10) {
+      slider.slider( 'value', 50 );
+    } else
+    if ($(this).val() <= 50) {
+      slider.slider( 'value', $(this).val()*247/50 );
+    }else if ($(this).val() <= 100){
+      slider.slider( 'value', ($(this).val()-50)*110/50 + 248 );
+    }else if ($(this).val() <= 200){
+      slider.slider( 'value', ($(this).val()-100)*132/100 + 359 );
+    }else if ($(this).val() <= 500){
+      slider.slider( 'value', ($(this).val()-200)*226/300 + 492 );
+    }else if ($(this).val() <= 1000){
+      slider.slider( 'value', ($(this).val()-500)*136/500 + 719 );
+    }else if ($(this).val() <= 2000){
+      slider.slider( 'value', ($(this).val()-1000)*144/1000 + 856 );
     }
   });
 });
