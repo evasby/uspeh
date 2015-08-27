@@ -1,7 +1,7 @@
 .main8{
-	height: 170px;
-	padding: 2px 0px 0px 0px;
-	&_head{
+  height: 168px;
+  padding: 2px 0px 0px 0px;
+  &_head{
     font-size: 30px;
     color: #373737;
     text-transform: uppercase;
@@ -9,6 +9,67 @@
     height: 20px;
     line-height: 0.74;
     padding: 0px 0px 0px 15px;
-    margin: 0px 0px 58px 0px;
+    margin: 0px 0px 59px 0px;
+  }
+  &_item{
+    text-align: center;
+    border-right: 1px solid #cccccc;
+  }
+  /*bxslider*******************************/
+  .bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+  }
+
+  .bx-wrapper img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url('../image/bx_loader.gif') center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+  }
+  /* DIRECTION CONTROLS (NEXT / PREV) */
+
+  .bx-wrapper .bx-prev {
+    left: -50px;
+    background: url('../image/arrows-bx.png') no-repeat 0px 0px;
+  }
+
+  .bx-wrapper .bx-next {
+    right: -50px;
+    background: url('../image/arrows-bx.png') no-repeat -18px 0px;
+  }
+
+  .bx-wrapper .bx-prev:hover {
+    //background-position: 0 0;
+  }
+
+  .bx-wrapper .bx-next:hover {
+    //background-position: -43px 0;
+  }
+
+  .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    outline: 0;
+    width: 18px;
+    height: 35px;
+    text-indent: -9999px;
+    z-index: 9999;
+  }
+
+  .bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
   }
 }

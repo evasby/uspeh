@@ -5,7 +5,7 @@
          url('fonts/proximanova-reg.woff2') format('woff2'),
          url('fonts/proximanova-reg.woff') format('woff'),
          url('fonts/proximanova-reg.ttf') format('truetype'),
-         url('fonts/proximanova-reg.svg#proxima_nova_rgregular') format('svg');
+         url('fonts/proximanova-reg.svg#proximanova') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -17,7 +17,7 @@
          url('fonts/proximanova-bold.woff2') format('woff2'),
          url('fonts/proximanova-bold.woff') format('woff'),
          url('fonts/proximanova-bold.ttf') format('truetype'),
-         url('fonts/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+         url('fonts/proximanova-bold.svg#proximanova_bold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -29,7 +29,7 @@
          url('fonts/proximanova-light.woff2') format('woff2'),
          url('fonts/proximanova-light.woff') format('woff'),
          url('fonts/proximanova-light.ttf') format('truetype'),
-         url('fonts/proximanova-light.svg#proxima_nova_ltlight') format('svg');
+         url('fonts/proximanova-light.svg#proximanova_light') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -41,7 +41,19 @@
          url('fonts/proximanova-regit.woff2') format('woff2'),
          url('fonts/proximanova-regit.woff') format('woff'),
          url('fonts/proximanova-regit.ttf') format('truetype'),
-         url('fonts/proximanova-regit.svg#proxima_novaregular_italic') format('svg');
+         url('fonts/proximanova-regit.svg#proximanova_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proximanova_cond';
+    src: url('fonts/proximanovacond-reg.eot');
+    src: url('fonts/proximanovacond-reg.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanovacond-reg.woff2') format('woff2'),
+         url('fonts/proximanovacond-reg.woff') format('woff'),
+         url('fonts/proximanovacond-reg.ttf') format('truetype'),
+         url('fonts/proximanovacond-reg.svg#proximanova_cond') format('svg');
     font-weight: normal;
     font-style: normal;
 

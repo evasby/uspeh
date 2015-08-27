@@ -83,28 +83,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @font-face {
   font-family: 'proximanova';
   src: url("fonts/proximanova-reg.eot");
-  src: url("fonts/proximanova-reg.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-reg.woff2") format("woff2"), url("fonts/proximanova-reg.woff") format("woff"), url("fonts/proximanova-reg.ttf") format("truetype"), url("fonts/proximanova-reg.svg#proxima_nova_rgregular") format("svg");
+  src: url("fonts/proximanova-reg.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-reg.woff2") format("woff2"), url("fonts/proximanova-reg.woff") format("woff"), url("fonts/proximanova-reg.ttf") format("truetype"), url("fonts/proximanova-reg.svg#proximanova") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'proximanova_bold';
   src: url("fonts/proximanova-bold.eot");
-  src: url("fonts/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold.woff2") format("woff2"), url("fonts/proximanova-bold.woff") format("woff"), url("fonts/proximanova-bold.ttf") format("truetype"), url("fonts/proximanova-bold.svg#proxima_nova_rgbold") format("svg");
+  src: url("fonts/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold.woff2") format("woff2"), url("fonts/proximanova-bold.woff") format("woff"), url("fonts/proximanova-bold.ttf") format("truetype"), url("fonts/proximanova-bold.svg#proximanova_bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'proximanova_light';
   src: url("fonts/proximanova-light.eot");
-  src: url("fonts/proximanova-light.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-light.woff2") format("woff2"), url("fonts/proximanova-light.woff") format("woff"), url("fonts/proximanova-light.ttf") format("truetype"), url("fonts/proximanova-light.svg#proxima_nova_ltlight") format("svg");
+  src: url("fonts/proximanova-light.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-light.woff2") format("woff2"), url("fonts/proximanova-light.woff") format("woff"), url("fonts/proximanova-light.ttf") format("truetype"), url("fonts/proximanova-light.svg#proximanova_light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'proximanova_italic';
   src: url("fonts/proximanova-regit.eot");
-  src: url("fonts/proximanova-regit.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regit.woff2") format("woff2"), url("fonts/proximanova-regit.woff") format("woff"), url("fonts/proximanova-regit.ttf") format("truetype"), url("fonts/proximanova-regit.svg#proxima_novaregular_italic") format("svg");
+  src: url("fonts/proximanova-regit.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regit.woff2") format("woff2"), url("fonts/proximanova-regit.woff") format("woff"), url("fonts/proximanova-regit.ttf") format("truetype"), url("fonts/proximanova-regit.svg#proximanova_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanova_cond';
+  src: url("fonts/proximanovacond-reg.eot");
+  src: url("fonts/proximanovacond-reg.eot?#iefix") format("embedded-opentype"), url("fonts/proximanovacond-reg.woff2") format("woff2"), url("fonts/proximanovacond-reg.woff") format("woff"), url("fonts/proximanovacond-reg.ttf") format("truetype"), url("fonts/proximanovacond-reg.svg#proximanova_cond") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -112,6 +119,7 @@ body {
   font-family: proximanova;
   font-size: 18px;
   min-width: 1000px;
+  position: relative;
 }
 
 strong, b {
@@ -771,11 +779,317 @@ textarea:focus {
   line-height: 1.2;
 }
 
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#cboxWrapper {
+  max-width: none;
+}
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left;
+}
+
+#cboxContent {
+  position: relative;
+}
+
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#cboxTitle {
+  margin: 0;
+}
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer;
+}
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+  background: #000;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+#colorbox {
+  outline: 0;
+}
+
+#cboxContent {
+  margin-top: 20px;
+  background: transparent;
+}
+
+.cboxIframe {
+  background: #fff;
+}
+
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc;
+}
+
+#cboxLoadedContent {
+  border: 2px solid #19254b;
+  background: #fff;
+  margin: 18px;
+}
+
+#cboxTitle {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #ccc;
+}
+
+#cboxCurrent {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  color: #ccc;
+}
+
+#cboxLoadingGraphic {
+  background: url(../image/temp/loading.gif) no-repeat center center;
+}
+
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  width: auto;
+  background: none;
+}
+
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
+  outline: 0;
+}
+
+#cboxSlideshow {
+  position: absolute;
+  top: -20px;
+  right: 90px;
+  color: #fff;
+}
+
+#cboxPrevious {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin-top: -32px;
+  background: url(../image/temp/controls.png) no-repeat top left;
+  width: 28px;
+  height: 65px;
+  text-indent: -9999px;
+}
+
+#cboxPrevious:hover {
+  background-position: bottom left;
+}
+
+#cboxNext {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -32px;
+  background: url(../image/temp/controls.png) no-repeat top right;
+  width: 28px;
+  height: 65px;
+  text-indent: -9999px;
+}
+
+#cboxNext:hover {
+  background-position: bottom right;
+}
+
+#cboxClose {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  background: url(../image/close.png) no-repeat top center;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+}
+
+#cboxClose:hover {
+  background-position: bottom center;
+}
+
+/*#cboxOverlay{background:#000; opacity: 0.9; filter: alpha(opacity = 90);}
+#colorbox{outline:0;}
+    #cboxContent{margin-top:20px;background:#000;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{border:5px solid #000; background:#fff;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+
+        // these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles 
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        // avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating)
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+        
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}*/
 .arrow-bb {
   width: 18px;
   height: 18px;
   margin: 13px auto 51px auto;
   background: url(../image/arrow-bb.png) no-repeat;
+}
+
+.app {
+  position: relative;
+}
+.app_wrap {
+  position: fixed;
+  z-index: 5;
+  top: 470px;
+  left: 0px;
+  font-family: proximanova_cond;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.app_item {
+  display: block;
+  display: inline-block;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+  text-decoration: none;
+  margin: 0px 0px 19px 0px;
+  position: relative;
+  width: 215px;
+  -webkit-transition: width 0.2s ease-in-out;
+  -moz-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  -ms-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+.app_item:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+* html .app_item {
+  height: 1%;
+}
+.app_item:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+  width: 13px;
+  height: 14px;
+  background: url("../image/arrow-app.png") no-repeat;
+}
+.app_item:hover {
+  width: 235px;
+}
+.app_left {
+  width: 61px;
+  float: left;
+  background-color: #3498db;
+}
+.app_left span {
+  color: #ffffff;
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 0px 0px 8px;
+  position: relative;
+}
+.app_left span:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 13px;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.app_right {
+  background-color: #19254b;
+}
+.app_right span {
+  line-height: 1.1;
+  color: #ffffff;
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 0px 0px 19px;
 }
 
 .main1_head {
@@ -1788,6 +2102,8 @@ textarea:focus {
   height: 319px;
   padding: 41px 0px 0px 0px;
   overflow: hidden;
+  /*bxslider*******************************/
+  /* PAGER */
 }
 .main6_head {
   font-size: 30px;
@@ -1876,10 +2192,55 @@ textarea:focus {
   font-family: proximanova_bold;
   text-transform: uppercase;
 }
+.main6 .bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+}
+.main6 .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+.main6 .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url("../image/bx_loader.gif") center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.main6 .bx-wrapper .bx-pager {
+  text-align: center;
+  padding-top: 55px;
+}
+.main6 .bx-wrapper .bx-pager .bx-pager-item,
+.main6 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.main6 .bx-wrapper .bx-pager.bx-default-pager a {
+  text-indent: -9999px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin: 0 3px;
+  outline: 0;
+  background: url("../image/pager.png") 0px 0px no-repeat;
+}
+.main6 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.main6 .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background-position: -19px 0px;
+}
 
 .main8 {
-  height: 170px;
+  height: 168px;
   padding: 2px 0px 0px 0px;
+  /*bxslider*******************************/
+  /* DIRECTION CONTROLS (NEXT / PREV) */
 }
 .main8_head {
   font-size: 30px;
@@ -1889,7 +2250,53 @@ textarea:focus {
   height: 20px;
   line-height: 0.74;
   padding: 0px 0px 0px 15px;
-  margin: 0px 0px 58px 0px;
+  margin: 0px 0px 59px 0px;
+}
+.main8_item {
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+.main8 .bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+}
+.main8 .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.main8 .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url("../image/bx_loader.gif") center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.main8 .bx-wrapper .bx-prev {
+  left: -50px;
+  background: url("../image/arrows-bx.png") no-repeat 0px 0px;
+}
+.main8 .bx-wrapper .bx-next {
+  right: -50px;
+  background: url("../image/arrows-bx.png") no-repeat -18px 0px;
+}
+.main8 .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  outline: 0;
+  width: 18px;
+  height: 35px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.main8 .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
 }
 
 .footer {

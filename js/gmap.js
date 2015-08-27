@@ -5,7 +5,8 @@ var infoboxcoord = new google.maps.LatLng(53.909318, 27.443461);
 function initialize() {
   var mapOptions = {
     zoom: 16,
-    center: center
+    center: center,
+    scrollwheel: false
   };
   map = new google.maps.Map(document.getElementById('gmap'),
       mapOptions);

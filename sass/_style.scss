@@ -2,6 +2,7 @@
 $bold: proximanova_bold;
 $light: proximanova_light;
 $italic: proximanova_italic;
+$cond: proximanova_cond;
 $min_width: 1000px;
 $font_size18: 18px;
 $font_size20: 20px;
@@ -19,6 +20,7 @@ body{
   font-family: $font;
   font-size: $font_size18;
   min-width: $min_width;
+  position: relative;
 }
 p{
   
@@ -86,7 +88,10 @@ textarea{
 @import "form-discount";
 @import "main-descr";
 
+@import "form-popup";
+
 @import "arrow-bb";
+@import "app";
 @import "main1";
 @import "main2";
 @import "calc-tax";

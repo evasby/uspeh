@@ -19,6 +19,8 @@
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/gmap.js"></script>
   
@@ -164,6 +166,19 @@
   </div>
 
   <div class="arrow-bb"></div>
+
+  <div class="app">
+    <div class="app_wrap">
+      <a href="" id="app1" class="app_item">
+        <div class="app_left"><span>Заявка</span></div>
+        <div class="app_right"><span>Задать вопрос</span></div>
+      </a>
+      <a href="" id="app2" class="app_item">
+        <div class="app_left"><span>Заявка</span></div>
+        <div class="app_right"><span>Бухгалтерское обслуживание</span></div>
+      </a>
+    </div>
+  </div>
 
   <div class="main1 container" id="main1">
     <div class="main1_head">Важное о бухгалтерском успехе</div>
@@ -376,13 +391,27 @@
           <div class="main6_author"><span>Сергей Павлович</span>, директор компании "Гвозди и молотки"</div>
         </div>
       </div>
-      <!--<div class="main6_item">
-        <div class="main6_text">Мы благодарны специалистам ООО “Бухгалтерский успех” за оперативную помощь в восстановлении бухучета. Директор нашей компании вышел в оставку, и нужно было срочно решить возникшие в связи с этим сложности. Приглашенный специалист помог в кратчайшее время навести порядок в документах и подготовить их для проверки, проанализировал и дал эффективные рекомендации по решению спорных вопросов. В итоге мы справились намного быстрее и легче, чем если бы занимались всем самостоятельно.</div>
+      <div class="main6_item">
+        <div class="main6_text">Мы благодарны специалистам ООО “Бухгалтерский успех” за оперативную помощь в восстановлении бухучета. Директор нашей компании вышел в оставку, и нужно было срочно решить возникшие в связи с этим сложности.</div>
         <div class="main6_info">
           <a href="" class="main6_link">Смотреть оригинал отзыва</a>
           <div class="main6_author"><span>Сергей Павлович</span>, директор компании "Гвозди и молотки"</div>
         </div>
-      </div>-->
+      </div>
+      <div class="main6_item">
+        <div class="main6_text">Приглашенный специалист помог в кратчайшее время навести порядок в документах и подготовить их для проверки, проанализировал и дал эффективные рекомендации по решению спорных вопросов. В итоге мы справились намного быстрее и легче, чем если бы занимались всем самостоятельно.</div>
+        <div class="main6_info">
+          <a href="" class="main6_link">Смотреть оригинал отзыва</a>
+          <div class="main6_author"><span>Сергей Павлович</span>, директор компании "Гвозди и молотки"</div>
+        </div>
+      </div>
+      <div class="main6_item">
+        <div class="main6_text">Директор нашей компании вышел в оставку, и нужно было срочно решить возникшие в связи с этим сложности. Приглашенный специалист помог в кратчайшее время навести порядок в документах и подготовить их для проверки, проанализировал и дал эффективные рекомендации по решению спорных вопросов.</div>
+        <div class="main6_info">
+          <a href="" class="main6_link">Смотреть оригинал отзыва</a>
+          <div class="main6_author"><span>Сергей Павлович</span>, директор компании "Гвозди и молотки"</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -417,7 +446,12 @@
 
   <div id="main8 "class="main8 container">
     <div class="main8_head">Наши партнеры, которым мы доверяем</div>
-    <div class="main8_slider"></div>
+    <div class="main8_slider">
+      <div class="main8_item"><img src="image/down/partner1.png" alt=""></div>
+      <div class="main8_item"><img src="image/down/partner2.png" alt=""></div>
+      <div class="main8_item"><img src="image/down/partner1.png" alt=""></div>
+      <div class="main8_item"><img src="image/down/partner2.png" alt=""></div>
+    </div>
   </div>
 
   <footer class="footer">
@@ -458,5 +492,49 @@
       </div>
     </div>
   </footer>
+  <div class="hide">
+
+    <div id="form1" class="form-popup">
+      <div class="form-popup_wrap">
+        <form action="#">
+          <div class="form-popup_title">Задать вопрос</div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите имя">
+          </div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите номер телефона" required="required">
+          </div>
+          <div class="form-popup_inner">
+            <textarea id="edit-submitted-message" class="form-textarea required" rows="5" cols="60" placeholder="Ваш вопрос..." required="required"></textarea>
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить заявку" name="op">
+          </div>
+          <div class="form-popup_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+        </form>
+      </div>
+    </div>
+    <div id="form2" class="form-popup">
+      <div class="form-popup_wrap">
+        <form action="#">
+          <div class="form-popup_title">Подать заявку на бухгалтерское обслуживание</div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите имя">
+          </div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите телефон" required="required">
+          </div>
+          <div class="form-popup_inner">
+            <textarea id="edit-submitted-message" class="form-textarea required" rows="5" cols="60" placeholder="Введите комментарий..." required="required"></textarea>
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить заявку" name="op">
+          </div>
+          <div class="form-popup_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+        </form>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
