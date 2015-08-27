@@ -21,6 +21,7 @@
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+  <script type="text/javascript" src="js/jquery.poshytip.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/gmap.js"></script>
   
@@ -168,16 +169,14 @@
   <div class="arrow-bb"></div>
 
   <div class="app">
-    <div class="app_wrap">
-      <a href="" id="app1" class="app_item">
-        <div class="app_left"><span>Заявка</span></div>
-        <div class="app_right"><span>Задать вопрос</span></div>
-      </a>
-      <a href="" id="app2" class="app_item">
-        <div class="app_left"><span>Заявка</span></div>
-        <div class="app_right"><span>Бухгалтерское обслуживание</span></div>
-      </a>
-    </div>
+    <a href="" id="app1" class="app_item">
+      <div class="app_left"><span>Заявка</span></div>
+      <div class="app_right"><span>Задать вопрос</span></div>
+    </a>
+    <a href="" id="app2" class="app_item">
+      <div class="app_left"><span>Заявка</span></div>
+      <div class="app_right"><span>Бухгалтерское обслуживание</span></div>
+    </a>
   </div>
 
   <div class="main1 container" id="main1">
@@ -357,23 +356,23 @@
   <div id="main5" class="main5">
     <div class="main5_wrap container">
       <div class="main5_head">Схема работы с нами</div>
-      <div class="main5_item main5_item__1">
+      <div class="main5_item main5_item__1" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-1.png" alt=""></div>
         <a href="" class="main5_link">Ознакомление с вашими документами</a>
       </div>
-      <div class="main5_item main5_item__2">
+      <div class="main5_item main5_item__2" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-2.png" alt=""></div>
         <a href="" class="main5_link">Подбор оптимального тарифного плана</a>
       </div>
-      <div class="main5_item main5_item__3">
+      <div class="main5_item main5_item__3" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-3.png" alt=""></div>
         <a href="" class="main5_link">Заключение договора на оказание услуг</a>
       </div>
-      <div class="main5_item main5_item__4">
+      <div class="main5_item main5_item__4" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-4.png" alt=""></div>
         <a href="" class="main5_link">Получение эффекта в первом месяце работы</a>
       </div>
-      <div class="main5_item main5_item__5">
+      <div class="main5_item main5_item__5" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-5.png" alt=""></div>
         <a href="" class="main5_link">Мы занимаемся Вашей бухгалтерией, Вы - своим бизнесом!</a>
       </div>
@@ -495,7 +494,7 @@
   <div class="hide">
 
     <div id="form1" class="form-popup">
-      <div class="form-popup_wrap">
+      <div class="form-popup_wrap form-popup_wrap__question">
         <form action="#">
           <div class="form-popup_title">Задать вопрос</div>
           <div class="form-popup_inner">

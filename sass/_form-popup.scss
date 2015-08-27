@@ -1,6 +1,75 @@
 .form-popup{
   &_wrap{
-
+    &__question{
+      width: 284px;
+    }
+  }
+  &_title{
+    font-family: $bold;
+    text-align: center;
+    color: #19254b;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 36px 0px 20px 0px;
+    margin: 0px 0px 25px 0px;
+    position: relative;
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 50%;
+      margin: 0px 0px 0px -17px;
+      bottom: 0px;
+      width: 35px;
+      height: 3px;
+      background-color: #19254b;
+    }
+  }
+  &_inner{
+    padding: 0px 0px 17px 0px;
+    text-align: center;
+    input{
+      font-size: 16px;
+      width: 199px;
+      height: 44px;
+      border: 1px solid #c2c2c2;
+      margin: 0px;
+      padding: 0px 22px 0px 22px;
+    }
+    textarea{
+      font-size: 16px;
+      width: 199px;
+      height: 77px;
+      border: 1px solid #c2c2c2;
+      margin: 0px;
+      padding: 11px 22px 0px 22px;
+    }
+  }
+  &_button{
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+    input{
+      width: 245px;
+      height: 56px;
+      border: none;
+      background-color: #e74c3c;
+      font-family: $bold;
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 1px 0px 0px 0px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  &_descr{
+    font-family: $light;
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 20px 30px 20px;
+    line-height: 1.2;
   }
 }
 /*
@@ -31,7 +100,11 @@
 }
 
 #colorbox{outline:0;}
-    #cboxContent{margin-top:20px;background:transparent;}
+    #cboxContent{
+      margin-top:20px;
+      background:transparent;
+      //@include def-opacity(0.8);
+    }
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{

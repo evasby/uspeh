@@ -1,6 +1,47 @@
 $(document).ready(function(){
-  $("#app1").colorbox({inline:true, opacity:0.8, href:"#form1"});
-  $("#app2").colorbox({inline:true, opacity:0.8, href:"#form2"});
+  $("#app1").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form1"});
+  $("#app2").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form2"});
+
+  $('.main5_item__1').poshytip({
+    className: 'tip-green',
+    alignTo: 'target',
+    alignX: 'right',
+    alignY: 'top',
+    offsetX: -10,
+    offsetY: -100
+  });
+  $('.main5_item__2').poshytip({
+    className: 'tip-green',
+    alignTo: 'target',
+    alignX: 'right',
+    alignY: 'top',
+    offsetX: -10,
+    offsetY: -100
+  });
+  $('.main5_item__3').poshytip({
+    className: 'tip-green',
+    alignTo: 'target',
+    alignX: 'right',
+    alignY: 'top',
+    offsetX: -10,
+    offsetY: -100
+  });
+  $('.main5_item__4').poshytip({
+    className: 'tip-green',
+    alignTo: 'target',
+    alignX: 'right',
+    alignY: 'top',
+    offsetX: -10,
+    offsetY: -100
+  });
+  $('.main5_item__5').poshytip({
+    className: 'tip-green',
+    alignTo: 'target',
+    alignX: 'right',
+    alignY: 'top',
+    offsetX: -10,
+    offsetY: -100
+  });
 
   $('.main6_slider').bxSlider({
     controls: false,

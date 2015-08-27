@@ -1,14 +1,11 @@
 .app{
-  position: relative;
-  &_wrap{
-    position: fixed;
-    z-index: 5;
-    top: 470px;
-    left: 0px;
-    font-family: $cond;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
+  position: absolute;
+  z-index: 5;
+  top: 470px;
+  left: 0px;
+  font-family: $cond;
+  font-size: 14px;
+  text-transform: uppercase;
   &_item{
     display: block;
     @include clearfix();
