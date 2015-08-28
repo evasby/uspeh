@@ -209,6 +209,13 @@ textarea:focus {
   min-width: 1000px;
   min-height: 259px;
   padding: 61px 0px 61px 0px;
+  position: relative;
+}
+.title.bg-loaded {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 .title_wrap {
   position: relative;
@@ -219,6 +226,15 @@ textarea:focus {
   padding: 43px 0px 43px 0px;
   background: url("../image/title-main-1920.jpg") 50% no-repeat;
   background-size: cover;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .title__info {
   background: url("../image/title-info-1920.jpg") 50% no-repeat;
@@ -1083,6 +1099,11 @@ textarea:focus {
   font-family: proximanova_cond;
   font-size: 14px;
   text-transform: uppercase;
+}
+.app__fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 .app_item {
   display: block;

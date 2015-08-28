@@ -6,6 +6,11 @@
   font-family: $cond;
   font-size: 14px;
   text-transform: uppercase;
+  &__fixed{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
   &_item{
     display: block;
     @include clearfix();

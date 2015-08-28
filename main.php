@@ -18,6 +18,8 @@
   <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/bg-loaded.js"></script>
+  <script type="text/javascript" src="js/jquery.waitforimages.min.js"></script>
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
@@ -168,7 +170,7 @@
 
   <div class="arrow-bb"></div>
 
-  <div class="app">
+  <div id="app" class="app">
     <a href="" id="app1" class="app_item">
       <div class="app_left"><span>Заявка</span></div>
       <div class="app_right"><span>Задать вопрос</span></div>
@@ -443,7 +445,7 @@
     </div>
   </div>
 
-  <div id="main8 "class="main8 container">
+  <div id="main8" class="main8 container">
     <div class="main8_head">Наши партнеры, которым мы доверяем</div>
     <div class="main8_slider">
       <div class="main8_item"><img src="image/down/partner1.png" alt=""></div>

@@ -2,6 +2,10 @@
   min-width: $min_width;
   min-height: 259px;
   padding: 61px 0px 61px 0px;
+  position: relative;
+  &.bg-loaded{
+    @include def-opacity(1);
+  }
   &_wrap{
     position: relative;
   }
@@ -11,6 +15,8 @@
     padding: 43px 0px 43px 0px;
     background: url('../image/title-main-1920.jpg') 50% no-repeat;
     background-size: cover;
+    @include def-opacity(0);
+    @include def-transition(opacity, 0.2s);
   }
   &__info{
     background: url('../image/title-info-1920.jpg') 50% no-repeat;
