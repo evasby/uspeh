@@ -115,6 +115,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+#offset {
+  position: fixed;
+  right: 100px;
+  top: 100px;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+#blocks {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  background-color: #ccc;
+  padding: 10px;
+  display: none;
+}
+
 body {
   font-family: proximanova;
   font-size: 18px;
@@ -1235,6 +1252,21 @@ textarea:focus {
   padding: 40px 0px 40px 0px;
   border-top: 1px solid #dfdddd;
   background: url(../image/main2-bac.jpg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.main2.bg-loaded {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 .main2_head {
   width: 1000px;
@@ -2033,6 +2065,23 @@ textarea:focus {
   line-height: 1.2;
 }
 
+.main4 {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.main4.bg-loaded {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
 .main4_head {
   font-size: 30px;
   color: #373737;
@@ -2105,6 +2154,21 @@ textarea:focus {
   height: 912px;
   background: url("../image/main5-1920.jpg") 50% 50% no-repeat;
   background-size: cover;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.main5.bg-loaded {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 .main5_head {
   font-size: 30px;

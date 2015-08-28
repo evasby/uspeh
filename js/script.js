@@ -8,15 +8,41 @@ $(document).ready(function(){
     */
 
 
-  var app_height = $('#app').offset().top;
-  var main1_height = $('#main1').offset().top;
-  var main2_height = $('#main2').offset().top;
-  var main3_height = $('#main3').offset().top;
-  var main4_height = $('#main4').offset().top;
-  var main5_height = $('#main5').offset().top;
-  var main6_height = $('#main6').offset().top;
-  var main7_height = $('#main7').offset().top;
-  var main8_height = $('#main8').offset().top;
+  var app_top = $('#app').offset().top;
+  var title_top = $('#title').offset().top;
+  var title_height = $('#title').innerHeight();
+  var main1_top = $('#main1').offset().top;
+  var main1_height = $('#main1').innerHeight();
+  var main2_top = $('#main2').offset().top;
+  var main2_height = $('#main2').innerHeight();
+  var main3_top = $('#main3').offset().top;
+  var main3_height = $('#main3').innerHeight();
+  var main4_top = $('#main4').offset().top;
+  var main4_height = $('#main4').innerHeight();
+  var main5_top = $('#main5').offset().top;
+  var main5_height = $('#main5').innerHeight();
+  var main6_top = $('#main6').offset().top;
+  var main6_height = $('#main6').innerHeight();
+  var main7_top = $('#main7').offset().top;
+  var main7_height = $('#main7').innerHeight();
+  var main8_top = $('#main8').offset().top;
+  var main8_height = $('#main8').innerHeight();
+  var title_loaded, main1_loaded, main2_loaded, main3_loaded, main4_loaded, main5_loaded, main6_loaded, main7_loaded, main8_loaded = false;
+  var add_H = 300;
+  $('#blocks').html(
+  	'<p>titleT - ' + title_top + '; titleH - ' + title_height + '</p>' + 
+  	'<p>main1T - ' + main1_top + '; main1H - ' + main1_height + '</p>' + 
+  	'<p>main2T - ' + main2_top + '; main2H - ' + main2_height + '</p>' + 
+  	'<p>main3T - ' + main3_top + '; main3H - ' + main3_height + '</p>' +
+  	'<p>main4T - ' + main4_top + '; main4H - ' + main4_height + '</p>' +
+  	'<p>main5T - ' + main5_top + '; main5H - ' + main5_height + '</p>' +
+  	'<p>main6T - ' + main6_top + '; main6H - ' + main6_height + '</p>' +
+  	'<p>main7T - ' + main7_top + '; main7H - ' + main7_height + '</p>' +
+  	'<p>main8T - ' + main8_top + '; main8H - ' + main8_height + '</p>');
+ 	var win_H = $(window).height();
+  $(window).resize(function() {
+  	win_H = $(window).height();
+  })
 
   /*function loadImage(selector, name){
     $(selector).css('background-image','url(../image/'+ name +')')
@@ -26,7 +52,7 @@ $(document).ready(function(){
   };
   loadImage('.title__main', 'title-main-1920.jpg');*/
 
-  function loadImage(selector){
+  /*function loadImage(selector){
     startTime = new Date().getTime();
     $(selector).bgLoaded({
       afterLoaded : function(){
@@ -35,7 +61,7 @@ $(document).ready(function(){
       }
     });
   };
-  loadImage('.title__main');
+  loadImage('.title__main');*/
 
 
 
@@ -45,14 +71,77 @@ $(document).ready(function(){
   $('.title__main').delay(1000).animate({
     opacity: 1,
   }, 1000);*/
-
+	
+	var startTime = new Date().getTime();
+	var top = $(document).scrollTop();
+	if (top == 0) {
+  	$('.title__main').bgLoaded({
+      afterLoaded : function(){
+       this.addClass('bg-loaded');
+       title_loaded = true;
+       console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
+      }
+    });
+	};
   $(window).scroll(function(){
-    var top = $(document).scrollTop();
-    if (top > app_height) {
+  	
+  	
+    top = $(document).scrollTop();
+    $('#offset').text(top);
+    //app--------------------------------/
+    if (top > app_top) {
       $('#app').addClass('app__fixed');
     } else {
       $('#app').removeClass('app__fixed');
-    }
+    };
+    //title------------------------------/
+    if ((top > title_top + title_height) && (title_loaded)) {
+    	console.log(title_top + title_height);
+			$('.title__main').removeClass('bg-loaded');
+			title_loaded = false;
+    };
+    if ((top < title_top + add_H) && (!title_loaded)){
+    	$('.title__main').bgLoaded({
+	      afterLoaded : function(){
+	       this.addClass('bg-loaded');
+	       title_loaded = true;
+	       console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
+	      }
+	    });
+    };
+    //main2------------------------------/
+    if ((top > main2_top - add_H) && (top < main2_top + main2_height - add_H) && (!main2_loaded)){
+			$('#main2').addClass('bg-loaded');
+			main2_loaded = true;
+			console.log('load main2');
+    };
+    if (((top < main2_top - win_H) || (top > main2_top + main2_height)) && (main2_loaded)) {
+    	console.log('unload main2');
+			$('#main2').removeClass('bg-loaded');
+			main2_loaded = false;
+    };
+    //main4------------------------------/
+    if ((top > main4_top - add_H) && (top < main4_top + main4_height - add_H) && (!main4_loaded)){
+			$('#main4').addClass('bg-loaded');
+			main4_loaded = true;
+			console.log('load main4');
+    };
+    if (((top < main4_top - win_H) || (top > main4_top + main4_height)) && (main4_loaded)) {
+    	console.log('unload main4');
+			$('#main4').removeClass('bg-loaded');
+			main4_loaded = false;
+    };
+    //main5------------------------------/
+    if ((top > main5_top - add_H) && (top < main5_top + main5_height - add_H) && (!main5_loaded)){
+			$('#main5').addClass('bg-loaded');
+			main5_loaded = true;
+			console.log('load main5');
+    };
+    if (((top < main5_top - win_H) || (top > main5_top + main5_height)) && (main5_loaded)) {
+    	console.log('unload main5');
+			$('#main5').removeClass('bg-loaded');
+			main5_loaded = false;
+    };
   });
 
 

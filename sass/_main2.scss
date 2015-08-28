@@ -2,6 +2,11 @@
   padding: 40px 0px 40px 0px;
   border-top: 1px solid #dfdddd;
   background: url(../image/main2-bac.jpg);
+  @include def-opacity(0);
+  @include def-transition(opacity, 0.2s);
+  &.bg-loaded{
+    @include def-opacity(1);
+  }
   &_head{
     width: $min_width;
     margin: 0 auto 17px auto;

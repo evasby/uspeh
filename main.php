@@ -134,7 +134,7 @@
       </div>
     </div>  
   </div>-->
-  <div class="title title__main">
+  <div id="title" class="title title__main">
     <div class="title_wrap container">
       <h1 class="title_h1 title_h1__main">Аутсортинг бухгалтерских услуг в Минске</h1>
       <div class="title_descr title_descr__main">
@@ -169,6 +169,9 @@
   </div>
 
   <div class="arrow-bb"></div>
+  
+  <div id="offset">0</div>
+  <div id="blocks"></div>
 
   <div id="app" class="app">
     <a href="" id="app1" class="app_item">

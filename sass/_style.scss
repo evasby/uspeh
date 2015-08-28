@@ -16,6 +16,21 @@ $font_size_h1: 38px;
 @import "fonts";
 //**********************************************************/
 //**********************************************************/
+#offset{
+  position: fixed;
+  right: 100px;
+  top: 100px;
+  background-color: #ccc;
+  padding: 10px;
+}
+#blocks{
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  background-color: #ccc;
+  padding: 10px;
+  display: none;
+}
 body{
   font-family: $font;
   font-size: $font_size18;
