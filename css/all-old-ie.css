@@ -227,6 +227,7 @@ textarea:focus {
   min-height: 259px;
   padding: 61px 0px 61px 0px;
   position: relative;
+  overflow: hidden;
 }
 .title.bg-loaded {
   -webkit-opacity: 1;

@@ -7,6 +7,15 @@ $(document).ready(function(){
     **Main animation
     */
 
+  //prepare----------------------------------/
+  $('.form-discount').css({
+    top: '-448px',
+    opacity: '0'
+  });
+  $('.main-descr').css({
+    right: '500px',
+    opacity: '0'
+  });
 
   var app_top = $('#app').offset().top;
   var title_top = $('#title').offset().top;
@@ -43,49 +52,33 @@ $(document).ready(function(){
   $(window).resize(function() {
   	win_H = $(window).height();
   })
-
-  /*function loadImage(selector, name){
-    $(selector).css('background-image','url(../image/'+ name +')')
-    .waitForImages(function() {
-      console.log('lib1');
-    }, $.noop, true);
-  };
-  loadImage('.title__main', 'title-main-1920.jpg');*/
-
-  /*function loadImage(selector){
-    startTime = new Date().getTime();
-    $(selector).bgLoaded({
-      afterLoaded : function(){
-       this.addClass('bg-loaded');
-       console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
-      }
-    });
-  };
-  loadImage('.title__main');*/
-
-
-
-
-
-  /*$('.title__main').css('opacity', '0');
-  $('.title__main').delay(1000).animate({
-    opacity: 1,
-  }, 1000);*/
 	
 	var startTime = new Date().getTime();
 	var top = $(document).scrollTop();
 	if (top == 0) {
   	$('.title__main').bgLoaded({
       afterLoaded : function(){
-       this.addClass('bg-loaded');
-       title_loaded = true;
-       console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
+        this.addClass('bg-loaded');
+        title_loaded = true;
+        //console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
+        //inner animation------   
+        setTimeout((function() {
+          $('.form-discount').stop().animate({
+            top: '-43px',
+            opacity: '1'
+          }, 400);
+        }), 500);
+        setTimeout((function() {
+          $('.main-descr').stop().animate({
+            right: '300px',
+            opacity: '1'
+          }, 400);
+        }), 1000);
+        //---------------------
       }
     });
 	};
-  $(window).scroll(function(){
-  	
-  	
+  $(window).scroll(function(){ 	
     top = $(document).scrollTop();
     $('#offset').text(top);
     //app--------------------------------/
@@ -99,13 +92,36 @@ $(document).ready(function(){
     	console.log(title_top + title_height);
 			$('.title__main').removeClass('bg-loaded');
 			title_loaded = false;
+      //inner prepare------
+      $('.form-discount').css({
+        top: '-448px',
+        opacity: '0'
+      });
+      $('.main-descr').css({
+        right: '500px',
+        opacity: '0'
+      });
+      //---------------------
     };
     if ((top < title_top + add_H) && (!title_loaded)){
     	$('.title__main').bgLoaded({
 	      afterLoaded : function(){
-	       this.addClass('bg-loaded');
-	       title_loaded = true;
-	       console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
+          this.addClass('bg-loaded');
+          title_loaded = true;
+          //inner animation------
+          setTimeout((function() {
+            $('.form-discount').stop().animate({
+              top: '-43px',
+              opacity: '1'
+            }, 400);
+          }), 500);
+          setTimeout((function() {
+            $('.main-descr').stop().animate({
+              right: '300px',
+              opacity: '1'
+            }, 400);
+          }), 1000);
+          //---------------------
 	      }
 	    });
     };
