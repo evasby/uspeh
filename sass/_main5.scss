@@ -2,11 +2,11 @@
 	height: 912px;
 	background: url('../image/main5-1920.jpg') 50% 50% no-repeat;
 	background-size: cover;
-  @include def-opacity(0);
+  /*@include def-opacity(0);
   @include def-transition(opacity, 0.2s);
   &.bg-loaded{
     @include def-opacity(1);
-  }
+  }*/
 	&_head{
     font-size: 30px;
     color: #ffffff;

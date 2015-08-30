@@ -1,23 +1,263 @@
 $(document).ready(function(){
 
-  $('html, body').scrollTop();
+  var visible = '80%';
+  var hidden = 100;
+  $('.app_item').addClass('slideInLeft');
+  var waypoint_app = new Waypoint({
+    element: $('#app'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#app').addClass('app__fixed');
+      } else{
+        $('#app').removeClass('app__fixed');
+      }
+    }
+  })
 
+  var waypoint_title1 = new Waypoint({
+    element: $('#title'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.title__main').bgLoaded({
+          afterLoaded : function(){
+            $('#title').removeClass('fadeOut').addClass('fadeIn');
+            $('.title_h1').removeClass('fadeOut').addClass('fadeIn');
+            $('.title_descr').removeClass('fadeOut').addClass('fadeIn');
+            $('.main-descr').removeClass('rollOut').addClass('rollIn');
+            $('.form-discount').addClass('bounceInDown');
+          }
+        });
+      } else{
+        $('#title').removeClass('fadeIn').addClass('fadeOut');
+        $('.title_h1').removeClass('fadeIn').addClass('fadeOut');
+        $('.title_descr').removeClass('fadeIn').addClass('fadeOut');
+        $('.main-descr').removeClass('rollIn').addClass('rollOut');
+        $('.form-discount').removeClass('bounceInDown');
+      }
+    },
+    offset: visible
+  })
+  var waypoint_title2 = new Waypoint({
+    element: $('#title'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#title').removeClass('fadeIn').addClass('fadeOut');
+        $('.title_h1').removeClass('fadeIn').addClass('fadeOut');
+        $('.title_descr').removeClass('fadeIn').addClass('fadeOut');
+        $('.main-descr').removeClass('rollIn').addClass('rollOut');
+        $('.form-discount').removeClass('bounceInDown');
+      } else {
+        $('#title').removeClass('fadeOut').addClass('fadeIn');
+        $('.title_h1').removeClass('fadeOut').addClass('fadeIn');
+        $('.title_descr').removeClass('fadeOut').addClass('fadeIn');
+        $('.main-descr').removeClass('rollOut').addClass('rollIn');
+        $('.form-discount').addClass('bounceInDown');
+      };
+    },
+    offset: - $('#title').innerHeight() + hidden
+  })
 
+  var waypoint1_1 = new Waypoint({
+    element: $('#main1'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main1_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main1_item').removeClass('fadeOutUp').addClass('fadeInUp');
+      } else{
+        $('.main1_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main1_item').removeClass('fadeInUp').addClass('fadeOutUp');
+      }
+    },
+    offset: visible
+  })
+  var waypoint1_2 = new Waypoint({
+    element: $('#main1'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main1_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main1_item').removeClass('fadeInUp').addClass('fadeOutUp');
+      } else {
+        $('.main1_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main1_item').removeClass('fadeOutUp').addClass('fadeInUp');
+      };
+    },
+    offset: - $('#main1').innerHeight() + hidden
+  })
+
+  var waypoint2_1 = new Waypoint({
+    element: $('#main2'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main2_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main2_wrap').removeClass('fadeOut').addClass('fadeIn');
+        $('.calc-tax_item').removeClass('flipOutY').addClass('flipInY');
+      } else{
+        $('.main2_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main2_wrap').removeClass('fadeIn').addClass('fadeOut');
+        $('.calc-tax_item').removeClass('flipInY').addClass('flipOutY');
+      }
+    },
+    offset: visible
+  })
+  var waypoint2_2 = new Waypoint({
+    element: $('#main2'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main2_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main2_wrap').removeClass('fadeIn').addClass('fadeOut');
+        $('.calc-tax_item').removeClass('flipInY').addClass('flipOutY');
+      } else {
+        $('.main2_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main2_wrap').removeClass('fadeOut').addClass('fadeIn');
+        $('.calc-tax_item').removeClass('flipOutY').addClass('flipInY');
+      };
+    },
+    offset: - $('#main2').innerHeight() + hidden
+  })
+
+  var waypoint3_1 = new Waypoint({
+    element: $('#main3'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#main3').addClass('main3__anim fadeIn').removeClass('fadeOut');
+        $('.main3_item').removeClass('fadeOut').addClass('fadeIn');
+      } else{
+        $('#main3').addClass('fadeOut').removeClass('main3__anim fadeIn');
+        $('.main3_item').removeClass('fadeIn').addClass('fadeOut');
+      }
+    },
+    offset: visible
+  })
+  var waypoint3_2 = new Waypoint({
+    element: $('#main3'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#main3').addClass('fadeOut').removeClass('main3__anim fadeIn');
+        $('.main3_item').removeClass('fadeIn').addClass('fadeOut');
+      } else {
+        $('#main3').addClass('main3__anim fadeIn').removeClass('fadeOut');
+        $('.main3_item').removeClass('fadeOut').addClass('fadeIn');
+      };
+    },
+    offset: - $('#main3').innerHeight() + hidden
+  })
+
+  var waypoint4_1 = new Waypoint({
+    element: $('#main4'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main4_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main4_item').removeClass('fadeOutUp').addClass('fadeInUp');
+      } else{
+        $('.main4_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main4_item').removeClass('fadeInUp').addClass('fadeOutUp');
+      }
+    },
+    offset: visible
+  })
+  var waypoint4_2 = new Waypoint({
+    element: $('#main4'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main4_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main4_item').removeClass('fadeInUp').addClass('fadeOutUp');
+      } else {
+        $('.main4_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main4_item').removeClass('fadeOutUp').addClass('fadeInUp');
+      };
+    },
+    offset: - $('#main4').innerHeight() + hidden
+  })
+
+  var waypoint5_1 = new Waypoint({
+    element: $('#main5'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main5_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main5').removeClass('fadeOut').addClass('fadeIn');
+        $('.main5_item').removeClass('zoomOut').addClass('zoomIn');
+      } else{
+        $('.main5_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main5').removeClass('fadeIn').addClass('fadeOut');
+        $('.main5_item').removeClass('zoomIn').addClass('zoomOut');
+      }
+    },
+    offset: visible
+  })
+  var waypoint5_2 = new Waypoint({
+    element: $('#main5'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('.main5_head').removeClass('fadeIn').addClass('fadeOut');
+        $('.main5').removeClass('fadeIn').addClass('fadeOut');
+        $('.main5_item').removeClass('zoomIn').addClass('zoomOut');
+      } else {
+        $('.main5_head').removeClass('fadeOut').addClass('fadeIn');
+        $('.main5').removeClass('fadeOut').addClass('fadeIn');
+        $('.main5_item').removeClass('zoomOut').addClass('zoomIn');
+      };
+    },
+    offset: - $('#main5').innerHeight() + hidden
+  })
+
+  var waypoint7_1 = new Waypoint({
+    element: $('#main7'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#main7').addClass('main3__anim fadeIn').removeClass('fadeOut');
+        $('.main3_item').removeClass('fadeOut').addClass('fadeIn');
+      } else{
+        $('#main7').addClass('fadeOut').removeClass('main3__anim fadeIn');
+        $('.main3_item').removeClass('fadeIn').addClass('fadeOut');
+      }
+    },
+    offset: visible
+  })
+  var waypoint7_2 = new Waypoint({
+    element: $('#main7'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#main7').addClass('fadeOut').removeClass('main3__anim fadeIn');
+        $('.main3_item').removeClass('fadeIn').addClass('fadeOut');
+      } else {
+        $('#main7').addClass('main3__anim fadeIn').removeClass('fadeOut');
+        $('.main3_item').removeClass('fadeOut').addClass('fadeIn');
+      };
+    },
+    offset: - $('#main7').innerHeight() + hidden
+  })
+
+   var waypoint8_1 = new Waypoint({
+    element: $('#main8'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#main8').addClass('fadeIn').removeClass('fadeOut');
+        $('.main8_head').addClass('fadeIn').removeClass('fadeOut');
+        $('.main8_slider').addClass('fadeIn').removeClass('fadeOut');
+      } else{
+        $('#main8').addClass('fadeOut').removeClass('fadeIn');
+        $('.main_head').addClass('fadeOut').removeClass('fadeIn');
+        $('.main8_slider').addClass('fadeOut').removeClass('fadeIn');
+      }
+    },
+    offset: visible
+  })
+  var waypoint8_2 = new Waypoint({
+    element: $('#main8'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        $('#main8').addClass('fadeOut').removeClass('fadeIn');
+        $('.main8_head').addClass('fadeOut').removeClass('fadeIn');
+        $('#main8').addClass('fadeOut').removeClass('fadeIn');
+      } else {
+        $('#main8').addClass('fadeIn').removeClass('fadeOut');
+        $('.main_head').addClass('fadeIn').removeClass('fadeOut');
+        $('.main8_slider').addClass('fadeIn').removeClass('fadeOut');
+      };
+    },
+    offset: - $('#main8').innerHeight() + hidden
+  })
   /*
-    **Main animation
-    */
-
-  //prepare----------------------------------/
-  $('.form-discount').css({
-    top: '-448px',
-    opacity: '0'
-  });
-  $('.main-descr').css({
-    right: '500px',
-    opacity: '0'
-  });
-
-  var app_top = $('#app').offset().top;
   var title_top = $('#title').offset().top;
   var title_height = $('#title').innerHeight();
   var main1_top = $('#main1').offset().top;
@@ -51,156 +291,7 @@ $(document).ready(function(){
  	var win_H = $(window).height();
   $(window).resize(function() {
   	win_H = $(window).height();
-  })
-	
-	var startTime = new Date().getTime();
-	var top = $(document).scrollTop();
-	if (top == 0) {
-  	$('.title__main').bgLoaded({
-      afterLoaded : function(){
-        this.addClass('bg-loaded');
-        title_loaded = true;
-        //console.log(this.attr('class')+' took '+Math.round((new Date().getTime() - startTime))+'ms');
-        //inner animation------   
-        setTimeout((function() {
-          $('.form-discount').stop().animate({
-            top: '-43px',
-            opacity: '1'
-          }, 400);
-        }), 500);
-        setTimeout((function() {
-          $('.main-descr').stop().animate({
-            right: '300px',
-            opacity: '1'
-          }, 400);
-        }), 1000);
-        //---------------------
-      }
-    });
-	};
-  $(window).scroll(function(){ 	
-    top = $(document).scrollTop();
-    $('#offset').text(top);
-    //app--------------------------------/
-    if (top > app_top) {
-      $('#app').addClass('app__fixed');
-    } else {
-      $('#app').removeClass('app__fixed');
-    };
-    //title------------------------------/
-    if ((top > title_top + title_height) && (title_loaded)) {
-    	console.log(title_top + title_height);
-			$('.title__main').removeClass('bg-loaded');
-			title_loaded = false;
-      //inner prepare------
-      $('.form-discount').css({
-        top: '-448px',
-        opacity: '0'
-      });
-      $('.main-descr').css({
-        right: '500px',
-        opacity: '0'
-      });
-      //---------------------
-    };
-    if ((top < title_top + add_H) && (!title_loaded)){
-    	$('.title__main').bgLoaded({
-	      afterLoaded : function(){
-          this.addClass('bg-loaded');
-          title_loaded = true;
-          //inner animation------
-          setTimeout((function() {
-            $('.form-discount').stop().animate({
-              top: '-43px',
-              opacity: '1'
-            }, 400);
-          }), 500);
-          setTimeout((function() {
-            $('.main-descr').stop().animate({
-              right: '300px',
-              opacity: '1'
-            }, 400);
-          }), 1000);
-          //---------------------
-	      }
-	    });
-    };
-    //main2------------------------------/
-    if ((top > main2_top - add_H) && (top < main2_top + main2_height - add_H) && (!main2_loaded)){
-			$('#main2').addClass('bg-loaded');
-			main2_loaded = true;
-			console.log('load main2');
-    };
-    if (((top < main2_top - win_H) || (top > main2_top + main2_height)) && (main2_loaded)) {
-    	console.log('unload main2');
-			$('#main2').removeClass('bg-loaded');
-			main2_loaded = false;
-    };
-    //main4------------------------------/
-    if ((top > main4_top - add_H) && (top < main4_top + main4_height - add_H) && (!main4_loaded)){
-			$('#main4').addClass('bg-loaded');
-			main4_loaded = true;
-			console.log('load main4');
-    };
-    if (((top < main4_top - win_H) || (top > main4_top + main4_height)) && (main4_loaded)) {
-    	console.log('unload main4');
-			$('#main4').removeClass('bg-loaded');
-			main4_loaded = false;
-    };
-    //main5------------------------------/
-    if ((top > main5_top - add_H) && (top < main5_top + main5_height - add_H) && (!main5_loaded)){
-			$('#main5').addClass('bg-loaded');
-			main5_loaded = true;
-			console.log('load main5');
-    };
-    if (((top < main5_top - win_H) || (top > main5_top + main5_height)) && (main5_loaded)) {
-    	console.log('unload main5');
-			$('#main5').removeClass('bg-loaded');
-			main5_loaded = false;
-    };
-  });
-
-
-
-
-
-
-
-
-
-
-
-  /*******************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  })*/
   $("#app1").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form1"});
   $("#app2").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form2"});
 
@@ -260,24 +351,6 @@ $(document).ready(function(){
     moveSlides: 1,
     controls: true
   });
-
-  $('.app_item').each(function(){
-    $(this).css('left', '-1000px');
-  });
-  $('#app1').delay(1500).animate({left: '0px'}, 500, 'swing');
-  $('#app2').delay(1800).animate({left: '0px'}, 500, 'swing');
-
-  /*$('.main5_wrap').mousemove(function(e){
-    // положение элемента
-    var pos = $(this).offset();
-    var elem_left = pos.left;
-    var elem_top = pos.top;
-    // положение курсора внутри элемента
-    var Xinner = e.pageX - elem_left;
-    var Yinner = e.pageY - elem_top;
-    console.log("X: " + Xinner + " Y: " + Yinner); // вывод результата в консоль
-  });*/
-  
 	var curent;
   var slider = $( "#calc" ).slider({
     value: 10,

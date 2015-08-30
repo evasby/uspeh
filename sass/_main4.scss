@@ -1,9 +1,9 @@
 .main4{
-  @include def-opacity(0);
+  /*@include def-opacity(0);
   @include def-transition(opacity, 0.2s);
   &.bg-loaded{
     @include def-opacity(1);
-  }
+  }*/
   &_head{
     font-size: 30px;
     color: #373737;

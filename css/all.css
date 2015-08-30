@@ -186,6 +186,126 @@ textarea:focus {
   display: none;
 }
 
+.delay-05s {
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -o-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.delay-06s {
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.delay-07s {
+  -webkit-animation-delay: .7s;
+  -moz-animation-delay: .7s;
+  -o-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+.delay-08s {
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.delay-09s {
+  -webkit-animation-delay: .9s;
+  -moz-animation-delay: .9s;
+  -o-animation-delay: .9s;
+  animation-delay: .9s;
+}
+
+.delay-1s {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay-11s {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  -o-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+
+.delay-12s {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.delay-13s {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  -o-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+.delay-14s {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  -o-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.delay-15s {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.delay-16s {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -o-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.delay-17s {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  -o-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+
+.delay-18s {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  -o-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.delay-19s {
+  -webkit-animation-delay: 1.9s;
+  -moz-animation-delay: 1.9s;
+  -o-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+}
+
+.delay-2s {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.hidded {
+  visibility: hidden;
+}
+
+.fadeIn, .fadeInUp, .fadeOut, .fadeOutUp, .flipInX, .flipOutX, .flipInY, .flipOutY, .zoomIn, .zoomOut, .slideInLeft, .rollIn, .rollOut, .bounce, .pulse, .tada, .bounceInDown {
+  visibility: visible;
+}
+
 .placeholder {
   font-family: proximanova;
   font-size: 16px;
@@ -227,13 +347,9 @@ textarea:focus {
   min-height: 259px;
   padding: 61px 0px 61px 0px;
   position: relative;
-  overflow: hidden;
-}
-.title.bg-loaded {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  /*&.bg-loaded{
+    @include def-opacity(1);
+  }*/
 }
 .title_wrap {
   position: relative;
@@ -244,15 +360,8 @@ textarea:focus {
   padding: 43px 0px 43px 0px;
   background: url("../image/title-main-1920.jpg") 50% no-repeat;
   background-size: cover;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  /*@include def-opacity(0);
+  @include def-transition(opacity, 0.2s);*/
 }
 .title__info {
   background: url("../image/title-info-1920.jpg") 50% no-repeat;
@@ -446,7 +555,7 @@ textarea:focus {
   border-top: 6px solid #fff;
   padding: 0px;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   top: 55px;
   left: 0px;
   width: 100%;
@@ -671,6 +780,7 @@ textarea:focus {
   position: absolute;
   top: -43px;
   right: 0px;
+  z-index: 2;
 }
 .form-discount_wrap {
   position: relative;
@@ -1203,21 +1313,11 @@ textarea:focus {
   padding: 40px 0px 40px 0px;
   border-top: 1px solid #dfdddd;
   background: url(../image/main2-bac.jpg);
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-}
-.main2.bg-loaded {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  /*@include def-opacity(0);
+  @include def-transition(opacity, 0.2s);
+  &.bg-loaded{
+    @include def-opacity(1);
+  }*/
 }
 .main2_head {
   width: 1000px;
@@ -1847,10 +1947,21 @@ textarea:focus {
 
 .main3 {
   min-height: 192px;
-  background: url("../image/action-1920.jpg") 50% 50% no-repeat;
+  background: url("../image/action-1920.jpg") 0% 0% no-repeat;
   background-size: cover;
   padding: 38px 0px 0px 0px;
   margin: 0px 0px 40px 0px;
+  -webkit-transition: background-position 2s ease-in-out;
+  -moz-transition: background-position 2s ease-in-out;
+  -o-transition: background-position 2s ease-in-out;
+  -ms-transition: background-position 2s ease-in-out;
+  transition: background-position 2s ease-in-out;
+}
+.main3__anim {
+  background-position: 50% 50%;
+}
+.main3:hover {
+  background-position: 0% 0%;
 }
 .main3_wrap {
   display: inline-block;
@@ -1985,21 +2096,11 @@ textarea:focus {
 }
 
 .main4 {
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-}
-.main4.bg-loaded {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  /*@include def-opacity(0);
+  @include def-transition(opacity, 0.2s);
+  &.bg-loaded{
+    @include def-opacity(1);
+  }*/
 }
 .main4_head {
   font-size: 30px;
@@ -2065,21 +2166,11 @@ textarea:focus {
   height: 912px;
   background: url("../image/main5-1920.jpg") 50% 50% no-repeat;
   background-size: cover;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-}
-.main5.bg-loaded {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  /*@include def-opacity(0);
+  @include def-transition(opacity, 0.2s);
+  &.bg-loaded{
+    @include def-opacity(1);
+  }*/
 }
 .main5_head {
   font-size: 30px;

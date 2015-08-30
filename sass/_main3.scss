@@ -1,9 +1,16 @@
 .main3{
   min-height: 192px;
-  background: url('../image/action-1920.jpg') 50% 50% no-repeat;
+  background: url('../image/action-1920.jpg') 0% 0% no-repeat;
   background-size: cover;
   padding: 38px 0px 0px 0px;
   margin: 0px 0px 40px 0px;
+  @include def-transition(background-position, 2s);
+  &__anim{
+    background-position: 50% 50%;
+  }
+  &:hover{
+    background-position: 0% 0%;
+  }
   &_wrap{
     @include clearfix();
   }

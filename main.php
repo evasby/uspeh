@@ -4,7 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
   <title>Бухгалтерский успех - Главная</title>
-  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/all.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css"/>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -24,6 +25,7 @@
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
   <script type="text/javascript" src="js/jquery.poshytip.min.js"></script>
+  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/gmap.js"></script>
   
@@ -134,14 +136,14 @@
       </div>
     </div>  
   </div>-->
-  <div id="title" class="title title__main">
+  <div id="title" class="title title__main animated hidded">
     <div class="title_wrap container">
-      <h1 class="title_h1 title_h1__main">Аутсортинг бухгалтерских услуг в Минске</h1>
-      <div class="title_descr title_descr__main">
+      <h1 class="title_h1 title_h1__main animated hidded delay-05s">Аутсортинг бухгалтерских услуг в Минске</h1>
+      <div class="title_descr title_descr__main animated hidded delay-07s">
         <p>Экономия до 30% средств</p>
         <p>Штат из 25 бухгалтеров</p>
       </div>
-      <div class="form-discount">
+      <div class="form-discount animated hidded delay-15s">
         <div class="form-discount_transp"></div>
         <div class="form-discount_wrap">
           <form action="#">
@@ -159,7 +161,7 @@
           </form>
         </div>
       </div>
-      <div class="main-descr">
+      <div class="main-descr animated hidded delay-08s">
         <div class="main-descr_title">Акция!</div>
         <div class="main-descr_descr">
           Закажите бухгалтерские услуги до 10 июля и получите скидку в размере 15%
@@ -167,42 +169,37 @@
       </div>
     </div>
   </div>
-
   <div class="arrow-bb"></div>
-  
-  <div id="offset">0</div>
-  <div id="blocks"></div>
-
   <div id="app" class="app">
-    <a href="" id="app1" class="app_item">
+    <a href="" id="app1" class="app_item animated hidded delay-15s">
       <div class="app_left"><span>Заявка</span></div>
       <div class="app_right"><span>Задать вопрос</span></div>
     </a>
-    <a href="" id="app2" class="app_item">
+    <a href="" id="app2" class="app_item animated hidded delay-18s">
       <div class="app_left"><span>Заявка</span></div>
       <div class="app_right"><span>Бухгалтерское обслуживание</span></div>
     </a>
   </div>
 
   <div class="main1 container" id="main1">
-    <div class="main1_head">Важное о бухгалтерском успехе</div>
+    <div class="main1_head animated hidded">Важное о бухгалтерском успехе</div>
     <div class="main1_wrap">
-      <div class="main1_item">
+      <div class="main1_item animated hidded delay-05s">
         <div class="main1_image"><img src="image/down/main1-1.png" alt=""></div>
         <div class="main1_title">Риски застрахованы</div>
         <div class="main1_text">Подготовленная отчетность проверяется внутренним аудитором для избежания возможных недочетов</div>
       </div>
-      <div class="main1_item">
+      <div class="main1_item animated hidded delay-06s">
         <div class="main1_image"><img src="image/down/main1-2.png" alt=""></div>
         <div class="main1_title">Высокая квалификация бухгалтеров</div>
         <div class="main1_text">Система жесткого отбора специалистов при приеме на работу, участие сотрудников в семинарах внутри компании и профильных конференциях партнера</div>
       </div>
-      <div class="main1_item">
+      <div class="main1_item animated hidded delay-07s">
         <div class="main1_image"><img src="image/down/main1-3.png" alt=""></div>
         <div class="main1_title">Внутренний контроль качества</div>
         <div class="main1_text">Возможные убытки, связанные с недочетами в бухгалтерии, застрахованы на сумму до 500 млн. руб, что дает дополнительную уверенность клиентам</div>
       </div>
-      <div class="main1_item">
+      <div class="main1_item animated hidded delay-08s">
         <div class="main1_image"><img src="image/down/main1-4.png" alt=""></div>
         <div class="main1_title">Экономия более 30%</div>
         <div class="main1_text">Вы экономите на налогах, расходах на бухгалтерское и юридическое программное обеспечение, других офисных расходах, связаных с содержанием бухгалтера в штате</div>
@@ -211,8 +208,8 @@
   </div>
 
   <div class="main2" id="main2">
-    <div class="main2_head"><span>Калькулятор тарифа</span></div>
-    <div class="main2_wrap container">
+    <div class="main2_head animated hidded"><span>Калькулятор тарифа</span></div>
+    <div class="main2_wrap container animated hidded delay-05s">
       <div class="main2_descr">Рассчитайте стоимость обслуживания под ваши нужды</div>
       <div class="calc-tax">
         <div class="calc-tax_head">Система налогооблажения</div>
@@ -220,21 +217,21 @@
           <div class="calc-tax_left"></div><div class="calc-tax_right"></div>
         </div>
         <div class="calc-tax_wrap">
-          <div class="calc-tax_item">
+          <div class="calc-tax_item animated hidded delay-1s">
             <input id="rfirst" type="radio" name="radio" checked hidden />
             <label for="rfirst">
               <div class="calc-tax_title">УСН</div>
               <div class="calc-tax_descr">Упрощённая система налогообложения</div>
             </label>
           </div>
-          <div class="calc-tax_item">
+          <div class="calc-tax_item animated hidded delay-11s">
             <input id="rsecond" type="radio" name="radio" hidden />
             <label for="rsecond">
               <div class="calc-tax_title">УСН с НДС</div>
               <div class="calc-tax_descr">Упрощённая система налогообложения с уплатой налога на добавленную стоимость</div>
             </label>
           </div>
-          <div class="calc-tax_item">
+          <div class="calc-tax_item animated hidded delay-12s">
             <input id="rthird" type="radio" name="radio" hidden />
             <label for="rthird">
               <div class="calc-tax_title">ОСН</div>
@@ -278,15 +275,15 @@
     </div>
   </div>
 
-  <div id="main3" class="main3">
+  <div id="main3" class="main3 animated hidded">
     <div class="main3_wrap container">
-      <div class="main3_item">
+      <div class="main3_item animated hidded delay-05s">
         <div class="action">
           <div class="action_title">Акция!</div>
           <div class="action_descr">Оплатите услуги за 2 месяца и получите <span>скидку 25%</span></div>
         </div>
       </div>
-      <div class="main3_item">
+      <div class="main3_item animated hidded delay-07s">
         <div class="form-action">
           <div class="form-action_wrap">
             <form action="#">
@@ -308,49 +305,49 @@
   </div>
 
   <div id="main4" class="main4 container">
-    <div class="main4_head">Преимущества работы с ООО "Бухгалтерский успех"</div>
+    <div class="main4_head animated hidded">Преимущества работы с ООО "Бухгалтерский успех"</div>
     <div class="main4_wrap">
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-05s">
         <div class="main4_image"><img src="image/down/main4-1.png" alt=""></div>
         <div class="main4_title">Профессиональная ответственность</div>
         <div class="main4_text">Программа ответственности застрахована на 500 млн. рублей.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-06s">
         <div class="main4_image"><img src="image/down/main4-2.png" alt=""></div>
         <div class="main4_title">Лицензионая программа 1С "Бухгалтерия"</div>
         <div class="main4_text">Качественная программа без багов.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-07s">
         <div class="main4_image"><img src="image/down/main4-3.png" alt=""></div>
         <div class="main4_title">Удаленная работа с 1С "Бухгалтерия"</div>
         <div class="main4_text">Возможность при работе использовать удаленно бухгалтерию 1С на наших серверах.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-08s">
         <div class="main4_image"><img src="image/down/main4-4.png" alt=""></div>
         <div class="main4_title">Значительный опыт бухгалтеров</div>
         <div class="main4_text">Сотрудники имеют большой опыт работы главными бухгалтерами и имеют постояную возможность обмена опытом с коллегами.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-09s">
         <div class="main4_image"><img src="image/down/main4-5.png" alt=""></div>
         <div class="main4_title">Использование нормативно-правовых баз</div>
         <div class="main4_text">Имеем огромную базу различных правовых документов: бухгалтерский консультант и т.д.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-1s">
         <div class="main4_image"><img src="image/down/main4-6.png" alt=""></div>
         <div class="main4_title">Бесплатная консультация клиентов</div>
         <div class="main4_text">Подстроимся под потребности даже самых изощренных потребителей.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-11s">
         <div class="main4_image"><img src="image/down/main4-7.png" alt=""></div>
         <div class="main4_title">Оптимизация налогов организаций</div>
         <div class="main4_text">Бухгалтеры на период отпусков и больничных.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-12s">
         <div class="main4_image"><img src="image/down/main4-8.png" alt=""></div>
         <div class="main4_title">Минимизация расходов на бухгалтерию</div>
         <div class="main4_text">Возможность при работе использовать удаленно бухгалтерию 1С на наших серверах.</div>
       </div>
-      <div class="main4_item">
+      <div class="main4_item animated hidded delay-13s">
         <div class="main4_image"><img src="image/down/main4-9.png" alt=""></div>
         <div class="main4_title">Индивидуальный подход к клиенту </div>
         <div class="main4_text">Помощь в консультациях в разных гос. учреждениях, таких как налоговая, исполком, ФСЗН.</div>
@@ -358,26 +355,26 @@
     </div>
   </div>
 
-  <div id="main5" class="main5">
+  <div id="main5" class="main5 animated hidded">
     <div class="main5_wrap container">
-      <div class="main5_head">Схема работы с нами</div>
-      <div class="main5_item main5_item__1" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
+      <div class="main5_head animated hidded delay-05s">Схема работы с нами</div>
+      <div class="main5_item main5_item__1 animated hidded delay-06s" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-1.png" alt=""></div>
         <a href="" class="main5_link">Ознакомление с вашими документами</a>
       </div>
-      <div class="main5_item main5_item__2" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
+      <div class="main5_item main5_item__2 animated hidded delay-08s" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-2.png" alt=""></div>
         <a href="" class="main5_link">Подбор оптимального тарифного плана</a>
       </div>
-      <div class="main5_item main5_item__3" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
+      <div class="main5_item main5_item__3 animated hidded delay-1s" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-3.png" alt=""></div>
         <a href="" class="main5_link">Заключение договора на оказание услуг</a>
       </div>
-      <div class="main5_item main5_item__4" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
+      <div class="main5_item main5_item__4 animated hidded delay-12s" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-4.png" alt=""></div>
         <a href="" class="main5_link">Получение эффекта в первом месяце работы</a>
       </div>
-      <div class="main5_item main5_item__5" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
+      <div class="main5_item main5_item__5 animated hidded delay-14s" title="Результаты нашего сотрудничества вы оцените уже через месяц: бизнес-процессы оптимизированы, издержки снижены, деньги сэкономлены. Всего месяц — и в ваших руках появятся дополнительные средства на развитие вашего бизнеса.">
         <div class="main5_image"><img src="image/main5-5.png" alt=""></div>
         <a href="" class="main5_link">Мы занимаемся Вашей бухгалтерией, Вы - своим бизнесом!</a>
       </div>
@@ -419,15 +416,15 @@
     </div>
   </div>
 
-  <div id="main7" class="main3">
+  <div id="main7" class="main3 animated hidded">
     <div class="main3_wrap container">
-      <div class="main3_item">
+      <div class="main3_item animated hidded delay-05s">
         <div class="action">
           <div class="action_title">Акция!</div>
           <div class="action_descr">Оплатите услуги за 2 месяца и получите <span>скидку 25%</span></div>
         </div>
       </div>
-      <div class="main3_item">
+      <div class="main3_item animated hidded delay-07s">
         <div class="form-action">
           <div class="form-action_wrap">
             <form action="#">
@@ -448,9 +445,9 @@
     </div>
   </div>
 
-  <div id="main8" class="main8 container">
-    <div class="main8_head">Наши партнеры, которым мы доверяем</div>
-    <div class="main8_slider">
+  <div id="main8" class="main8 container animated hidded">
+    <div class="main8_head animated hidded delay-05s">Наши партнеры, которым мы доверяем</div>
+    <div class="main8_slider animated hidded delay-07s">
       <div class="main8_item"><img src="image/down/partner1.png" alt=""></div>
       <div class="main8_item"><img src="image/down/partner2.png" alt=""></div>
       <div class="main8_item"><img src="image/down/partner1.png" alt=""></div>
