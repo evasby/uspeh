@@ -2,6 +2,7 @@
   position: fixed;
   right: 31px;
   top: 50%;
+  margin: -60px 0px 0px 0px;
   z-index: 10;
   &_item{
     height: 25px;
@@ -9,11 +10,27 @@
     margin: 0px 0px 7px 0px;
     display: block;
     text-decoration: none;
+    position: relative;
     &:hover{
       background-position: 100% -25px;
     }
     &__active{
       background-position: 100% -25px;
+    }
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      right: 11px;
+      top: -9px;
+      width: 2px;
+      height: 10px;
+      background-color: #3498db;
+    }
+    .main-pager li:first-child &{
+      &:before{
+        background: none;
+      }
     }
   }
   &_label{

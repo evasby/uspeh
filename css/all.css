@@ -409,6 +409,7 @@ textarea:focus {
   position: fixed;
   right: 31px;
   top: 50%;
+  margin: -60px 0px 0px 0px;
   z-index: 10;
 }
 .main-pager_item {
@@ -417,12 +418,26 @@ textarea:focus {
   margin: 0px 0px 7px 0px;
   display: block;
   text-decoration: none;
+  position: relative;
 }
 .main-pager_item:hover {
   background-position: 100% -25px;
 }
 .main-pager_item__active {
   background-position: 100% -25px;
+}
+.main-pager_item:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 11px;
+  top: -9px;
+  width: 2px;
+  height: 10px;
+  background-color: #3498db;
+}
+.main-pager li:first-child .main-pager_item:before {
+  background: none;
 }
 .main-pager_label {
   text-align: right;

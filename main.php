@@ -183,9 +183,6 @@
   </div>
   <div class="main-pager">
     <ul>
-    <li><a href="#main1" class="main-pager_item">
-      <div class="main-pager_label">Важное</div>
-    </a></li>
     <li><a href="#main2" class="main-pager_item">
       <div class="main-pager_label">Калькулятор</div>
     </a></li>
@@ -194,12 +191,6 @@
     </a></li>
     <li><a href="#main5" class="main-pager_item">
       <div class="main-pager_label">Схема работы</div>
-    </a></li>
-    <li><a href="#main6" class="main-pager_item">
-      <div class="main-pager_label">Отзывы</div>
-    </a></li>
-    <li><a href="#main8" class="main-pager_item">
-      <div class="main-pager_label">Наши партнеры</div>
     </a></li>
     <li><a href="#gmap" class="main-pager_item">
       <div class="main-pager_label">Контакты</div>

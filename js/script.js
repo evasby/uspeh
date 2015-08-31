@@ -5,15 +5,15 @@ $(document).ready(function(){
       $.scrollTo(
         $(this).attr("href"),
         {
-          duration: 200,
+          duration: 400,
           offset: { 'left':0, 'top':0 }
         }
       );
     });  
   });
 
-  var visible = '80%';
-  var hidden = 100;
+  var visible = '95%';
+  var hidden = 50;
   $('.app_item').addClass('slideInLeft');
   var waypoint_app = new Waypoint({
     element: $('#app'),
@@ -343,31 +343,6 @@ $(document).ready(function(){
     offset: - $('#main2').innerHeight() + 200
   })
 
-  var waypager31 = new Waypoint({
-    element: $('#main3'),
-    handler: function(dir) {
-      if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
-        $('.main-pager a[href="#main3"]').addClass("main-pager_item__active");
-      } else{
-        navigation_links.removeClass("main-pager_item__active");
-      }
-    },
-    offset: 100
-  })
-  var waypager32 = new Waypoint({
-    element: $('#main3'),
-    handler: function(dir) {
-      if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
-      } else {
-        navigation_links.removeClass("main-pager_item__active");
-        $('.main-pager a[href="#main3"]').addClass("main-pager_item__active");
-      };
-    },
-    offset: - $('#main3').innerHeight() + 200
-  })
-
   var waypager41 = new Waypoint({
     element: $('#main4'),
     handler: function(dir) {
@@ -418,79 +393,29 @@ $(document).ready(function(){
     offset: - $('#main5').innerHeight() + 200
   })
 
-  var waypager61 = new Waypoint({
-    element: $('#main6'),
-    handler: function(dir) {
-      if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
-        $('.main-pager a[href="#main6"]').addClass("main-pager_item__active");
-      } else{
-        navigation_links.removeClass("main-pager_item__active");
-      }
-    },
-    offset: 100
-  })
-  var waypager62 = new Waypoint({
-    element: $('#main6'),
-    handler: function(dir) {
-      if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
-      } else {
-        navigation_links.removeClass("main-pager_item__active");
-        $('.main-pager a[href="#main6"]').addClass("main-pager_item__active");
-      };
-    },
-    offset: - $('#main6').innerHeight() + 200
-  })
-
-  var waypager81 = new Waypoint({
-    element: $('#main8'),
-    handler: function(dir) {
-      if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
-        $('.main-pager a[href="#main8"]').addClass("main-pager_item__active");
-      } else{
-        navigation_links.removeClass("main-pager_item__active");
-      }
-    },
-    offset: 100
-  })
-  var waypager82 = new Waypoint({
-    element: $('#main8'),
-    handler: function(dir) {
-      if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
-      } else {
-        navigation_links.removeClass("main-pager_item__active");
-        $('.main-pager a[href="#main8"]').addClass("main-pager_item__active");
-      };
-    },
-    offset: - $('#main8').innerHeight() + 200
-  })
-
   var waypager_gmap1 = new Waypoint({
     element: $('#gmap'),
     handler: function(dir) {
       if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
+        //navigation_links.removeClass("main-pager_item__active");
         $('.main-pager a[href="#gmap"]').addClass("main-pager_item__active");
       } else{
         navigation_links.removeClass("main-pager_item__active");
       }
     },
-    offset: 200
+    offset: 500
   })
   var waypager_gmap2 = new Waypoint({
     element: $('#gmap'),
     handler: function(dir) {
       if (dir === 'down') {
-        navigation_links.removeClass("main-pager_item__active");
+        //navigation_links.removeClass("main-pager_item__active");
       } else {
         navigation_links.removeClass("main-pager_item__active");
         $('.main-pager a[href="#gmap"]').addClass("main-pager_item__active");
       };
     },
-    offset: - $('#gmap').innerHeight() + 200
+    offset: - $('#gmap').innerHeight() + 500
   })
   /*
   var title_top = $('#title').offset().top;
