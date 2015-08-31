@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>liLanding</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/liLanding.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liLanding.js"></script>
+<script>
+$(window).load(function(){
+	$('.landingMenu').liLanding({
+		show: function (linkEl, landingItem) {
+			$('.screenDecor',landingItem).animate({opacity:1},500);
+			landingItem.css({backgroundColor:'#ff0'});
+		},
+		hide: function (linkEl, landingItem) {
+			$('.screenDecor',landingItem).animate({opacity:0},300);
+			landingItem.css({backgroundColor:'#fff'});
+		}	
+	});
+})
+</script> 
+</head>
+<body>
+
+<div class="conteiner">
+
+	<h3>liLanding - jQuery Landing Navigation или навигация по лендингу</h3>
+    
+    
+    
+    
+    <div class="navPr">
+    	<a href="index.html">Описание</a>
+        <span>Функции обратного вызова</span>
+    </div>
+	
+    <div style="position:relative">
+        <div class="landingMenu">
+            <ul>
+                <li><a href="#land_1">landing link 1</a></li>
+                <li><a href="#land_2">landing link 2</a></li>
+                <li><a href="#land_3">landing link 3</a></li>
+                <li><a href="#land_4">landing link 4</a></li>
+                <li><a href="#land_5">landing link 5</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="land_1" class="landingItem ">
+        <div class="bg_1">
+            <span class="screenDecor">1</span>
+        </div>
+    </div>
+    <div id="land_2" class="landingItem ">
+        <div class="bg_2">
+            <span class="screenDecor">2</span>
+        </div>
+    </div>
+    <div id="land_3" class="landingItem ">
+        <div class="bg_3">
+            <span class="screenDecor">3</span>
+        </div>
+    </div>
+    <div id="land_4" class="landingItem ">
+        <div class="bg_4">
+           <span class="screenDecor">4</span>
+        </div>
+    </div>
+    <div id="land_5" class="landingItem ">
+        <div class="bg_5">
+            <span class="screenDecor">5</span>
+        </div>
+    </div>
+    <div class="autor">
+        <a class="logoMasscode" target="_blank" href="http://masscode.ru">
+            <span class="logoMass">MASS</span>CODE<span class="logoMass">.RU</span>
+        </a>
+    </div>
+
+
+</div>
+</body>
+</html>

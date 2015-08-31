@@ -26,6 +26,7 @@
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
   <script type="text/javascript" src="js/jquery.poshytip.min.js"></script>
   <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/gmap.js"></script>
   
@@ -179,6 +180,31 @@
       <div class="app_left"><span>Заявка</span></div>
       <div class="app_right"><span>Бухгалтерское обслуживание</span></div>
     </a>
+  </div>
+  <div class="main-pager">
+    <ul>
+    <li><a href="#main1" class="main-pager_item">
+      <div class="main-pager_label">Важное</div>
+    </a></li>
+    <li><a href="#main2" class="main-pager_item">
+      <div class="main-pager_label">Калькулятор</div>
+    </a></li>
+    <li><a href="#main4" class="main-pager_item">
+      <div class="main-pager_label">Преимущества</div>
+    </a></li>
+    <li><a href="#main5" class="main-pager_item">
+      <div class="main-pager_label">Схема работы</div>
+    </a></li>
+    <li><a href="#main6" class="main-pager_item">
+      <div class="main-pager_label">Отзывы</div>
+    </a></li>
+    <li><a href="#main8" class="main-pager_item">
+      <div class="main-pager_label">Наши партнеры</div>
+    </a></li>
+    <li><a href="#gmap" class="main-pager_item">
+      <div class="main-pager_label">Контакты</div>
+    </a></li>
+    </ul>
   </div>
 
   <div class="main1 container" id="main1">

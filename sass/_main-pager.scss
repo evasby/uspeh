@@ -1,0 +1,34 @@
+.main-pager{
+  position: fixed;
+  right: 31px;
+  top: 50%;
+  z-index: 10;
+  &_item{
+    height: 25px;
+    background: url('../image/main-pager.png') 100% 0px no-repeat;
+    margin: 0px 0px 7px 0px;
+    display: block;
+    text-decoration: none;
+    &:hover{
+      background-position: 100% -25px;
+    }
+    &__active{
+      background-position: 100% -25px;
+    }
+  }
+  &_label{
+    text-align: right;
+    padding: 6px 37px 0px 0px;
+    color: #122333;
+    font-size: 14px;
+    text-transform: uppercase;
+    visibility: hidden;
+    @include def-transition(all, 0.2s);
+    .main-pager_item:hover & {
+      visibility: visible;
+    }
+    .main-pager_item__active & {
+      visibility: visible;
+    }
+  }
+}

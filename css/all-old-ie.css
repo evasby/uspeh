@@ -405,6 +405,45 @@ textarea:focus {
   margin: 0px 0px 15px 0px;
 }
 
+.main-pager {
+  position: fixed;
+  right: 31px;
+  top: 50%;
+  z-index: 10;
+}
+.main-pager_item {
+  height: 25px;
+  background: url("../image/main-pager.png") 100% 0px no-repeat;
+  margin: 0px 0px 7px 0px;
+  display: block;
+  text-decoration: none;
+}
+.main-pager_item:hover {
+  background-position: 100% -25px;
+}
+.main-pager_item__active {
+  background-position: 100% -25px;
+}
+.main-pager_label {
+  text-align: right;
+  padding: 6px 37px 0px 0px;
+  color: #122333;
+  font-size: 14px;
+  text-transform: uppercase;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.main-pager_item:hover .main-pager_label {
+  visibility: visible;
+}
+.main-pager_item__active .main-pager_label {
+  visibility: visible;
+}
+
 .button {
   display: block;
   text-decoration: none;
@@ -2024,7 +2063,7 @@ textarea:focus {
   background: url("../image/action-1920.jpg") 0% 0% no-repeat;
   background-size: cover;
   padding: 38px 0px 0px 0px;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 0px 0px;
   -webkit-transition: background-position 2s ease-in-out;
   -moz-transition: background-position 2s ease-in-out;
   -o-transition: background-position 2s ease-in-out;
@@ -2183,6 +2222,7 @@ textarea:focus {
   &.bg-loaded{
     @include def-opacity(1);
   }*/
+  padding: 40px 0px 0px 0px;
 }
 .main4_head {
   font-size: 30px;
@@ -2547,7 +2587,7 @@ textarea:focus {
 
 .main8 {
   height: 168px;
-  padding: 2px 0px 0px 0px;
+  padding: 42px 0px 0px 0px;
   /*bxslider*******************************/
   /* DIRECTION CONTROLS (NEXT / PREV) */
 }

@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+  $('.main-pager_item').each(function(){
+    $(this).click(function(){
+      $.scrollTo(
+        $(this).attr("href"),
+        {
+          duration: 200,
+          offset: { 'left':0, 'top':0 }
+        }
+      );
+    });  
+  });
+
   var visible = '80%';
   var hidden = 100;
   $('.app_item').addClass('slideInLeft');
@@ -13,6 +25,8 @@ $(document).ready(function(){
       }
     }
   })
+
+  
 
   var waypoint_title1 = new Waypoint({
     element: $('#title'),
@@ -53,6 +67,7 @@ $(document).ready(function(){
         $('.main-descr').removeClass('rollOut').addClass('rollIn');
         $('.form-discount').addClass('bounceInDown');
       };
+      
     },
     offset: - $('#title').innerHeight() + hidden
   })
@@ -111,6 +126,7 @@ $(document).ready(function(){
         $('.main2_wrap').removeClass('fadeOut').addClass('fadeIn');
         $('.calc-tax_item').removeClass('flipOutY').addClass('flipInY');
       };
+      
     },
     offset: - $('#main2').innerHeight() + hidden
   })
@@ -256,6 +272,225 @@ $(document).ready(function(){
       };
     },
     offset: - $('#main8').innerHeight() + hidden
+  })
+
+  /*var waypoint_gmap1 = new Waypoint({
+    element: $('#gmap'),
+    handler: function(dir) {
+      navigation_links.removeClass("main-pager_item__active");
+      $('.main-pager a[href="#gmap"]').addClass("main-pager_item__active");
+    },
+    offset: visible
+  })
+  var waypoint_gmap2 = new Waypoint({
+    element: $('#gmap'),
+    handler: function(dir) {
+      navigation_links.removeClass("main-pager_item__active");
+      $('.main-pager a[href="#gmap"]').addClass("main-pager_item__active");
+    },
+    offset: - $('#gmap').innerHeight() + hidden
+  })*/
+
+
+  var navigation_links = $('.main-pager_item');
+  var waypager11 = new Waypoint({
+    element: $('#main1'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main1"]').addClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager12 = new Waypoint({
+    element: $('#main1'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main1"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main1').innerHeight() + 200
+  })
+
+  var waypager21 = new Waypoint({
+    element: $('#main2'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main2"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager22 = new Waypoint({
+    element: $('#main2'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main2"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main2').innerHeight() + 200
+  })
+
+  var waypager31 = new Waypoint({
+    element: $('#main3'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main3"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager32 = new Waypoint({
+    element: $('#main3'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main3"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main3').innerHeight() + 200
+  })
+
+  var waypager41 = new Waypoint({
+    element: $('#main4'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main4"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager42 = new Waypoint({
+    element: $('#main4'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main4"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main4').innerHeight() + 200
+  })
+
+  var waypager51 = new Waypoint({
+    element: $('#main5'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main5"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager52 = new Waypoint({
+    element: $('#main5'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main5"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main5').innerHeight() + 200
+  })
+
+  var waypager61 = new Waypoint({
+    element: $('#main6'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main6"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager62 = new Waypoint({
+    element: $('#main6'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main6"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main6').innerHeight() + 200
+  })
+
+  var waypager81 = new Waypoint({
+    element: $('#main8'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main8"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 100
+  })
+  var waypager82 = new Waypoint({
+    element: $('#main8'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#main8"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#main8').innerHeight() + 200
+  })
+
+  var waypager_gmap1 = new Waypoint({
+    element: $('#gmap'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#gmap"]').addClass("main-pager_item__active");
+      } else{
+        navigation_links.removeClass("main-pager_item__active");
+      }
+    },
+    offset: 200
+  })
+  var waypager_gmap2 = new Waypoint({
+    element: $('#gmap'),
+    handler: function(dir) {
+      if (dir === 'down') {
+        navigation_links.removeClass("main-pager_item__active");
+      } else {
+        navigation_links.removeClass("main-pager_item__active");
+        $('.main-pager a[href="#gmap"]').addClass("main-pager_item__active");
+      };
+    },
+    offset: - $('#gmap').innerHeight() + 200
   })
   /*
   var title_top = $('#title').offset().top;
