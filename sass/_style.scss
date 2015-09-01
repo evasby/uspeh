@@ -37,8 +37,12 @@ body{
   min-width: $min_width;
   position: relative;
 }
-p{
-  
+textarea{
+  resize: none;
+  box-shadow: none;
+}
+input{
+  box-shadow: none;
 }
 strong, b{
   font-family: $bold;
@@ -224,6 +228,8 @@ textarea{
 @import "main6";
 @import "main8";
 
+@import "mybreadcrumb";
+@import "user-content";
 @import "block-form";
 
 @import "footer";

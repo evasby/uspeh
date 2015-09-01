@@ -37,10 +37,10 @@
       <div class="topmenu_inner container">
         <ul class="topmenu_list">
           <li class="topmenu_item">
-            <a href="" class="topmenu_link topmenu_link__active">Главная</a>
+            <a href="/main.php" class="topmenu_link topmenu_link__active">Главная</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">О компании</a>
+            <a href="/about.php" class="topmenu_link">О компании</a>
           </li>
           <li class="topmenu_item">
             <a href="" class="topmenu_link">Наши услуги</a>

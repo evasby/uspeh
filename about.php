@@ -22,8 +22,8 @@
   <!--<script type="text/javascript" src="js/bg-loaded.js"></script>
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-  <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
+  <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
   <script src="js/script-about.js"></script>
   <script src="js/gmap.js"></script>
   
@@ -34,10 +34,10 @@
       <div class="topmenu_inner container">
         <ul class="topmenu_list">
           <li class="topmenu_item">
-            <a href="" class="topmenu_link topmenu_link__active">Главная</a>
+            <a href="/main.php" class="topmenu_link">Главная</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">О компании</a>
+            <a href="/about.php" class="topmenu_link topmenu_link__active">О компании</a>
           </li>
           <li class="topmenu_item">
             <a href="" class="topmenu_link">Наши услуги</a>
@@ -133,26 +133,73 @@
     </div>  
   </div>
 
+  <div class="mybreadcrumb container">
+    <a class="mybreadcrumb_link" href="/">Главная</a>
+    <span class="mybreadcrumb_item">О компании</span>
+  </div>
+
+  <article class="user-content container">
+    <h2>Заголовок h2</h2>
+    <p>Компания «Бухгалтерский успех» работает на белорусском рынке аутсорсинговых услуг с 2011 года. Наша бухгалтерская компания – небольшой коллектив, состоящий из высококвалифицированных специалистов в области бухгалтерского учета и консалтинга, профессиональный стаж которых составляет от семи до двадцати пяти лет. <a href="">Ссылка</a></p>
+    <h3>Заголовок h3</h3>
+    <p>Полученный опыт позволяет качественно и оперативно выполнять работы по восстановлению, постановке и ведению бухгалтерского учёта.</p>
+    <p>Компания "Бухгалтерский успех" ценит каждого клиента, будь то начинающий индивидуальный предприниматель или состоявшаяся успешная компания.<br>Для учета потребностей разных организаций мы предлагаем сотрудничество по шести тарифным планам. Если вам не подойдет ни один из них, мы предложим индивидуальную схему работы.</p>
+    <hr>
+    <h4>Заголовок h4</h4>
+    <p>Мы предлагаем бухгалтерское сопровождение при регистрации субъектов хозяйствования, выполняем все функции главного бухгалтера, осуществляем полное бухгалтерское обслуживание организаций с подготовкой и предоставлением всей отчетности, оказываем консультационные услуги в области бухгалтерского учета и налогообложения. В рамках договоров на оказание бухгалтерских услуг проводим обучение работе с программой «1С: Бухгалтерия» и системой «Банк-Клиент».</p>
+    <hr>
+    <p>Список:</p>
+    <p><ul>
+      <li>Список 1</li>
+      <li>Список 2</li>
+      <li>Список 3</li>
+      <li>Список 4</li>
+      <li>Список 5</li>
+      <li>Список 6</li>
+    </ul></p>
+    <p>Таблица:</p>
+    <p><table border="1" cellpadding="1" cellspacing="1" style="width: 100%;">
+      <tbody>
+        <tr>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+        <tr>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+        <tr>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+      </tbody>
+    </table></p>
+  </article>
+
   <div class="block-form">
     <div class="block-form_layer"></div>
     <div class="block-form_wrap container">
       <form action="#">
-        <div class="block-form_left">
+        <div class="block-form_top">
+          <div class="block-form_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут</div>
           <div class="block-form_title">Напишите нам письмо или задайте вопрос</div>
-          <div class="block-form_inner">
-            <textarea id="edit-submitted-message" class="form-textarea required" rows="5" cols="60" placeholder="Ваш вопрос..." required="required"></textarea>
-          </div>
         </div>
-        <div class="block-form_right">
-          <div class="block-form_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
-          <div class="block-form_inner">
-            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваше имя">
+        <div class="block-form_bottom">
+          <div class="block-form_left">
+            <div class="block-form_inner">
+              <textarea id="edit-submitted-message" class="form-textarea required" rows="5" cols="60" placeholder="Ваш вопрос..." required="required"></textarea>
+            </div>
           </div>
-          <div class="block-form_inner">
-            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваш телефон">
-          </div>
-          <div class="block-form_button">
-            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить" name="op">
+          <div class="block-form_right">
+            <div class="block-form_inner">
+              <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваше имя">
+            </div>
+            <div class="block-form_inner">
+              <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Ваш телефон" required="required">
+            </div>
+            <div class="block-form_button">
+              <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить" name="op">
+            </div>
           </div>
         </div>
       </form>
@@ -234,6 +281,23 @@
           </div>
           <div class="form-popup_button">
             <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить заявку" name="op">
+          </div>
+          <div class="form-popup_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+        </form>
+      </div>
+    </div>
+    <div id="form3" class="form-popup">
+      <div class="form-popup_wrap form-popup_wrap__callback">
+        <form action="#">
+          <div class="form-popup_title">Заказать обратный звонок</div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите имя">
+          </div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите телефон" required="required">
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Заказать звонок" name="op">
           </div>
           <div class="form-popup_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
         </form>

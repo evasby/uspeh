@@ -12,6 +12,7 @@ $(document).ready(function(){
   })
   $("#app1").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form1"});
   $("#app2").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form2"});*/
+  $("#b_callback").colorbox({transition:"fade", inline:true, opacity:0.8, href:"#form3"});
 
   // Declare parallax on layers
   /*$('#qwew').parallax({

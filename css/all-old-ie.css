@@ -31,7 +31,6 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -52,9 +51,12 @@ ol, ul {
   list-style: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+table, tr, th, td, table, caption, tbody, tfoot, thead {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 caption, th, td {
@@ -137,6 +139,15 @@ body {
   font-size: 18px;
   min-width: 1000px;
   position: relative;
+}
+
+textarea {
+  resize: none;
+  box-shadow: none;
+}
+
+input {
+  box-shadow: none;
 }
 
 strong, b {
@@ -360,11 +371,13 @@ textarea:focus {
   padding: 43px 0px 43px 0px;
   background: url("../image/title-main-1920.jpg") 50% no-repeat;
   background-size: cover;
-  /*@include def-opacity(0);
-  @include def-transition(opacity, 0.2s);*/
 }
 .title__info {
   background: url("../image/title-info-1920.jpg") 50% no-repeat;
+  background-size: cover;
+}
+.title__about {
+  background: url("../image/title-about-1920.jpg") 50% no-repeat;
   background-size: cover;
 }
 .title_h1 {
@@ -2722,6 +2735,156 @@ textarea:focus {
   display: none;
 }
 
+.mybreadcrumb {
+  padding: 31px 0px 52px 0px;
+}
+.mybreadcrumb_link {
+  color: #373737;
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0px 0px 0px 23px;
+  *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="breadcrumb_before" );
+}
+.mybreadcrumb_link:visited {
+  color: #373737;
+}
+.mybreadcrumb_link:hover {
+  color: #3498db;
+}
+.mybreadcrumb_link:active {
+  color: #373737;
+}
+.mybreadcrumb_link:focus {
+  color: #373737;
+}
+.mybreadcrumb_link:before {
+  background: url("../image/bread.png") -18px 0px no-repeat #fff;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  top: 1px;
+  left: -24px;
+}
+* + html .mybreadcrumb_link {
+  margin-right: 15px;
+}
+.mybreadcrumb_link .breadcrumb_before {
+  background: url("../image/bread.png") no-repeat #fff;
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  top: 1px;
+  left: -24px;
+}
+.mybreadcrumb_link:first-child {
+  margin: 0px 0px -1px 0px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 18px;
+  height: 15px;
+  background: url("../image/bread.png") 0px 0px no-repeat #fff;
+}
+.mybreadcrumb_link:first-child:before {
+  display: none;
+}
+.mybreadcrumb_link:first-child .breadcrumb_before {
+  display: none;
+}
+.mybreadcrumb_item {
+  color: #3498db;
+  position: relative;
+  font-size: 14px;
+  margin: 0px 0px 0px 23px;
+  *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="breadcrumb_before" );
+}
+.mybreadcrumb_item:before {
+  background: url("../image/bread.png") -18px 0px no-repeat #fff;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  top: 1px;
+  left: -24px;
+}
+* + html .mybreadcrumb_item {
+  margin-right: 15px;
+}
+.mybreadcrumb_item .breadcrumb_before {
+  background: url("../image/bread.png") no-repeat #fff;
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  top: 1px;
+  left: -24px;
+}
+
+.user-content {
+  padding: 0px 0px 54px 0px;
+}
+.user-content h1, .user-content h2 {
+  font-family: proximanova_bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0px 0px 18px 0px;
+}
+.user-content h3 {
+  font-family: proximanova_bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0px 0px 18px 0px;
+}
+.user-content h4 {
+  font-family: proximanova_bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0px 0px 18px 0px;
+}
+.user-content p {
+  font-family: proximanova_light;
+  font-size: 18px;
+  color: #373737;
+  line-height: 1.2;
+  margin: 0px 0px 22px 0px;
+}
+.user-content hr {
+  margin: 48px 0px 44px 0px;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(120, 120, 120, 0) 10%, #787878, rgba(120, 120, 120, 0) 90%);
+}
+.user-content a {
+  color: #373737;
+  font-family: proximanova_light;
+  font-size: 18px;
+}
+.user-content a:visited {
+  color: #373737;
+}
+.user-content a:hover {
+  color: #3498db;
+}
+.user-content a:active {
+  color: #373737;
+}
+.user-content a:focus {
+  color: #373737;
+}
+.user-content ul {
+  padding: 0px 0px 0px 30px;
+  list-style-type: disc;
+}
+.user-content li {
+  font-family: proximanova_light;
+  font-size: 16px;
+  color: #373737;
+}
+
 .block-form {
   height: 360px;
   position: relative;
@@ -2734,10 +2897,12 @@ textarea:focus {
   }*/
 }
 .block-form_title {
+  width: 675px;
+  float: left;
+  padding: 68px 0px 35px 0px;
   color: #ffffff;
   font-size: 26px;
   position: relative;
-  padding: 0px 0px 35px 0px;
 }
 .block-form_title:before {
   content: " ";
@@ -2745,7 +2910,7 @@ textarea:focus {
   position: absolute;
   left: 18px;
   margin: 0px 0px 0px -17px;
-  top: -21px;
+  top: 47px;
   width: 44px;
   height: 2px;
   background-color: #ffffff;
@@ -2764,14 +2929,16 @@ textarea:focus {
   transition: background-position 2s ease-in-out;
 }
 .block-form_wrap {
+  position: relative;
+  z-index: 2;
+}
+.block-form_top {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   * zoom: 1;
   display: block;
-  position: relative;
-  z-index: 2;
 }
-.block-form_wrap:after {
+.block-form_top:after {
   clear: both;
   content: ".";
   display: block;
@@ -2780,16 +2947,37 @@ textarea:focus {
   line-height: 0;
   visibility: hidden;
 }
-* html .block-form_wrap {
+* html .block-form_top {
+  height: 1%;
+}
+.block-form_bottom {
+  display: inline-block;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+}
+.block-form_bottom:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+* html .block-form_bottom {
   height: 1%;
 }
 .block-form_left {
   width: 675px;
   float: left;
-  padding: 68px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .block-form_right {
-  padding: 46px 0px 0px 720px;
+  float: right;
+  width: 230px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 50px;
 }
 .block-form_descr {
   font-family: proximanova_light;
@@ -2797,7 +2985,9 @@ textarea:focus {
   color: #ffffff;
   text-align: center;
   line-height: 1.1;
-  padding: 0px 0px 37px 0px;
+  padding: 46px 0px 37px 0px;
+  float: right;
+  width: 230px;
 }
 .block-form_inner {
   padding: 0px 0px 11px 0px;
@@ -2805,7 +2995,7 @@ textarea:focus {
 }
 .block-form_inner input {
   font-size: 16px;
-  width: 199px;
+  width: 184px;
   height: 44px;
   border: 1px solid #c2c2c2;
   margin: 0px;
@@ -2813,7 +3003,7 @@ textarea:focus {
 }
 .block-form_inner textarea {
   font-size: 16px;
-  width: 631px;
+  width: 629px;
   height: 164px;
   border: 1px solid #c2c2c2;
   margin: 0px;
@@ -2823,7 +3013,7 @@ textarea:focus {
   padding: 9px 0px 0px 0px;
 }
 .block-form_button input {
-  width: 245px;
+  width: 230px;
   height: 54px;
   border: 2px solid #ffffff;
   background-color: transparent;
