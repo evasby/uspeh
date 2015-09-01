@@ -125,7 +125,7 @@
         </div>
       </div>
       <div class="header_section">
-        <a class="button button__phone" href="/">Заказать звонок</a>
+        <a id="b_callback" class="button button__phone" href="/">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -261,11 +261,11 @@
         <div class="calc-extra_wrap">
           <div class="calc-extra_item">
             <div class="calc-extra_title calc-extra_title__left">Скидки и бонусы</div>
-            <a href="" class="calc-extra_link">Выберите скидки и бонусы</a>
+            <a href="" id="b_calc1" class="calc-extra_link">Выберите скидки и бонусы</a>
           </div>
           <div class="calc-extra_item">
             <div class="calc-extra_title calc-extra_title__right">Дополнительные услуги</div>
-            <a href="" class="calc-extra_link">Выберите повышающий коэффициент</a>
+            <a href="" id="b_calc2" class="calc-extra_link">Выберите повышающий коэффициент</a>
           </div>
         </div>
       </div>
@@ -284,8 +284,8 @@
       </div>
       <div class="calc-result">
         <div class="calc-result_wrap">
-          <a class="button button__calcorder" href="/">Заказать тариф</a>
-          <a class="button button__calcinfo" href="/">Что входит в стоимость</a>
+          <a id="b_calc4" class="button button__calcorder" href="/">Заказать тариф</a>
+          <a id="b_calc3" class="button button__calcinfo" href="/">Что входит в стоимость</a>
           <div class="calc-result_result">Стоимость = <span class="calc-result_price">560 000</span><span class="calc-result_curr"> бел.руб.\месяц</span></div>
         </div>
       </div>
@@ -533,7 +533,7 @@
       </div>
     </div>
     <div id="form2" class="form-popup">
-      <div class="form-popup_wrap">
+      <div class="form-popup_wrap form-popup_wrap__buh">
         <form action="#">
           <div class="form-popup_title">Подать заявку на бухгалтерское обслуживание</div>
           <div class="form-popup_inner">
@@ -552,6 +552,158 @@
         </form>
       </div>
     </div>
+    <div id="form3" class="form-popup">
+      <div class="form-popup_wrap form-popup_wrap__callback">
+        <form action="#">
+          <div class="form-popup_title">Заказать обратный звонок</div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите имя">
+          </div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите телефон" required="required">
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Заказать звонок" name="op">
+          </div>
+          <div class="form-popup_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+        </form>
+      </div>
+    </div>
+
+    <div id="form4" class="form-popup">
+      <div class="form-popup_wrap form-popup_wrap__bonus">
+        <form action="#">
+          <div class="form-popup_title">Скидки и бонусы</div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc1" type="checkbox" hidden />
+            <label for="ccalc1">Учёт разных видов деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc2" type="checkbox" hidden />
+            <label for="ccalc2">Учёт посреднической деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc3" type="checkbox" hidden />
+            <label for="ccalc3">Учёт деятельности, связанной со строительством, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc4" type="checkbox" hidden />
+            <label for="ccalc4">Учёт деятельности, связанной со строительством, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc5" type="checkbox" hidden />
+            <label for="ccalc5">Учёт деятельности, связанной со строительством, производством, общественным питанием, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc6" type="checkbox" hidden />
+            <label for="ccalc6">Учёт деятельности, связанной со строительством, производством, общественным питанием, производством, общественным питанием, учёт деятельности, связанной со строительством</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc7" type="checkbox" hidden />
+            <label for="ccalc7">Учёт разных видов деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc8" type="checkbox" hidden />
+            <label for="ccalc8">Учёт посреднической деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc9" type="checkbox" hidden />
+            <label for="ccalc9">Учёт посреднической деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc10" type="checkbox" hidden />
+            <label for="ccalc10">Учёт деятельности, связанной со строительством, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Выбрать" name="op">
+          </div>
+          <div class="form-popup_descr"></div>
+        </form>
+      </div>
+    </div>
+    <div id="form5" class="form-popup">
+      <div class="form-popup_wrap form-popup_wrap__bonus">
+        <form action="#">
+          <div class="form-popup_title">Дополнительные услуги</div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc21" type="checkbox" name="1" hidden />
+            <label for="ccalc21">Учёт разных видов деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc22" type="checkbox" name="2" hidden />
+            <label for="ccalc22">Учёт посреднической деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc23" type="checkbox" hidden />
+            <label for="ccalc23">Учёт деятельности, связанной со строительством, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc24" type="checkbox" hidden />
+            <label for="ccalc24">Учёт деятельности, связанной со строительством, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc25" type="checkbox" hidden />
+            <label for="ccalc25">Учёт деятельности, связанной со строительством, производством, общественным питанием, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc26" type="checkbox" hidden />
+            <label for="ccalc26">Учёт деятельности, связанной со строительством, производством, общественным питанием, производством, общественным питанием, учёт деятельности, связанной со строительством</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc27" type="checkbox" hidden />
+            <label for="ccalc27">Учёт разных видов деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc28" type="checkbox" hidden />
+            <label for="ccalc28">Учёт посреднической деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc29" type="checkbox" hidden />
+            <label for="ccalc29">Учёт посреднической деятельности</label>
+          </div>
+          <div class="form-popup_checkbox">
+            <input id="ccalc210" type="checkbox" hidden />
+            <label for="ccalc210">Учёт деятельности, связанной со строительством, производством, общественным питанием</label>
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Выбрать" name="op">
+          </div>
+          <div class="form-popup_descr"></div>
+        </form>
+      </div>
+    </div>
+    <div id="form6" class="form-popup">
+      <div class="form-popup_wrap form-popup_wrap__info">
+        <form action="#">
+          <div class="form-popup_title">Что входит в стоимость?</div>
+          <div class="form-popup_info">- Строка 1</div>
+          <div class="form-popup_info">- Строка 2</div>
+          <div class="form-popup_info">- Строка 3</div>
+        </form>
+      </div>
+    </div>
+    <div id="form7" class="form-popup">
+      <div class="form-popup_wrap form-popup_wrap__tarif">
+        <form action="#">
+          <div class="form-popup_title">Заказать тариф</div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите имя">
+          </div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите телефон" required="required">
+          </div>
+          <div class="form-popup_inner">
+            <input class="form-text" type="text" maxlength="128" size="60" value="" placeholder="Введите e-mail" required="required">
+          </div>
+          <div class="form-popup_button">
+            <input class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Отправить" name="op">
+          </div>
+          <div class="form-popup_descr">Введите ваше имя и телефон. Специалисты Бухгалтерский успех свяжутся с вами в течение 30 минут.</div>
+        </form>
+      </div>
+    </div>
+
+    
 
   </div>
 </body>

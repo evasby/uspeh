@@ -3,6 +3,28 @@
     &__question{
       width: 284px;
     }
+    &__buh{
+      width: 320px;
+    }
+    &__callback{
+      width: 284px;
+    }
+    &__bonus{
+      width: 502px;
+      .form-popup_title{
+        margin: 0px 0px 29px 0px;
+      }
+      .form-popup_button {
+        padding: 5px 0 0;
+      }
+    }
+    &__info{
+      width: 316px;
+      padding: 0px 0px 23px 0px;
+    }
+    &__tarif{
+      width: 284px;
+    }
   }
   &_title{
     font-family: $bold;
@@ -70,6 +92,41 @@
     text-align: center;
     padding: 15px 20px 30px 20px;
     line-height: 1.2;
+  }
+  &_info{
+    padding: 0px 26px 0px 26px;
+    margin: 0px 0px 12px 0px;
+    font-size: 16px;
+    color: #373737;
+  }
+  &_checkbox{
+    padding: 0px 60px 0px 60px;
+    margin: 0px 0px 32px 0px;
+  }
+  input[type="checkbox"] {
+    display:none;            
+  }
+  input[type="checkbox"] + label {
+    font-size: 16px;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+  }
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 19px;
+    width: 24px;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+    background: url('../image/calc-form-check.png') no-repeat;
+  }
+  /*input[type="checkbox"]:checked + label {
+    border-color: #3498db;
+  }*/
+  input[type="checkbox"]:checked + label::before {
+    background-position: -24px 0px;
   }
 }
 /*
