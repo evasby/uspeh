@@ -1,0 +1,66 @@
+.mypager{
+  padding: 44px 0px 48px 0px;
+  text-align: center;
+  &_list{
+    @include clearfix();
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+  }
+  &_item{
+    float: left;
+    display: block;
+    width: 21px;
+    //height: 26px;
+    margin: 0px 5px 0px 5px;
+    padding: 2px 0px 2px 0px;
+    font-size: 16px;
+    &__current{
+      color: #ffffff;
+      background-color: #3498db;
+    }
+    a{
+      @include link(#373737, #3498db);
+      font-size: 16px;
+      text-decoration: none;
+    }
+    &.mypager-prev, &.mypager-next{
+      padding: 3px 0px 0px 0px;
+    }
+    &.mypager-prev a, &.mypager-next a{
+      display: block;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      width: 8px;
+      height: 13px;
+      background: url('../image/arrows-pager.png') no-repeat;
+      margin: 0 auto;
+    }
+    &.mypager-prev a{
+      &:hover{
+        background-position: 0px -13px;
+      }
+    }
+    &.mypager-next a{
+      background-position: -8px 0px;
+      &:hover{
+        background-position: -8px -13px;
+      }
+    }
+  }
+  .ajax-progress{
+    position: absolute;
+    //top: 10px;
+    //left: -6px;
+    top: 11px;
+    left: -15px;
+    .throbber {
+      background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+      float: left;
+      height: 15px; /* tweak this according to your gif */
+      width: 15px; /* tweak this according to your gif */
+      margin: 0px;
+    }
+  }
+}

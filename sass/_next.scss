@@ -1,0 +1,36 @@
+.next{
+  &_title{
+    font-family: $bold;
+    font-size: 18px;
+    color: #373737;
+    text-transform: uppercase;
+    margin: -12px 0px 32px 0px;
+  }
+  &_link{
+    font-family: $italic;
+    font-size: 18px;
+    @include link(#373737, #3498db);
+    text-decoration: none;
+    display: block;
+    padding: 0px 0px 0px 28px;
+    @include def-transition(all, 0.2s);
+    position: relative;
+    margin: 0px 0px 20px 0px;
+    &:before{
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 2px;
+      width: 10px;
+      height: 11px;
+      background: url('../image/arrow-next.png') no-repeat;
+    }
+    &:hover{
+      padding: 0px 0px 0px 49px;
+    }
+    &:hover:before{
+      background-position: -10px 0px;
+    }
+  }
+}

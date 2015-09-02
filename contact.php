@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
-  <title>Бухгалтерский успех - О компании</title>
+  <title>Бухгалтерский успех - Контакты</title>
   <link rel="stylesheet" href="css/all.css" type="text/css" />
   <link rel="stylesheet" href="css/animate.css" type="text/css"/>
   <!--[if lt IE 9]>
@@ -103,7 +103,7 @@
     <div class="header_bottom container">
       <div class="header_section">
         <div class="logo">
-          <a class="logo_link" href="/">Бухгалтерский успех</a>
+          <a class="logo_link" href="/main.php">Бухгалтерский успех</a>
           <span class="logo_text">Бухгалтерские услуги №1 в Беларуси</span>
         </div>
       </div>
@@ -127,54 +127,56 @@
     </div>
   </header>
 
-  <div class="title title__about">
+  <div class="title title__contact">
     <div class="title_wrap container">
-      <h1 class="title_h1">О компании</h1>
+      <h1 class="title_h1">Контакты</h1>
+      <div class="title_descr">
+        <p>К нам удобно добираться - наш офис находится в бизнес-центре “Аквабел”, который расположен на пересечении Логойского тракта и МКАД. Рядом есть большая бесплатная парковка.</p>
+      </div>
     </div>  
   </div>
 
   <div class="mybreadcrumb container">
-    <a class="mybreadcrumb_link" href="/">Главная</a>
-    <span class="mybreadcrumb_item">О компании</span>
+    <a class="mybreadcrumb_link" href="/main.php">Главная</a>
+    <span class="mybreadcrumb_item">Контакты</span>
   </div>
 
-  <article class="user-content container">
-    <h2>Заголовок h2</h2>
-    <p>Компания «Бухгалтерский успех» работает на белорусском рынке аутсорсинговых услуг с 2011 года. Наша бухгалтерская компания – небольшой коллектив, состоящий из высококвалифицированных специалистов в области бухгалтерского учета и консалтинга, профессиональный стаж которых составляет от семи до двадцати пяти лет. <a href="">Ссылка</a></p>
-    <h3>Заголовок h3</h3>
-    <p>Полученный опыт позволяет качественно и оперативно выполнять работы по восстановлению, постановке и ведению бухгалтерского учёта.</p>
-    <p>Компания "Бухгалтерский успех" ценит каждого клиента, будь то начинающий индивидуальный предприниматель или состоявшаяся успешная компания.<br>Для учета потребностей разных организаций мы предлагаем сотрудничество по шести тарифным планам. Если вам не подойдет ни один из них, мы предложим индивидуальную схему работы.</p>
-    <hr>
-    <h4>Заголовок h4</h4>
-    <p>Мы предлагаем бухгалтерское сопровождение при регистрации субъектов хозяйствования, выполняем все функции главного бухгалтера, осуществляем полное бухгалтерское обслуживание организаций с подготовкой и предоставлением всей отчетности, оказываем консультационные услуги в области бухгалтерского учета и налогообложения. В рамках договоров на оказание бухгалтерских услуг проводим обучение работе с программой «1С: Бухгалтерия» и системой «Банк-Клиент».</p>
-    <hr>
-    <p>Список:</p>
-    <p><ul>
-      <li>Список 1</li>
-      <li>Список 2</li>
-      <li>Список 3</li>
-      <li>Список 4</li>
-      <li>Список 5</li>
-      <li>Список 6</li>
-    </ul></p>
-    <p>Таблица:</p>
-    <p><table border="1" cellpadding="1" cellspacing="1" style="width: 100%;">
-      <tbody>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-      </tbody>
-    </table></p>
-  </article>
+  <div class="contacts container">
+    <div class="contacts_item">
+      <div class="contacts_image"><img src="image/down/contacts1.png" alt=""></div>
+      <div class="contacts_text">
+        <p>ООО “Бухгалтерский успех”</p>
+        <p>ул. Притыцкого, 83</p>
+        <p>пом. 33н, каб. 2</p>
+        <p>Минск, 220140, Беларусь</p>
+      </div>
+    </div>
+    <div class="contacts_item">
+      <div class="contacts_image"><img src="image/down/contacts2.png" alt=""></div>
+      <div class="contacts_text">
+        <p>+375 (17) 385 94 80</p>
+        <p>+375 (17) 202 72 33  т/ф</p>
+        <p>+375 (29) 385 94 80</p>
+        <p>+375 (29) 235 94 80</p>
+      </div>
+    </div>
+    <div class="contacts_item">
+      <div class="contacts_image"><img src="image/down/contacts3.png" alt=""></div>
+      <div class="contacts_text">
+        <p>buhgalteru@list.ru</p>
+        <p>list@buhgalteru.by</p>
+        <p>ICQ: 422-629-144</p>
+        <p>Skype: buhgalteru.by</p>
+      </div>
+    </div>
+    <div class="contacts_item">
+      <div class="contacts_image"><img src="image/down/contacts4.png" alt=""></div>
+      <div class="contacts_text">
+        <p>Пн-Пт</p>
+        <p>с 9:00 до 18:00</p>
+      </div>
+    </div>
+  </div>
 
   <div class="block-form">
     <div class="block-form_layer"></div>

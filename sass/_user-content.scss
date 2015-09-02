@@ -20,7 +20,7 @@
 	}
 	p{
 		font-family: $light;
-		font-size: 18px;
+		font-size: 16px;
 		color: #373737;
 		line-height: 1.2;
 		margin: 0px 0px 22px 0px;
@@ -35,15 +35,17 @@
 		@include link(#373737, #3498db);
 		//text-decoration: none;
 		font-family: $light;
-		font-size: 18px;
+		font-size: 16px;
 	}
 	ul{
 		padding: 0px 0px 0px 30px;
+		list-style-image: url('../image/list.png');
 		list-style-type: disc;
 	}
 	li{
 		font-family: $light;
 		font-size: 16px;
 		color: #373737;
+		margin: 0px 0px 28px 0px;
 	}
 }

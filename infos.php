@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
-  <title>Бухгалтерский успех - О компании</title>
+  <title>Бухгалтерский успех - Полезная информация</title>
   <link rel="stylesheet" href="css/all.css" type="text/css" />
   <link rel="stylesheet" href="css/animate.css" type="text/css"/>
   <!--[if lt IE 9]>
@@ -37,7 +37,7 @@
             <a href="/main.php" class="topmenu_link">Главная</a>
           </li>
           <li class="topmenu_item">
-            <a href="/about.php" class="topmenu_link topmenu_link__active">О компании</a>
+            <a href="/about.php" class="topmenu_link">О компании</a>
           </li>
           <li class="topmenu_item">
             <span class="topmenu_link">Наши услуги</span>
@@ -92,7 +92,7 @@
             <a href="/tarifs.php" class="topmenu_link">Тарифы</a>
           </li>
           <li class="topmenu_item">
-            <a href="/infos.php" class="topmenu_link">Полезная информация</a>
+            <a href="/infos.php" class="topmenu_link topmenu_link__active">Полезная информация</a>
           </li>
           <li class="topmenu_item">
             <a href="/contact.php" class="topmenu_link">Контакты</a>
@@ -103,7 +103,7 @@
     <div class="header_bottom container">
       <div class="header_section">
         <div class="logo">
-          <a class="logo_link" href="/">Бухгалтерский успех</a>
+          <a class="logo_link" href="/main.php">Бухгалтерский успех</a>
           <span class="logo_text">Бухгалтерские услуги №1 в Беларуси</span>
         </div>
       </div>
@@ -127,54 +127,82 @@
     </div>
   </header>
 
-  <div class="title title__about">
+  <div class="title title__info">
     <div class="title_wrap container">
-      <h1 class="title_h1">О компании</h1>
+      <h1 class="title_h1">Полезная информация</h1>
+      <div class="title_descr">
+        <p>Здесь можно подробно ознакомиться с полезными анонсами, новостями, новостями компании Бухгалтерский успех</p>
+      </div>
     </div>  
   </div>
 
   <div class="mybreadcrumb container">
-    <a class="mybreadcrumb_link" href="/">Главная</a>
-    <span class="mybreadcrumb_item">О компании</span>
+    <a class="mybreadcrumb_link" href="/main.php">Главная</a>
+    <span class="mybreadcrumb_item">Полезная информация</span>
   </div>
 
-  <article class="user-content container">
-    <h2>Заголовок h2</h2>
-    <p>Компания «Бухгалтерский успех» работает на белорусском рынке аутсорсинговых услуг с 2011 года. Наша бухгалтерская компания – небольшой коллектив, состоящий из высококвалифицированных специалистов в области бухгалтерского учета и консалтинга, профессиональный стаж которых составляет от семи до двадцати пяти лет. <a href="">Ссылка</a></p>
-    <h3>Заголовок h3</h3>
-    <p>Полученный опыт позволяет качественно и оперативно выполнять работы по восстановлению, постановке и ведению бухгалтерского учёта.</p>
-    <p>Компания "Бухгалтерский успех" ценит каждого клиента, будь то начинающий индивидуальный предприниматель или состоявшаяся успешная компания.<br>Для учета потребностей разных организаций мы предлагаем сотрудничество по шести тарифным планам. Если вам не подойдет ни один из них, мы предложим индивидуальную схему работы.</p>
-    <hr>
-    <h4>Заголовок h4</h4>
-    <p>Мы предлагаем бухгалтерское сопровождение при регистрации субъектов хозяйствования, выполняем все функции главного бухгалтера, осуществляем полное бухгалтерское обслуживание организаций с подготовкой и предоставлением всей отчетности, оказываем консультационные услуги в области бухгалтерского учета и налогообложения. В рамках договоров на оказание бухгалтерских услуг проводим обучение работе с программой «1С: Бухгалтерия» и системой «Банк-Клиент».</p>
-    <hr>
-    <p>Список:</p>
-    <p><ul>
-      <li>Список 1</li>
-      <li>Список 2</li>
-      <li>Список 3</li>
-      <li>Список 4</li>
-      <li>Список 5</li>
-      <li>Список 6</li>
-    </ul></p>
-    <p>Таблица:</p>
-    <p><table border="1" cellpadding="1" cellspacing="1" style="width: 100%;">
-      <tbody>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-      </tbody>
-    </table></p>
-  </article>
+  <div class="infos container">
+    <div class="infos_item">
+      <a href="/info.php" class="infos_image"><img src="image/down/infos1.jpg" alt=""></a>
+      <div class="infos_text">
+        <a href="/info.php" class="infos_title">Бухгалтерский аутсортинг</a>
+        <div class="infos_descr">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</div>
+        <a href="/info.php" class="infos_link">Подробнее</a>
+      </div>
+    </div>
+    <div class="infos_item">
+      <a href="/info.php" class="infos_image"><img src="image/down/infos2.jpg" alt=""></a>
+      <div class="infos_text">
+        <a href="/info.php" class="infos_title">Важность современного бухгалтерского обслуживания</a>
+        <div class="infos_descr">Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из.</div>
+        <a href="/info.php" class="infos_link">Подробнее</a>
+      </div>
+    </div>
+    <div class="infos_item">
+      <a href="/info.php" class="infos_image"><img src="image/down/infos3.jpg" alt=""></a>
+      <div class="infos_text">
+        <a href="/info.php" class="infos_title">Помощь в ведении бухгалтерской документации и отчетности</a>
+        <div class="infos_descr">На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окноиллюстрированного журнала и вставил в красивую золоченую рамку.</div>
+        <a href="/info.php" class="infos_link">Подробнее</a>
+      </div>
+    </div>
+    <div class="next">
+      <div class="next_title">Следующие:</div>
+      <ul class="next_list">
+        <li class="next_item">
+          <a href="/info.php" class="next_link">Какие различия между бухгалтерами?</a>
+        </li>
+        <li class="next_item">
+          <a href="/info.php" class="next_link">Скидка 40% на восстановление бухучета.</a>
+        </li>
+        <li class="next_item">
+          <a href="/info.php" class="next_link">Кто такой бухгалтер в Бухгалтерском успехе?</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mypager">
+      <ul class="pager mypager_list">
+        <li class="mypager_item mypager-prev">
+          <a href="/info"><</a>
+        </li>
+        <li class="mypager_item">
+          <a href="/info" title="На страницу номер 2">1</a>
+        </li>
+        <li class="mypager_item mypager_item__current">2</li>
+        <li class="mypager_item">
+          <a href="/info" title="На страницу номер 3">3</a>
+        </li>
+        <li class="mypager_item">
+          <a href="/info" title="На страницу номер 4">4</a>
+        </li>
+        <li class="mypager_item mypager-next">
+          <a href="/info?page=1">></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
 
   <div class="block-form">
     <div class="block-form_layer"></div>

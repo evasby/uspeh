@@ -40,9 +40,16 @@ body{
 textarea{
   resize: none;
   box-shadow: none;
+  @include def-border-radius(0px);
 }
 input{
   box-shadow: none;
+  @include def-border-radius(0px);
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  box-shadow: none;
+  @include def-border-radius(0px);
+  //@include def-v-gradient(#fff, #000);
 }
 strong, b{
   font-family: $bold;
@@ -199,6 +206,7 @@ textarea{
 @import "placeholder";
 @import "title";
 @import "main-pager";
+@import "mypager";
 
 @import "button";
 @import "header";
@@ -231,6 +239,11 @@ textarea{
 @import "mybreadcrumb";
 @import "user-content";
 @import "block-form";
+
+@import "contacts";
+
+@import "infos";
+@import "next";
 
 @import "footer";
 @import "gmap";

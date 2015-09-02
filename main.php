@@ -16,19 +16,19 @@
     <link rel="stylesheet" href="css/all.css">
   <![endif]-->
   <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
-  <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+  <script type="text/javascript" src="js/infobox.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="js/bg-loaded.js"></script>
-  <script type="text/javascript" src="js/jquery.waitforimages.min.js"></script>
+  <!--<script type="text/javascript" src="js/jquery.waitforimages.min.js"></script>-->
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
   <script type="text/javascript" src="js/jquery.poshytip.min.js"></script>
   <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/gmap.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/gmap.js"></script>
   
 </head>
 <body>
@@ -43,62 +43,62 @@
             <a href="/about.php" class="topmenu_link">О компании</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">Наши услуги</a>
+            <span class="topmenu_link">Наши услуги</span>
             <div class="topmenu_wrap">
               <ul class="topmenu_list__l2">
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Восстановление учёта</a>
+                  <a href="/service.php" class="topmenu_link__l2">Восстановление учёта</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Постановка учёта</a>
+                  <a href="/service.php" class="topmenu_link__l2">Постановка учёта</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Полное ведение учёта</a>
+                  <a href="/service.php" class="topmenu_link__l2">Полное ведение учёта</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Составление отчётности</a>
+                  <a href="/service.php" class="topmenu_link__l2">Составление отчётности</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Консультирование</a>
+                  <a href="/service.php" class="topmenu_link__l2">Консультирование</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Подготовка документов</a>
+                  <a href="/service.php" class="topmenu_link__l2">Подготовка документов</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Доступ к программе 1С</a>
+                  <a href="/service.php" class="topmenu_link__l2">Доступ к программе 1С</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Документы для кредитов</a>
+                  <a href="/service.php" class="topmenu_link__l2">Документы для кредитов</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Налоговая оптимизация</a>
+                  <a href="/service.php" class="topmenu_link__l2">Налоговая оптимизация</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Учёт оплаты труда</a>
+                  <a href="/service.php" class="topmenu_link__l2">Учёт оплаты труда</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Персонифицированный учёт</a>
+                  <a href="/service.php" class="topmenu_link__l2">Персонифицированный учёт</a>
                 </li>
                 <li class="topmenu_item__l2">
-                  <a href="" class="topmenu_link__l2">Годовая отчётность</a>
+                  <a href="/service.php" class="topmenu_link__l2">Годовая отчётность</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">Цены</a>
+            <a href="/price.php" class="topmenu_link">Цены</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">Гарантии</a>
+            <a href="/service.php" class="topmenu_link">Гарантии</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">Тарифы</a>
+            <a href="/tarifs.php" class="topmenu_link">Тарифы</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">Полезная информация</a>
+            <a href="/infos.php" class="topmenu_link">Полезная информация</a>
           </li>
           <li class="topmenu_item">
-            <a href="" class="topmenu_link">Контакты</a>
+            <a href="/contact.php" class="topmenu_link">Контакты</a>
           </li>
         </ul>
       </div>
@@ -106,7 +106,7 @@
     <div class="header_bottom container">
       <div class="header_section">
         <div class="logo">
-          <a class="logo_link" href="/">Бухгалтерский успех</a>
+          <a class="logo_link" href="/main.php">Бухгалтерский успех</a>
           <span class="logo_text">Бухгалтерские услуги №1 в Беларуси</span>
         </div>
       </div>

@@ -58,6 +58,7 @@
       &:hover{
         cursor: pointer;
       }
+      @include def-v-gradient(#3498db, #3498db);
     }
   }
   &_descr{

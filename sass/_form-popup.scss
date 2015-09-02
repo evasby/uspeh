@@ -83,6 +83,7 @@
       &:hover{
         cursor: pointer;
       }
+      @include def-v-gradient(#e74c3c, #e74c3c);
     }
   }
   &_descr{

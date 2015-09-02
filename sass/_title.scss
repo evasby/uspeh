@@ -25,6 +25,10 @@
     background: url('../image/title-about-1920.jpg') 50% no-repeat;
     background-size: cover;
   }
+  &__contact{
+    background: url('../image/title-contact-1920.jpg') 50% no-repeat;
+    background-size: cover;
+  }
   &_h1{
     font-family: $bold;
     font-size: $font_size_h1;
