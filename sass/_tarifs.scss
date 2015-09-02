@@ -1,0 +1,47 @@
+.tarifs{
+	padding: 15px 0px 6px 0px;
+	&_item{
+		width: 470px;
+		height: 760px;
+		float: left;
+		margin: 0px 0px 49px 0px;
+		background-color: #ededed;
+		&:nth-child(2n){
+			margin: 0px 0px 49px 20px;
+		}
+	}
+	&_title{
+		font-family: $bold;
+		font-size: 18px;
+		color: #373737;
+		text-transform: uppercase;
+		position: relative;
+		&:before{
+			content: ' ';
+			display: block;
+			position: absolute;
+			top: -18px;
+			left: 0px;
+			background-color: #3498db;
+			width: 40px;
+			height: 3px; 
+		}
+	}
+	&_link{
+		margin: 2px 0px 0px 0px;
+		padding: 16px 0px 0px 50px;
+		display: block;
+		float: right;
+		width: 297px;
+		height: 32px;
+		background: url('../image/link-calc.png') 19px 15px no-repeat #3498db;
+		//background-color: #3498db;
+		text-decoration: none;
+		@include link(#ffffff, #ffffff);
+		font-size: 16px;
+	}
+	&_wrap{
+		@include clearfix();
+		padding: 0px 0px 35px 0px;
+	}
+}

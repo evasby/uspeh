@@ -1,0 +1,109 @@
+.tarif-block{
+	height: 100%;
+	@include def-transition(box-shadow, 0.1s);
+	&:hover{
+		-webkit-box-shadow: inset 0px 0px 0px 3px rgba(52,152,219,1);
+		-moz-box-shadow: inset 0px 0px 0px 3px rgba(52,152,219,1);
+		box-shadow: inset 0px 0px 0px 3px rgba(52,152,219,1);
+	}
+	&_title{
+		font-family: $boldit;
+		font-size: 24px;
+		color: #373737;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 24px 0px 20px 0px;
+	}
+	&_price{
+		background-color: #3498db;
+		font-family: $bold;
+		font-size: 28px;
+		color: #fff;
+		text-align: center;
+		padding: 29px 0px 27px 0px;
+		margin: 0px 0px 20px 0px;
+	}
+	&_list{
+		padding: 0px 0px 0px 36px;
+		margin: 0px 0px 34px 0px;
+		height: 416px;
+		//list-style-image: url('../image/list.png');
+		//list-style-type: disc;
+	}
+	&_item{
+		font-family: $light;
+		color: #373737;
+		font-size: 16px;
+		padding: 0px 20px 0px 14px;
+		position: relative;
+		z-index: 1;
+		line-height: 1.1;
+		&:before{
+			content: " ";
+			position: absolute;
+			top: 3px;
+			left: -13px;
+			width: 6px;
+			height: 10px;
+			background: url('../image/list.png') no-repeat;
+		}
+		&:last-child{
+			.tarif-block_left{
+				padding: 0px 20px 0px 0px;
+			}
+		}
+		&:after{
+			content: " ";
+			position: absolute;
+			top: 3px;
+			right: 105px;
+			width: 15px;
+			height: 11px;
+			background: url('../image/okey.png') no-repeat;
+		}
+	}
+	&_wrap{
+		@include clearfix();
+	}
+	&_left{
+		float: left;
+		width: 250px;
+		border-right: 1px solid #373737;
+		padding: 0px 20px 22px 0px;
+		position: relative;
+		z-index: 3;
+	}
+	&_right{
+		position: relative;
+		z-index: 2;
+		background-color: #ededed;
+		padding: 0px 0px 0px 299px;
+	}
+	&_link{
+    @include link(#373737, #373737);
+    font-family: $italic;
+    font-size: 14px;
+    text-decoration: none;
+    //padding: 0px 21px 0px 0px;
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+  	&:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 1px;
+      width: 13px;
+      height: 14px;
+      background: url('../image/arrow-link.png') no-repeat;
+	    &:hover{
+	      text-decoration: underline;
+	    }
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

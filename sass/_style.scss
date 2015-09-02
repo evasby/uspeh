@@ -3,6 +3,7 @@ $bold: proximanova_bold;
 $light: proximanova_light;
 $italic: proximanova_italic;
 $cond: proximanova_cond;
+$boldit: proximanova_bold_italic;
 $min_width: 1000px;
 $font_size18: 18px;
 $font_size20: 20px;
@@ -244,6 +245,11 @@ textarea{
 
 @import "infos";
 @import "next";
+
+@import "other";
+
+@import "tarifs";
+@import "tarif-block";
 
 @import "footer";
 @import "gmap";
