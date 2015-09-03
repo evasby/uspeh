@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
-  <title>Бухгалтерский успех - Бухгалтерский аутсортинг</title>
+  <title>Бухгалтерский успех - Тариф «Активный»</title>
   <link rel="stylesheet" href="css/all.css" type="text/css" />
   <link rel="stylesheet" href="css/animate.css" type="text/css"/>
   <!--[if lt IE 9]>
@@ -20,6 +20,7 @@
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <!--<script src="js/jquery.parallax.min.js"></script>-->
   <!--<script type="text/javascript" src="js/bg-loaded.js"></script>
+  <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
@@ -89,10 +90,10 @@
             <a href="/service.php" class="topmenu_link">Гарантии</a>
           </li>
           <li class="topmenu_item">
-            <a href="/tarifs.php" class="topmenu_link">Тарифы</a>
+            <a href="/tarifs.php" class="topmenu_link topmenu_link__active">Тарифы</a>
           </li>
           <li class="topmenu_item">
-            <a href="/infos.php" class="topmenu_link topmenu_link__active">Полезная информация</a>
+            <a href="/infos.php" class="topmenu_link">Полезная информация</a>
           </li>
           <li class="topmenu_item">
             <a href="/contact.php" class="topmenu_link">Контакты</a>
@@ -127,41 +128,43 @@
     </div>
   </header>
 
-  <div class="title title__info">
+  <div class="title title__tarifs">
     <div class="title_wrap container">
-      <h1 class="title_h1">Бухгалтерский аутсортинг</h1>
+      <h1 class="title_h1">Тариф «Активный»</h1>
       <div class="title_descr">
-        <p></p>
+        <p>Здесь можно подробно ознакомиться с полезными анонсами, новостями, новостями компании Бухгалтерский успех</p>
       </div>
     </div>  
   </div>
 
   <div class="mybreadcrumb container">
     <a class="mybreadcrumb_link" href="/main.php">Главная</a>
-    <a class="mybreadcrumb_link" href="/infos.php">Полезная информация</a>
-    <span class="mybreadcrumb_item">Бухгалтерский аутсортинг</span>
+    <a class="mybreadcrumb_link" href="/tarifs.php">Тарифы</a>
+    <span class="mybreadcrumb_item">Тариф «Активный»</span>
   </div>
 
-  <article class="user-content container">
-    <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось.</p>
-    <p>Готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.</p>
-    <p>Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он,</p>
-    <p>С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда.</p>
-  </article>
-
-  <div class="other container">
-    <a href="/info.php" class="other_item">
-      <div class="other_image"><img src="image/down/infos1.jpg" alt=""></div>
-      <div class="other_title">Виды бухгалтерских услуг</div>
-    </a>
-    <a href="/info.php" class="other_item">
-      <div class="other_image"><img src="image/down/infos2.jpg" alt=""></div>
-      <div class="other_title">Зачем нужны бухгалтерские услуги</div>
-    </a>
-    <a href="/info.php" class="other_item">
-      <div class="other_image"><img src="image/down/infos3.jpg" alt=""></div>
-      <div class="other_title">5 простых шагов для работы с нами</div>
-    </a>
+  <div class="container tarif">
+    <div class="tarif_image"><img src="image/down/infos1.jpg" alt=""></div>
+    <div class="user-content tarif_body">
+      <p><strong>«Активный»</strong> — тарифный план «два в одном». Включает в себя ведение бухгалтерского учёта и оказание консультационных услуг по одному договору.</p>
+      <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+      <br><br><br>
+      <p><strong>Основные условия и перечень услуг, включенных в пакет  «Активный»:</strong></p>
+      <ul>
+        <li>Расчет и начисление заработной платы, расчет налогов, отчислений, подготовка и предоставление отчетности   —  до 5 сотрудников.</li>
+        <li>Ведение учета на основании первичных документов (внесение в базу 1С)  – до 100 в месяц.</li>
+        <li>Ведение бухгалтерских и налоговых регистров.</li>
+        <li>Ежеквартальные налоговые декларации.</li>
+        <li>Ежеквартальный отчёт в Фонд социальной защиты населения.</li>
+        <li>ПУ-1, ПУ-2, ПУ-3.</li>
+        <li>Годовой отчет Белгосстрах.</li>
+        <li>Статистическая отчетность.</li>
+        <li>Книга доходов и расходов (УСН) или Баланс (УСН с НДС и ОСН).</li>
+        <li>Консультационные услуги — 1 (один) час.</li>
+      </ul>
+    </div>
+    <a href="" class="button button__tariforder">Заказать тариф</a>
+    <a href="" class="tarif_link">Индивидуальный калькулятор расчета цены</a>
   </div>
 
   

@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
-  <title>Бухгалтерский успех - Бухгалтерский аутсортинг</title>
+  <title>Бухгалтерский успех - Цены компании</title>
   <link rel="stylesheet" href="css/all.css" type="text/css" />
   <link rel="stylesheet" href="css/animate.css" type="text/css"/>
   <!--[if lt IE 9]>
@@ -20,6 +20,7 @@
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <!--<script src="js/jquery.parallax.min.js"></script>-->
   <!--<script type="text/javascript" src="js/bg-loaded.js"></script>
+  <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
   <script type="text/javascript" src="js/jquery.placeholder.js"></script>
@@ -89,10 +90,10 @@
             <a href="/service.php" class="topmenu_link">Гарантии</a>
           </li>
           <li class="topmenu_item">
-            <a href="/tarifs.php" class="topmenu_link">Тарифы</a>
+            <a href="/tarifs.php" class="topmenu_link topmenu_link__active">Тарифы</a>
           </li>
           <li class="topmenu_item">
-            <a href="/infos.php" class="topmenu_link topmenu_link__active">Полезная информация</a>
+            <a href="/infos.php" class="topmenu_link">Полезная информация</a>
           </li>
           <li class="topmenu_item">
             <a href="/contact.php" class="topmenu_link">Контакты</a>
@@ -127,9 +128,9 @@
     </div>
   </header>
 
-  <div class="title title__info">
+  <div class="title title__tarifs">
     <div class="title_wrap container">
-      <h1 class="title_h1">Бухгалтерский аутсортинг</h1>
+      <h1 class="title_h1">Цены компании</h1>
       <div class="title_descr">
         <p></p>
       </div>
@@ -138,30 +139,64 @@
 
   <div class="mybreadcrumb container">
     <a class="mybreadcrumb_link" href="/main.php">Главная</a>
-    <a class="mybreadcrumb_link" href="/infos.php">Полезная информация</a>
-    <span class="mybreadcrumb_item">Бухгалтерский аутсортинг</span>
+    <span class="mybreadcrumb_item">Цены компании</span>
   </div>
 
-  <article class="user-content container">
-    <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось.</p>
-    <p>Готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.</p>
-    <p>Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он,</p>
-    <p>С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда.</p>
-  </article>
+  <div class="container price">
+    <div class="user-content price_descr">
+      <p>Индивидуально подходим к клиентам, которые не смогли выбрать тарифный план на бухгалтерское обслуживание. Мы совместно определяем перечень необходимых услуг, процедур и действий, осуществляемых клиентом и бухгалтерской компанией, а так же условия оплаты и сумму вознаграждения за определенный объем оказываемых услуг.</p>
+    </div>
+    <div class="price_title">Цены на услуги ООО «Бухгалтерский успех»</div>
+    <div class="price_table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Наименование услуг</th>
+            <th><div class="price_price">Цены</div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Расчет и начисление заработной платы, налогов и отчислений, подготовка и предоставление отчетности (одного сотрудника)</td>
+            <td>сотрудник</td>
+            <td>125 000</td>
+          </tr>
+          <tr>
+            <td>Ведение учета на основании первичных документов (внесение в базу 1С)</td>
+            <td>документ</td>
+            <td>25 000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <a href="" class="price_link">Перейти к  калькулятору расчета цен</a>
+  </div>
+  <div class="container tarifs-block">
+    <div class="tarifs-block_title">Пакеты услуг</div>
+    <ul class="tarifs-block_list">
+      <li class="tarifs-block_item">
+        <a href="/tarif.php" class="tarifs-block_link">Начальный</a>
+      </li>
+      <li class="tarifs-block_item">
+        <a href="/tarif.php" class="tarifs-block_link">Активный</a>
+      </li>
+      <li class="tarifs-block_item">
+        <a href="/tarif.php" class="tarifs-block_link">Рациональный</a>
+      </li>
+      <li class="tarifs-block_item">
+        <a href="/tarif.php" class="tarifs-block_link">Оптимальный</a>
+      </li>
+      <li class="tarifs-block_item">
+        <a href="/tarif.php" class="tarifs-block_link">Деловой</a>
+      </li>
+      <li class="tarifs-block_item">
+        <a href="/tarif.php" class="tarifs-block_link">Успешный</a>
+      </li>
+    </ul>
+  </div>
 
-  <div class="other container">
-    <a href="/info.php" class="other_item">
-      <div class="other_image"><img src="image/down/infos1.jpg" alt=""></div>
-      <div class="other_title">Виды бухгалтерских услуг</div>
-    </a>
-    <a href="/info.php" class="other_item">
-      <div class="other_image"><img src="image/down/infos2.jpg" alt=""></div>
-      <div class="other_title">Зачем нужны бухгалтерские услуги</div>
-    </a>
-    <a href="/info.php" class="other_item">
-      <div class="other_image"><img src="image/down/infos3.jpg" alt=""></div>
-      <div class="other_title">5 простых шагов для работы с нами</div>
-    </a>
+  <div class="container b-note">
+    <p>* Стоимость в белорусских рублях в месяц, согласно Прейскуранта цен ООО « Бухгалтерский успех ». Работаем без НДС. Стоимость пакетов услуг приведена для  упрощённой системы налогообложения (УСН). Для клиентов использующих упрощённую систему налогообложения с уплатой налога на добавленную  стоимость (УСН с НДС) применяется коэффициент 1,2, для клиентов  использующих общую систему налогообложения (ОСН) – коэффициент 1,5.</p>
   </div>
 
   

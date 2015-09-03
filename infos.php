@@ -20,11 +20,11 @@
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <!--<script src="js/jquery.parallax.min.js"></script>-->
   <!--<script type="text/javascript" src="js/bg-loaded.js"></script>
-  <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
+  <script type="text/javascript" src="js/jquery.placeholder.js"></script>
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script-easy.js"></script>
   <script type="text/javascript" src="js/gmap.js"></script>
   
 </head>

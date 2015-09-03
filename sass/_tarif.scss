@@ -1,0 +1,36 @@
+.tarif{
+  @include clearfix();
+  padding: 0px 0px 72px 0px;
+  &_image{
+    float: left;
+    margin: 0px 20px 0px 0px;
+  }
+  ul{
+    padding: 0px 0px 0px 15px;
+    list-style-image: url('../image/list.png');
+    list-style-type: disc;
+  }
+  li{
+    font-family: $light;
+    font-size: 16px;
+    color: #373737;
+    margin: 0px 0px 28px 0px;
+    padding: 0px 0px 0px 17px;
+  }
+  &_link{
+    padding: 16px 0px 0px 50px;
+    margin: 0px 0px 0px 64px;
+    display: block;
+    float: left;
+    width: 347px;
+    height: 32px;
+    background: url('../image/link-calc.png') 19px 15px no-repeat #3498db;
+    //background-color: #3498db;
+    text-decoration: none;
+    @include link(#ffffff, #ffffff);
+    font-size: 16px;
+  }
+  &_body{
+    padding: 0px 0px 12px 0px;
+  }
+}
