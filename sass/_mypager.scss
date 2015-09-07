@@ -53,13 +53,13 @@
     position: absolute;
     //top: 10px;
     //left: -6px;
-    top: 11px;
+    top: 2px;
     left: -15px;
     .throbber {
-      background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+      background: transparent url('../image/loader-ajax.gif') no-repeat 0px 0px; /* tweak this according to your gif */
       float: left;
-      height: 15px; /* tweak this according to your gif */
-      width: 15px; /* tweak this according to your gif */
+      height: 16px; /* tweak this according to your gif */
+      width: 16px; /* tweak this according to your gif */
       margin: 0px;
     }
   }

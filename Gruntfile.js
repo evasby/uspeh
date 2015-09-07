@@ -48,7 +48,8 @@ module.exports = function(grunt) {
                     options: {
                         authKey: 'key1',
                         host: 'wfs.by',
-                        dest: '/home/evasby/www/wfs.by/layout',
+                        //dest: '/home/evasby/www/wfs.by/layout',
+                        dest: '/home/evasby/www/wfs.by/sites/all/themes/uspeh',
                         port: 21
                     },
                     files: [

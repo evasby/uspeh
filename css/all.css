@@ -581,16 +581,16 @@ textarea:focus {
 }
 .mypager .ajax-progress {
   position: absolute;
-  top: 11px;
+  top: 2px;
   left: -15px;
 }
 .mypager .ajax-progress .throbber {
-  background: transparent url("../image/ajax-loader.gif") no-repeat 0px 0px;
+  background: transparent url("../image/loader-ajax.gif") no-repeat 0px 0px;
   /* tweak this according to your gif */
   float: left;
-  height: 15px;
+  height: 16px;
   /* tweak this according to your gif */
-  width: 15px;
+  width: 16px;
   /* tweak this according to your gif */
   margin: 0px;
 }
