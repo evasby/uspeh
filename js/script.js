@@ -12,6 +12,7 @@ $(document).ready(function(){
     });  
   });
 
+
   var visible = '95%';
   var hidden = 50;
   $('.app_item').addClass('slideInLeft');

@@ -1,4 +1,7 @@
 .form-popup{
+  .messages{
+    display: none;
+  }
   &_wrap{
     &__question{
       width: 284px;
@@ -47,6 +50,10 @@
       background-color: #19254b;
     }
   }
+  &_confirmation{
+    padding: 0px 22px 0px 22px;
+    text-align: center;
+  }
   &_inner{
     padding: 0px 0px 17px 0px;
     text-align: center;
@@ -58,6 +65,9 @@
       margin: 0px;
       padding: 0px 22px 0px 22px;
     }
+    .error{
+        border: 1px solid #ff0000;
+      }
     textarea{
       font-size: 16px;
       width: 199px;
@@ -70,6 +80,7 @@
   &_button{
     padding: 9px 0px 0px 0px;
     text-align: center;
+    position: relative;
     input{
       width: 245px;
       height: 56px;
@@ -85,6 +96,20 @@
       }
       @include def-v-gradient(#e74c3c, #e74c3c);
     }
+    .ajax-progress{
+      position: absolute;
+      //top: 10px;
+      //left: -6px;
+      top: 29px;
+      right: 25px;
+      .throbber {
+        background: transparent url('../image/loader-ajax-red.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+        float: left;
+        height: 16px; /* tweak this according to your gif */
+        width: 16px; /* tweak this according to your gif */
+        margin: 0px;
+      }
+    }
   }
   &_descr{
     font-family: $light;
@@ -93,6 +118,14 @@
     text-align: center;
     padding: 15px 20px 30px 20px;
     line-height: 1.2;
+    p{
+      font-family: $light;
+      color: #666666;
+      font-size: 14px;
+      text-align: center;
+      padding: 15px 20px 30px 20px;
+      line-height: 1.2;
+    }
   }
   &_info{
     padding: 0px 26px 0px 26px;
