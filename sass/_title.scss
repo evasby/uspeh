@@ -33,6 +33,10 @@
     background: url('../image/title-tarifs-1920.jpg') 50% no-repeat;
     background-size: cover;
   }
+  &__price{
+    background: url('../image/title-price-1920.jpg') 50% no-repeat;
+    background-size: cover;
+  }
   &_h1{
     font-family: $bold;
     font-size: $font_size_h1;

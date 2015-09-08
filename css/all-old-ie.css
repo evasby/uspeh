@@ -415,6 +415,10 @@ textarea:focus {
   background: url("../image/title-tarifs-1920.jpg") 50% no-repeat;
   background-size: cover;
 }
+.title__price {
+  background: url("../image/title-price-1920.jpg") 50% no-repeat;
+  background-size: cover;
+}
 .title_h1 {
   font-family: proximanova_bold;
   font-size: 38px;
