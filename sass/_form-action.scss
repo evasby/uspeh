@@ -1,6 +1,21 @@
 .form-action{
+  .messages{
+    display: none;
+  }
   &_wrap{
     @include clearfix();
+  }
+  &_clear{
+    @include clearfix();
+  }
+  &_confirmation{
+    padding: 50px 50px 0px 50px;
+    
+    p{
+      text-align: center;
+      color: #ffffff;
+      font-size: 26px;
+    }
   }
   &_inner{
     padding: 0px 0px 12px 0px;
@@ -17,10 +32,16 @@
       margin: 0px;
       padding: 0px 16px 0px 16px;
     } 
+    .error{
+      -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,0,0,1);
+      -moz-box-shadow: inset 0px 0px 0px 1px rgba(255,0,0,1);
+      box-shadow: inset 0px 0px 0px 1px rgba(255,0,0,1);
+    }
   }
   &_button{
-    padding: 9px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 123px;
+    position: relative;
     input{
       width: 229px;
       height: 54px;
@@ -35,6 +56,20 @@
         cursor: pointer;
       }
     }
+    .ajax-progress{
+      position: absolute;
+      //top: 10px;
+      //left: -6px;
+      bottom: 20px;
+      right: 150px;
+      .throbber {
+        background: transparent url('../image/loader-ajax-blue2.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+        float: left;
+        height: 16px; /* tweak this according to your gif */
+        width: 16px; /* tweak this according to your gif */
+        margin: 0px;
+      }
+    }
   }
   &_descr{
     font-family: $light;
@@ -43,5 +78,12 @@
     padding: 10px 40px 0px 40px;
     text-align: center;
     line-height: 1.2;
+    p{
+      font-family: $light;
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.2;
+    }
   }
 }

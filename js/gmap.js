@@ -34,7 +34,7 @@ function initialize() {
     pixelOffset: new google.maps.Size(0, 0),
     zIndex: null,
     boxStyle: {
-      background: "url('../image/infobox.png') no-repeat",
+      background: "url('/sites/all/themes/uspeh/image/infobox.png') no-repeat",
       width: "332px",
       height: "208px"
     },

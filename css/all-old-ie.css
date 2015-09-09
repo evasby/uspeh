@@ -1169,7 +1169,6 @@ textarea:focus {
   font-family: proximanova_light;
   color: #666666;
   font-size: 14px;
-  padding: 15px 0px 0px 0px;
   line-height: 1.2;
 }
 .form-discount_confirmation p {
@@ -2403,6 +2402,8 @@ textarea:focus {
   font-family: proximanova_bold;
   font-size: 26px;
   color: #3498db;
+  display: inline-block;
+  width: 60px;
 }
 .calc-result_curr {
   font-size: 16px;
@@ -2507,6 +2508,9 @@ textarea:focus {
   }*/
 }
 
+.form-action .messages {
+  display: none;
+}
 .form-action_wrap {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
@@ -2525,6 +2529,32 @@ textarea:focus {
 * html .form-action_wrap {
   height: 1%;
 }
+.form-action_clear {
+  display: inline-block;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+}
+.form-action_clear:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+* html .form-action_clear {
+  height: 1%;
+}
+.form-action_confirmation {
+  padding: 50px 50px 0px 50px;
+}
+.form-action_confirmation p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+}
 .form-action_inner {
   padding: 0px 0px 12px 0px;
   margin: 0px 0px 0px 17px;
@@ -2541,9 +2571,15 @@ textarea:focus {
   margin: 0px;
   padding: 0px 16px 0px 16px;
 }
+.form-action_inner .error {
+  -webkit-box-shadow: inset 0px 0px 0px 1px red;
+  -moz-box-shadow: inset 0px 0px 0px 1px red;
+  box-shadow: inset 0px 0px 0px 1px red;
+}
 .form-action_button {
-  padding: 9px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 123px;
+  position: relative;
 }
 .form-action_button input {
   width: 229px;
@@ -2559,11 +2595,33 @@ textarea:focus {
 .form-action_button input:hover {
   cursor: pointer;
 }
+.form-action_button .ajax-progress {
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+}
+.form-action_button .ajax-progress .throbber {
+  background: transparent url("../image/loader-ajax-blue2.gif") no-repeat 0px 0px;
+  /* tweak this according to your gif */
+  float: left;
+  height: 16px;
+  /* tweak this according to your gif */
+  width: 16px;
+  /* tweak this according to your gif */
+  margin: 0px;
+}
 .form-action_descr {
   font-family: proximanova_light;
   color: #ffffff;
   font-size: 14px;
   padding: 10px 40px 0px 40px;
+  text-align: center;
+  line-height: 1.2;
+}
+.form-action_descr p {
+  font-family: proximanova_light;
+  color: #ffffff;
+  font-size: 14px;
   text-align: center;
   line-height: 1.2;
 }
@@ -3163,6 +3221,17 @@ textarea:focus {
     }
   }*/
 }
+.block-form .messages {
+  display: none;
+}
+.block-form_confirmation {
+  padding: 155px 50px 0px 50px;
+}
+.block-form_confirmation p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+}
 .block-form_title {
   width: 675px;
   float: left;
@@ -3182,7 +3251,7 @@ textarea:focus {
   height: 2px;
   background-color: #ffffff;
 }
-.block-form_layer {
+.block-form_bac {
   width: 100%;
   height: 100%;
   background: url("../image/big-2120-1410.jpg") no-repeat;
@@ -3269,6 +3338,7 @@ textarea:focus {
   padding: 0px 22px 0px 22px;
 }
 .block-form_inner textarea {
+  box-sizing: content-box;
   font-size: 16px;
   width: 629px;
   height: 164px;
@@ -3276,8 +3346,12 @@ textarea:focus {
   margin: 0px;
   padding: 11px 22px 0px 22px;
 }
+.block-form_inner .error {
+  border: 1px solid #ff0000;
+}
 .block-form_button {
   padding: 9px 0px 0px 0px;
+  position: relative;
 }
 .block-form_button input {
   width: 230px;
@@ -3292,6 +3366,21 @@ textarea:focus {
 }
 .block-form_button input:hover {
   cursor: pointer;
+}
+.block-form_button .ajax-progress {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.block-form_button .ajax-progress .throbber {
+  background: transparent url("../image/loader-ajax-blue2.gif") no-repeat 0px 0px;
+  /* tweak this according to your gif */
+  float: left;
+  height: 16px;
+  /* tweak this according to your gif */
+  width: 16px;
+  /* tweak this according to your gif */
+  margin: 0px;
 }
 
 .contacts {
