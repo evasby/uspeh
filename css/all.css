@@ -1463,7 +1463,7 @@ textarea:focus {
 }
 
 #cboxLoadingGraphic {
-  background: url(../image/temp/loading.gif) no-repeat center center;
+  background: url(../image/loading.gif) no-repeat center center;
 }
 
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
@@ -1491,7 +1491,7 @@ textarea:focus {
   top: 50%;
   left: 5px;
   margin-top: -32px;
-  background: url(../image/temp/controls.png) no-repeat top left;
+  background: url(../image/controls.png) no-repeat top left;
   width: 28px;
   height: 65px;
   text-indent: -9999px;
@@ -1506,7 +1506,7 @@ textarea:focus {
   top: 50%;
   right: 5px;
   margin-top: -32px;
-  background: url(../image/temp/controls.png) no-repeat top right;
+  background: url(../image/controls.png) no-repeat top right;
   width: 28px;
   height: 65px;
   text-indent: -9999px;
@@ -2556,6 +2556,7 @@ textarea:focus {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   display: block;
+  padding: 0px 0px 30px 0px;
 }
 .main4_wrap:after {
   clear: both;
@@ -2567,7 +2568,7 @@ textarea:focus {
   visibility: hidden;
 }
 .main4_item {
-  height: 146px;
+  height: 188px;
   width: 33.33%;
   float: left;
   display: inline-block;
@@ -2702,6 +2703,7 @@ textarea:focus {
   max-width: 300px;
   color: #860404;
   background-color: #ffffff;
+  min-height: 100px;
   /**
    * - If you set a background-image, border/padding/background-color will be ingnored.
    *   You can set any padding to .tip-inner instead if you need.
@@ -2921,6 +2923,8 @@ textarea:focus {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  width: 125px;
+  height: 47px;
 }
 .main8 .bx-wrapper .bx-loading {
   min-height: 50px;
@@ -4064,15 +4068,15 @@ textarea:focus {
   font-size: 30px;
   border-left: 3px solid #ffffff;
   padding-left: 19px;
-  margin: 30px 0px 0px 35px;
+  margin: 15px 0px 0px 25px;
   color: #ffffff;
 }
 .gmap_text {
-  margin: 27px 0px 0px 58px;
+  margin: 10px 0px 0px 48px;
 }
 .gmap_text p {
   margin-bottom: 7px;
-  font-size: 18px;
+  font-size: 15px;
   color: #ffffff;
 }
 

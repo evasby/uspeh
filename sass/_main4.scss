@@ -17,9 +17,10 @@
   }
   &_wrap{
     @include clearfix();
+    padding: 0px 0px 30px 0px;
   }
   &_item{
-    height: 146px;
+    height: 188px;
     width: 33.33%;
     float: left;
     @include clearfix();
