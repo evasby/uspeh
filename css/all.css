@@ -2766,6 +2766,9 @@ textarea:focus {
   /*bxslider*******************************/
   /* PAGER */
 }
+.main6__review {
+  height: auto;
+}
 .main6_head {
   font-size: 30px;
   color: #373737;
