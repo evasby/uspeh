@@ -102,6 +102,7 @@ module.exports = function(grunt) {
             css: {
                 files: ['sass/*.scss'],
                 tasks: ['sass', 'ftp_push:css'],
+                //tasks: ['sass'],
                 options: {
                     spawn: false,
                 }

@@ -208,6 +208,10 @@ a:focus {
   outline: none;
 }
 
+span:focus {
+  outline: none;
+}
+
 pre {
   white-space: normal;
 }
@@ -494,7 +498,7 @@ textarea:focus {
 .main-pager_label {
   text-align: right;
   padding: 6px 37px 0px 0px;
-  color: #122333;
+  color: #3498db;
   font-size: 14px;
   text-transform: uppercase;
   visibility: hidden;
@@ -642,6 +646,20 @@ textarea:focus {
   height: 23px;
   background: url("../image/calc-buttons.png") -23px 0px no-repeat;
 }
+.button__calcinfo:hover:before {
+  -webkit-animation-name: myrotate;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: myrotate;
+  -moz-animation-duration: 300ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: myrotate;
+  -ms-animation-duration: 300ms;
+  -ms-animation-timing-function: linear;
+  animation-name: myrotate;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
 .button__calcorder {
   float: right;
   width: 158px;
@@ -661,6 +679,20 @@ textarea:focus {
   height: 23px;
   background: url("../image/calc-buttons.png") -46px 0px no-repeat;
 }
+.button__calcorder:hover:before {
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: mymove;
+  -moz-animation-duration: 500ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: mymove;
+  -ms-animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  animation-name: mymove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 .button__tarifsorder {
   width: 158px;
   height: 33px;
@@ -679,6 +711,20 @@ textarea:focus {
   height: 23px;
   background: url("../image/calc-buttons.png") -46px 0px no-repeat;
 }
+.button__tarifsorder:hover:before {
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: mymove;
+  -moz-animation-duration: 500ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: mymove;
+  -ms-animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  animation-name: mymove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 .button__tariforder {
   width: 158px;
   height: 33px;
@@ -696,6 +742,20 @@ textarea:focus {
   width: 23px;
   height: 23px;
   background: url("../image/calc-buttons.png") -46px 0px no-repeat;
+}
+.button__tariforder:hover:before {
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: mymove;
+  -moz-animation-duration: 500ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: mymove;
+  -ms-animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  animation-name: mymove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
 }
 .button__phone {
   background-color: #e74c3c;
@@ -752,6 +812,46 @@ textarea:focus {
 @keyframes spin {
   50% {
     transform: rotate(30deg);
+  }
+}
+@-ms-keyframes myrotate {
+  50% {
+    transform: scaleX(0);
+  }
+}
+@-moz-keyframes myrotate {
+  50% {
+    transform: scaleX(0);
+  }
+}
+@-webkit-keyframes myrotate {
+  50% {
+    transform: scaleX(0);
+  }
+}
+@keyframes myrotate {
+  50% {
+    transform: scaleX(0);
+  }
+}
+@-ms-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-moz-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes mymove {
+  50% {
+    transform: translateX(-10px);
   }
 }
 .header {
@@ -818,7 +918,7 @@ textarea:focus {
   width: 100%;
 }
 .menutop_list__l2 {
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
 }
 .menutop_item {
@@ -841,7 +941,7 @@ textarea:focus {
 .menutop_item:hover .menutop_wrap {
   visibility: visible;
   max-height: 200px;
-  padding: 27px 0px 45px 0px;
+  padding: 33px 0px 33px 0px;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
@@ -866,7 +966,7 @@ textarea:focus {
   padding: 16px 12px 0px 12px;
   border-top: 3px solid #19254b;
   position: relative;
-  z-index: 3;
+  z-index: 6;
   *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="before" );
 }
 .menutop_link:visited {
@@ -1119,6 +1219,7 @@ textarea:focus {
 .form-discount_button {
   padding: 9px 0px 0px 0px;
   position: relative;
+  z-index: 5;
 }
 .form-discount_button input {
   width: 231px;
@@ -1130,18 +1231,10 @@ textarea:focus {
   font-size: 20px;
   text-transform: uppercase;
   padding: 1px 0px 0px 0px;
-  background-color: #3498db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3498db), to(#3498db));
-  /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #3498db, #3498db);
-  background-image: -moz-linear-gradient(top, #3498db, #3498db);
-  background-image: -ms-linear-gradient(top, #3498db, #3498db);
-  background-image: -o-linear-gradient(top, #3498db, #3498db);
-  background-image: linear-gradient(top, #3498db, #3498db);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3498db', EndColorStr='#3498db');
 }
 .form-discount_button input:hover {
   cursor: pointer;
+  background-color: #E74C3C;
 }
 .form-discount_button .ajax-progress {
   position: absolute;
@@ -1313,18 +1406,10 @@ textarea:focus {
   font-size: 20px;
   text-transform: uppercase;
   padding: 1px 0px 0px 0px;
-  background-color: #e74c3c;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e74c3c), to(#e74c3c));
-  /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #e74c3c, #e74c3c);
-  background-image: -moz-linear-gradient(top, #e74c3c, #e74c3c);
-  background-image: -ms-linear-gradient(top, #e74c3c, #e74c3c);
-  background-image: -o-linear-gradient(top, #e74c3c, #e74c3c);
-  background-image: linear-gradient(top, #e74c3c, #e74c3c);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e74c3c', EndColorStr='#e74c3c');
 }
 .form-popup_button input:hover {
   cursor: pointer;
+  background-color: #3498db;
 }
 .form-popup_button .ajax-progress {
   position: absolute;
@@ -2592,6 +2677,7 @@ textarea:focus {
 }
 .form-action_button input:hover {
   cursor: pointer;
+  border: 2px solid #E74C3C;
 }
 .form-action_button .ajax-progress {
   position: absolute;
@@ -3371,6 +3457,7 @@ textarea:focus {
 }
 .block-form_button input:hover {
   cursor: pointer;
+  border: 2px solid #E74C3C;
 }
 .block-form_button .ajax-progress {
   position: absolute;
@@ -3740,10 +3827,11 @@ textarea:focus {
   float: right;
   width: 297px;
   height: 32px;
-  background: url("../image/link-calc.png") 19px 15px no-repeat #3498db;
+  background-color: #3498db;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+  position: relative;
 }
 .tarifs_link:visited {
   color: #ffffff;
@@ -3756,6 +3844,30 @@ textarea:focus {
 }
 .tarifs_link:focus {
   color: #ffffff;
+}
+.tarifs_link:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  width: 15px;
+  height: 17px;
+  background: url("../image/link-calc.png") no-repeat;
+}
+.tarifs_link:hover:before {
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: mymove;
+  -moz-animation-duration: 500ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: mymove;
+  -ms-animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  animation-name: mymove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
 }
 .tarifs_wrap {
   display: inline-block;
@@ -3777,6 +3889,26 @@ textarea:focus {
   height: 1%;
 }
 
+@-ms-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-moz-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
 .tarif-block {
   height: 100%;
   -webkit-transition: box-shadow 0.1s ease-in-out;
@@ -3955,10 +4087,11 @@ textarea:focus {
   float: left;
   width: 347px;
   height: 32px;
-  background: url("../image/link-calc.png") 19px 15px no-repeat #3498db;
+  background-color: #3498db;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+  position: relative;
 }
 .tarif_link:visited {
   color: #ffffff;
@@ -3972,10 +4105,54 @@ textarea:focus {
 .tarif_link:focus {
   color: #ffffff;
 }
+.tarif_link:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  width: 15px;
+  height: 17px;
+  background: url("../image/link-calc.png") no-repeat;
+}
+.tarif_link:hover:before {
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: mymove;
+  -moz-animation-duration: 500ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: mymove;
+  -ms-animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  animation-name: mymove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 .tarif_body {
   padding: 0px 0px 12px 0px;
 }
 
+@-ms-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-moz-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
 .price {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
@@ -4055,6 +4232,9 @@ textarea:focus {
   font-family: proximanova_light_italic;
   font-size: 14px;
 }
+.price_table tr:hover td {
+  background-color: #f9f9f9;
+}
 .price_price {
   width: 179px;
 }
@@ -4065,10 +4245,11 @@ textarea:focus {
   float: right;
   width: 297px;
   height: 32px;
-  background: url("../image/link-calc.png") 19px 15px no-repeat #3498db;
+  background-color: #3498db;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+  position: relative;
 }
 .price_link:visited {
   color: #ffffff;
@@ -4082,7 +4263,71 @@ textarea:focus {
 .price_link:focus {
   color: #ffffff;
 }
+.price_link:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  width: 15px;
+  height: 17px;
+  background: url("../image/link-calc.png") no-repeat;
+}
+.price_link:hover:before {
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: mymove;
+  -moz-animation-duration: 500ms;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: mymove;
+  -ms-animation-duration: 500ms;
+  -ms-animation-timing-function: linear;
+  animation-name: mymove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
 
+@-ms-keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-moz-keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-ms-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-moz-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
 .tarifs-block {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
@@ -4202,27 +4447,23 @@ textarea:focus {
 .footer_up {
   position: absolute;
   top: 9px;
-  right: 128px;
+  right: 0px;
   display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   width: 49px;
   height: 49px;
-  background: url("../image/up.jpg") no-repeat;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  background: url("../image/up.png") 50% 50% no-repeat #999999;
 }
 .footer_up:hover {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  background-color: #ccc;
 }
 .footer_section {
   float: left;
+}
+.footer_section__social {
+  float: right;
 }
 .footer_copyright {
   color: #ffffff;
@@ -4322,7 +4563,7 @@ textarea:focus {
 
 .dev {
   display: block;
-  margin: 21px 6px 0px 0px;
+  margin: 21px 66px 0px 0px;
   width: 108px;
   height: 23px;
   float: right;

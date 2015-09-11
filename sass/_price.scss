@@ -60,6 +60,11 @@
         font-size: 14px;
       }
     }
+    tr{
+      &:hover td {
+        background-color: #f9f9f9;
+      }
+    }
   }
   &_price{
     width: 179px;
@@ -71,10 +76,83 @@
     float: right;
     width: 297px;
     height: 32px;
-    background: url('../image/link-calc.png') 19px 15px no-repeat #3498db;
+    background-color: #3498db;
+    //background: url('../image/link-calc.png') 19px 15px no-repeat #3498db;
     //background-color: #3498db;
     text-decoration: none;
     @include link(#ffffff, #ffffff);
     font-size: 16px;
+    position: relative;
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 19px;
+      top: 15px;
+      width: 15px;
+      height: 17px;
+      background: url('../image/link-calc.png') no-repeat;
+    }
+    &:hover{
+      &:before{
+        -webkit-animation-name: mymove;
+        -webkit-animation-duration: 500ms;
+        //-webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: mymove;
+        -moz-animation-duration: 500ms;
+        //-moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: mymove;
+        -ms-animation-duration: 500ms;
+        //-ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+        animation-name: mymove;
+        animation-duration: 500ms;
+        //animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        //animation-timing-function: cubic-bezier(.15,1.12,.49,.84);
+      }
+    }
+  }
+}
+@-ms-keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-moz-keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes myscale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@-ms-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-moz-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes mymove {
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes mymove {
+  50% {
+    transform: translateX(-10px);
   }
 }

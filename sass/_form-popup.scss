@@ -99,8 +99,9 @@
       padding: 1px 0px 0px 0px;
       &:hover{
         cursor: pointer;
+        background-color: #3498db;
       }
-      @include def-v-gradient(#e74c3c, #e74c3c);
+      //@include def-v-gradient(#e74c3c, #e74c3c);
     }
     .ajax-progress{
       position: absolute;
