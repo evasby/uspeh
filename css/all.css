@@ -181,7 +181,7 @@ strong, b {
   font-family: proximanova_bold;
 }
 
-i {
+i, em {
   font-family: proximanova_italic;
 }
 
@@ -1188,7 +1188,9 @@ textarea:focus {
 }
 .form-discount_button input:hover {
   cursor: pointer;
-  background-color: #E74C3C;
+  -webkit-box-shadow: 5px 5px 5px 0px #e74d3c;
+  -moz-box-shadow: 5px 5px 5px 0px #e74d3c;
+  box-shadow: 5px 5px 5px 0px #e74d3c;
 }
 .form-discount_button .ajax-progress {
   position: absolute;
@@ -1363,7 +1365,9 @@ textarea:focus {
 }
 .form-popup_button input:hover {
   cursor: pointer;
-  background-color: #3498db;
+  -webkit-box-shadow: 5px 5px 5px 0px #3498db;
+  -moz-box-shadow: 5px 5px 5px 0px #3498db;
+  box-shadow: 5px 5px 5px 0px #3498db;
 }
 .form-popup_button .ajax-progress {
   position: absolute;
@@ -1756,6 +1760,20 @@ textarea:focus {
   line-height: 0;
   visibility: hidden;
 }
+.main1-wrap {
+  display: inline-block;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  display: block;
+}
+.main1-wrap:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
 .main1_item {
   width: 25%;
   float: left;
@@ -2040,6 +2058,7 @@ textarea:focus {
 .calc-slider_curent {
   float: right;
   width: 150px;
+  position: relative;
 }
 .calc-slider_curent input {
   display: block;
@@ -2053,6 +2072,14 @@ textarea:focus {
   width: 79px;
   height: 26px;
   text-align: center;
+}
+.calc-slider_enter {
+  font-size: 10px;
+  color: #373737;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: 1px;
 }
 .calc-slider_main {
   width: 700px;
@@ -2587,7 +2614,8 @@ textarea:focus {
 }
 .form-action_button input:hover {
   cursor: pointer;
-  border: 2px solid #E74C3C;
+  border: 2px solid #3498db;
+  background-color: #3498db;
 }
 .form-action_button .ajax-progress {
   position: absolute;
@@ -3171,6 +3199,9 @@ textarea:focus {
   color: #373737;
   margin: 0px 0px 28px 0px;
 }
+.user-content em {
+  color: #373737;
+}
 
 .block-form {
   height: 360px;
@@ -3320,7 +3351,8 @@ textarea:focus {
 }
 .block-form_button input:hover {
   cursor: pointer;
-  border: 2px solid #E74C3C;
+  border: 2px solid #3498db;
+  background-color: #3498db;
 }
 .block-form_button .ajax-progress {
   position: absolute;

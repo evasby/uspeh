@@ -78,8 +78,11 @@
       &:hover{
         cursor: pointer;
         //border: 1px solid #19254B;
-        background-color: #E74C3C;
+        //background-color: #E74C3C;
         //@include def-v-gradient(#E74C3C, #E74C3C);
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
+box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
       }
       //@include def-v-gradient(#3498db, #3498db);
     }

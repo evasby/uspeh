@@ -33,6 +33,7 @@
 	&_curent{
 		float: right;
 		width: 150px;
+		position: relative;
 		input{
 			display: block;
 			padding: 0px;
@@ -46,6 +47,14 @@
 			height: 26px;
 			text-align: center;
 		}
+	}
+	&_enter{
+		font-size: 10px;
+		color: #373737;
+  	display: inline-block;
+		position: absolute;
+		top: -17px;
+		left: 1px;
 	}
 	&_main{
 		width: 700px;

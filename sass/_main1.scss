@@ -12,6 +12,9 @@
   &_wrap{
     @include clearfix();
   }
+  &-wrap{
+    @include clearfix();
+  }
   &_item{
     width: 25%;
     float: left;
