@@ -408,7 +408,15 @@ textarea:focus {
   background-size: cover;
 }
 .title__about {
-  background: url("../image/title-about-1920.jpg") 50% no-repeat;
+  background: url("../image/title-about-1600.jpg") 50% no-repeat;
+  background-size: cover;
+}
+.title__garant {
+  background: url("../image/title-garant-898.jpg") 50% no-repeat;
+  background-size: cover;
+}
+.title__aboutdark {
+  background: url("../image/title-about-1920-dark.jpg") 50% no-repeat;
   background-size: cover;
 }
 .title__contact {

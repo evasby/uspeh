@@ -47,9 +47,9 @@ module.exports = function(grunt) {
 			    css: {
                     options: {
                         authKey: 'key1',
-                        host: 'wfs.by',
+                        host: 'webformat.by',
                         //dest: '/home/evasby/www/wfs.by/layout',
-                        dest: '/home/evasby/www/wfs.by/sites/all/themes/uspeh',
+                        dest: 'www/buhgalteru.by/sites/all/themes/uspeh',
                         port: 21
                     },
                     files: [
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                         }
                     ]
 			    },
-                php: {
+                /*php: {
                     options: {
                         authKey: 'key1',
                         host: 'wfs.by',
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
                             ]
                         }
                     ]
-                }
+                }*/
 			  },
         watch: {
             css: {
@@ -107,7 +107,7 @@ module.exports = function(grunt) {
                     spawn: false,
                 }
             },
-            php: {
+            /*php: {
                 files: ['*.php'],
                 tasks: ['ftp_push:php'],
                 options: {
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false,
                 }
-            }
+            }*/
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');

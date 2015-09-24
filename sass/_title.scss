@@ -22,7 +22,17 @@
     background-size: cover;
   }
   &__about{
-    background: url('../image/title-about-1920.jpg') 50% no-repeat;
+    //background: url('../image/title-about-1920.jpg') 50% no-repeat;
+    background: url('../image/title-about-1600.jpg') 50% no-repeat;
+    background-size: cover;
+  }
+  &__garant{
+    //background: url('../image/title-about-1920.jpg') 50% no-repeat;
+    background: url('../image/title-garant-898.jpg') 50% no-repeat;
+    background-size: cover;
+  }
+  &__aboutdark{
+    background: url('../image/title-about-1920-dark.jpg') 50% no-repeat;
     background-size: cover;
   }
   &__contact{
