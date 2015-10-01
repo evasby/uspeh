@@ -3726,6 +3726,10 @@ textarea:focus {
   width: 40px;
   height: 3px;
 }
+.tarifs_footer {
+  font-size: 13px;
+  margin: -40px 0px 40px 0px;
+}
 .tarifs_link {
   margin: 2px 0px 0px 0px;
   padding: 16px 0px 0px 50px;
@@ -3834,12 +3838,14 @@ textarea:focus {
 }
 .tarif-block_price {
   background-color: #3498db;
+  padding: 29px 0px 27px 0px;
+  margin: 0px 0px 20px 0px;
+}
+.tarif-block_price p {
   font-family: proximanova_bold;
   font-size: 28px;
   color: #fff;
   text-align: center;
-  padding: 29px 0px 27px 0px;
-  margin: 0px 0px 20px 0px;
 }
 .tarif-block_list {
   padding: 0px 0px 0px 36px;
@@ -4078,6 +4084,10 @@ textarea:focus {
   width: 40px;
   height: 3px;
   background-color: #3498db;
+}
+.price_footer {
+  font-size: 13px;
+  margin: 34px 0px 0px 0px;
 }
 .price_descr {
   padding: 0px 0px 41px 0px;

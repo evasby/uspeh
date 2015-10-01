@@ -15,11 +15,13 @@
 		padding: 24px 0px 20px 0px;
 	}
 	&_price{
+		p{
+			font-family: $bold;
+			font-size: 28px;
+			color: #fff;
+			text-align: center;
+		}
 		background-color: #3498db;
-		font-family: $bold;
-		font-size: 28px;
-		color: #fff;
-		text-align: center;
 		padding: 29px 0px 27px 0px;
 		margin: 0px 0px 20px 0px;
 	}
