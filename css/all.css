@@ -1269,6 +1269,7 @@ textarea:focus {
 }
 
 .form-popup {
+  min-height: 300px;
   /*input[type="checkbox"]:checked + label {
     border-color: #3498db;
   }*/
