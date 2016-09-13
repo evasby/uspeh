@@ -1,5 +1,5 @@
 .title{
-  min-width: $min_width;
+  //min-width: $min_width;
   min-height: 259px;
   padding: 61px 0px 61px 0px;
   position: relative;
@@ -7,6 +7,7 @@
   /*&.bg-loaded{
     @include def-opacity(1);
   }*/
+
   &_wrap{
     position: relative;
   }
@@ -47,6 +48,11 @@
     background: url('../image/title-price-1920.jpg') 50% no-repeat;
     background-size: cover;
   }
+  @include m1000{
+    padding: 15px 0 8px;
+    height: auto;
+    min-height: 0;
+  }
   &_h1{
     font-family: $bold;
     font-size: $font_size_h1;
@@ -64,6 +70,23 @@
       margin: 0px 0px 77px 0px;
       line-height: 1.2;
       font-size: 35px;
+      @include m1000{
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto 5px auto;
+        text-align: center;
+        height: auto;
+        font-size: 22px;
+      }
+    }
+    @include m1000{
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto 5px auto;
+      padding: 0;
+      text-align: center;
+      height: auto;
+      font-size: 22px;
     }
   }
   &_descr{
@@ -73,6 +96,10 @@
       color: #ffffff;
       font-size: $font_size20;
       line-height: 1.2;
+      @include m1000{
+        line-height: 1;
+        margin: 0;
+      }
     }
     &__main{
       width: 630px;
@@ -82,6 +109,23 @@
         font-size: $font_size24;
         line-height: 0.6;
         margin: 0px 0px 15px 0px;
+        @include m1000{
+          line-height: 1;
+          margin: 0;
+        }
+      }
+    }
+    @include m1000{
+      padding: 0;
+      width: 100%;
+      max-width: 630px;
+      margin: 0 auto;
+      text-align: center;
+      border: none;
+      p{
+        font-size: 16px;
+        line-height: 1;
+        margin: 0;
       }
     }
   }

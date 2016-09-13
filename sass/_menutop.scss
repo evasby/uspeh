@@ -1,8 +1,46 @@
 .menutop{
   background-color: #19254b;
-  min-width: 1000px;
+  //min-width: 1000px;
+  @include m1000{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    //@include def-transition(all, 0.2s);
+    //overflow: hidden;
+    //max-height: 40px;
+  }
+  &_back{
+    position: absolute;
+    z-index: 10;
+    left: 7px;
+    top: 9px;
+    display: inline-block;
+    visibility: hidden;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    &__on{
+      visibility: visible;
+    }
+  }
+  &_triangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 12px 6px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    top: 4px;
+    left: 1px;
+  }
   &_inner{
   	//width: 960px;
+    @include m1000{
+      display: none;
+    }
   }
   &_wrap{
     background-color: #19254b;
@@ -22,20 +60,54 @@
       visibility: visible;
       display: none;
     }
+    @include m1000{
+      @include def-opacity(1);
+      min-width: 0;
+      max-height: none;
+      border: 0;
+      visibility: visible;
+      z-index: 7;
+      top: 35px;
+      //width: 100%;
+      //position: static;
+      //text-align: right;
+      display: none;
+      padding: 6px 0 10px 10px;
+      &__on{
+        display: block;
+        //left: auto;
+        //right: 0;
+      }
+    }
   }
   &_list{
     display: table;
     width: 100%;
+    @include m1000{
+      display: block;
+      &__hide{
+        left: -100%;
+      }
+    }
     &__l2{   
       width: 960px;
-      margin: 0 auto;    
+      margin: 0 auto;
+      @include m1000{
+        width: 100%;
+        margin: 0;
+        //display: none;
+      }
     }
   }
   &_item{ 
     vertical-align: top; 
     width: 1%;
     white-space: nowrap;
-    display: table-cell;  
+    display: table-cell;
+    @include m1000{
+      display: block;
+      width: 100%;
+    }
     @include old-ie{
       *width: auto;
       *display: inline;
@@ -50,8 +122,13 @@
       @include old-ie{
         width: 25%;
       }
+      @include m1000{
+        float: none;
+        width: auto!important;
+      }
     }
     &:hover{
+
       .menutop_wrap{
         visibility: visible;
         max-height: 200px;
@@ -60,6 +137,10 @@
         @include old-ie{
           display: block;
         }
+        @include m1000{
+          max-height: none;
+          padding: 6px 0 10px 10px;
+        }
       }
       .menutop_link{
       	border-top: 3px solid #3498db;
@@ -67,6 +148,17 @@
       & .menutop_link:before, & .before{
         visibility: visible;
       }
+      
+      @include m1000{
+        .menutop_link{
+          border: none;
+          border-left: 3px solid #3498db;
+        }
+        & .menutop_link:before, & .before{
+          visibility: hidden;
+        }
+      } 
+
     }
   }
   &_link{
@@ -81,8 +173,37 @@
     padding: 16px 12px 0px 12px;
     border-top: 3px solid #19254b;
     //@include def-transition(border-color, 0.2s);
+    @include m1000{
+      height: auto;
+      border: none;
+      display: block;
+      padding: 5px 12px 5px 12px;
+      text-align: left;
+      border-left: 3px solid #19254B;
+      &.nolink{
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        &:after{
+          content: '';
+          position: absolute;
+          z-index: 6;
+          right: -10px;
+          top: 6px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 0 6px 12px;
+          border-color: transparent transparent transparent #ffffff;
+        }
+      }
+    }
     &__active{
       border-top: 3px solid #3498db;
+      @include m1000{
+        border: none;
+        border-left: 3px solid #3498db;
+      }
     }
     &__l2{
       font-family: $light;
@@ -92,6 +213,12 @@
       text-decoration: none;
       &:hover{
         text-decoration: underline;
+      }
+      @include m1000{
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        padding: 5px 12px 5px 22px;
       }
     }
     position: relative;
@@ -141,5 +268,8 @@
         visibility: hidden;
       }
     }
+  }
+  @include m1000{
+    //display: none;
   }
 }

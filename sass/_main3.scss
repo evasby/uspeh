@@ -11,11 +11,18 @@
   &:hover{
     background-position: 0% 0%;
   }
+  @include m1000{
+    padding: 15px 0;
+  }
   &_wrap{
     @include clearfix();
   }
   &_item{
     width: 50%;
     float: left;
+    @include m1000{
+      float: none;
+      width: auto;
+    }
   }
 }

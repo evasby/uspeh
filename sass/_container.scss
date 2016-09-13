@@ -4,4 +4,8 @@
   @include old-ie{
     *width: 965px;
   }
+  @include m1000{
+  	width: auto;
+  	padding: 0 10px;
+  }
 }

@@ -75,6 +75,9 @@
   		text-decoration: underline;
   	}
   }
+  @include m960{
+    display: none;
+  }
 }
 .tip-green {
   z-index:1000;

@@ -18,6 +18,11 @@ $font_size_h1: 38px;
 @import "fonts";
 //**********************************************************/
 //**********************************************************/
+.iCall-block{
+  left: auto!important;
+  right: 10px!important;
+  top: 50px!important;
+}
 #offset{
   position: fixed;
   right: 100px;
@@ -36,7 +41,7 @@ $font_size_h1: 38px;
 body{
   font-family: $font;
   font-size: $font_size18;
-  min-width: $min_width;
+  //min-width: $min_width;
   position: relative;
 }
 textarea{
@@ -204,6 +209,9 @@ textarea{
 }
 .hidded{
   visibility: hidden;
+  @include m1000{
+    visibility: visible;
+  }
 }
 .fadeIn, .fadeInUp, .fadeOut, .fadeOutUp, .flipInX, .flipOutX, .flipInY, .flipOutY, .zoomIn, .zoomOut, .slideInLeft, .rollIn, .rollOut, .bounce, .pulse, .tada, .bounceInDown{
   visibility: visible;
@@ -268,3 +276,4 @@ textarea{
 @import "yamap";
 @import "social";
 @import "dev";
+@import "menu-toggle";

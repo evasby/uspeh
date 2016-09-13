@@ -22,11 +22,22 @@
       //@include def-opacity(1);
       background-color: #ccc;
     }
+    @include m1000{
+      position: static;
+      top: auto;
+      margin: 0 auto;
+    }
   }
   &_section{
     float: left;
     &__social{
       float: right;
+      @include m1000{
+        float: none;
+      }
+    }
+    @include m1000{
+      float: none;
     }
   }
   &_copyright{
@@ -34,5 +45,10 @@
     font-size: $font_size12;
     margin: 34px 0px 24px 0px;
     float: left;
+    @include m1000{
+      float: none;
+      margin: 15px 0px;
+      text-align: center;
+    }
   }
 }

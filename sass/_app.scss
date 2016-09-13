@@ -68,4 +68,7 @@
       padding: 0px 0px 0px 19px;
     }
   }
+  @include m1000{
+    display: none;
+  }
 }

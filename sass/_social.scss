@@ -4,8 +4,11 @@
   @include old-ie{
     width: 174px;
   }
+  @include m1000{
+    margin: 15px 0 0;
+    text-align: center;
+  }
   &_link{
-    display: block;
     float: left;
     text-indent: 100%;
     white-space: nowrap;
@@ -40,6 +43,10 @@
       &:hover{
         background-position: -117px -39px;
       }
+    }
+    @include m1000{
+      float: none;
+      display: inline-block;
     }
   }
 }

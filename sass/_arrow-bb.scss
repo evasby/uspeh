@@ -3,4 +3,7 @@
   height: 18px;
   margin: 13px auto 51px auto;
   background: url(../image/arrow-bb.png) no-repeat;
+  @include m1000{
+  	margin: 13px auto 20px auto;
+  }
 }

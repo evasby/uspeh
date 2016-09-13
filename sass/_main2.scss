@@ -27,4 +27,7 @@
   &_descr{
     margin: 0px 0px 37px 0px;
   }
+  @include m1000{
+    display: none;
+  }
 }

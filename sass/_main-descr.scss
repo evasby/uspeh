@@ -26,9 +26,12 @@
   &_descr{
     padding: 11px 20px 0px 26px;
     font-size: 17px; 
-    color: #e74c3c;
+    color: #000;
     //font-weight: bold;
     font-family: 'proximanova_bold';
     line-height: 1.2;
+  }
+  @include m1000{
+    display: none;
   }
 }

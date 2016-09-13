@@ -1,7 +1,17 @@
 .logo{
 	margin: 33px 50px 37px 0px;
+	@include m1000{
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
 	&__footer{
 		margin: 33px 65px 0px 0px;
+		@include m1000{
+	    margin: 0;
+	    text-align: center;
+	    padding-top: 15px;
+	  }
 	}
 	&_link{
 		display: block;
@@ -15,9 +25,20 @@
 		&__footer{
 			background: url('../image/logo-f.png') no-repeat;
 		}
+		@include m1000{
+    	margin: 0 auto;
+    	width: 100%;
+    	background-size: contain;
+    	background-position: 50%;
+    	max-width: 260px;
+ 	 	}
 	}
 	&_text{
 		color: #373737;
 		font-size: $font_size13;
+		@include m1000{
+	    position: relative;
+	    top: -15px;
+	  }
 	}
 }

@@ -114,4 +114,7 @@
   .bx-wrapper .bx-pager.bx-default-pager a.active {
     background-position: -19px 0px;
   }
+  @include m1000{
+    display: none;
+  }
 }

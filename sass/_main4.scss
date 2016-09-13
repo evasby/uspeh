@@ -5,6 +5,9 @@
     @include def-opacity(1);
   }*/
   padding: 40px 0px 0px 0px;
+  @include m1000{
+    padding: 15px 10px 0 10px;
+  }
   &_head{
     font-size: 30px;
     color: #373737;
@@ -14,6 +17,14 @@
     line-height: 0.74;
     padding: 0px 0px 0px 15px;
     margin: 0px 0px 58px 0px;
+    @include m1000{
+      height: auto;
+      margin-bottom: 15px;
+      font-size: 22px;
+      text-align: center;
+      border: none;
+      line-height: 1;
+    }
   }
   &_wrap{
     @include clearfix();
@@ -28,6 +39,12 @@
     width: 33.33%;
     float: left;
     @include clearfix();
+    @include m1000{
+      float: none;
+      width: auto;
+      height: auto;
+      margin-bottom: 20px;
+    }
   }
   &_image{
     float: left;
@@ -46,5 +63,8 @@
     font-size: 14px;
     padding: 0px 24px 0px 68px;
     line-height: 1.1;
+  }
+  @include m1000{
+    overflow: hidden;
   }
 }

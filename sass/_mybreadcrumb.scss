@@ -1,5 +1,8 @@
 .mybreadcrumb{
 	padding: 31px 0px 52px 0px;
+	@include m1000{
+		padding: 15px 10px 15px 10px;
+	}
 	&_link{
 		@include link(#373737, #3498db);
 		position: relative;

@@ -1,9 +1,15 @@
 .header{
   position: relative;
+  @include m1000{
+    padding-top: 35px;
+  }
   &_bottom{
 		@include clearfix();
   }
   &_section{
   	float: left;
+  	@include m1000{
+    	float: none;
+  	}
   }
 }

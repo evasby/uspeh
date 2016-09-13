@@ -1,6 +1,9 @@
 .address{
 	@include clearfix();
 	margin: 36px 0px 0px 0px;
+  @include m1000{
+    margin: 0;
+  }
 	p{
 		color: #373737;
 		font-size: $font_size18;
@@ -40,6 +43,18 @@
         top: 1px;
       }
     }
+    @include m1000{
+      float: none;
+      max-width: 210px;
+      margin: 0 auto;
+      padding: 0 0 5px 0;
+      border: none;
+      border-bottom: 1px solid #122333;
+      text-align: center;
+      &:before{
+        //left: 21px;
+      }
+    }
 	}
 	&_right{
 		float: left;
@@ -60,6 +75,17 @@
       &:before{
         background-position: -26px 0px;
         top: 0px;
+      }
+    }
+    @include m1000{
+      float: none;
+      max-width: 210px;
+      margin: 0 auto;
+      padding: 5px 0 0 0;
+      border: none;
+      text-align: center;
+      &:before{
+       top: 8px;
       }
     }
 	}

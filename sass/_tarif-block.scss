@@ -31,6 +31,11 @@
 		height: 416px;
 		//list-style-image: url('../image/list.png');
 		//list-style-type: disc;
+		@include m1000{
+			padding: 0px 0px 0px 25px;
+			height: auto;
+			margin: 0px 0px 15px 0px;
+		}
 	}
 	&_item{
 		font-family: $light;
@@ -63,6 +68,12 @@
 			height: 11px;
 			background: url('../image/okey.png') no-repeat;
 		}
+		@include m1000{
+			padding: 0px 20px 0px 3px;
+			&:after{
+				right: 25px;
+			}
+		}
 	}
 	&_wrap{
 		@include clearfix();
@@ -74,12 +85,23 @@
 		padding: 0px 20px 22px 0px;
 		position: relative;
 		z-index: 3;
+		@include m1000{
+			box-sizing: border-box;
+			width: 70%;
+			padding: 0px 5px 22px 0px;
+		}
 	}
 	&_right{
 		position: relative;
 		z-index: 2;
 		background-color: #ededed;
 		padding: 0px 0px 0px 299px;
+		@include m1000{
+			box-sizing: border-box;
+			padding: 0 0 0 10px;
+			float: left;
+			width: 30%;
+		}
 	}
 	&_link{
     @include link(#373737, #373737);

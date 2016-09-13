@@ -122,4 +122,7 @@ box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
       line-height: 1.2;
     }
   }
+  @include m1000{
+    display: none;
+  }
 }

@@ -3,6 +3,44 @@
     @content;
   }
 }
+@mixin m768 {
+  @if not $old-ie {
+    @media all and (max-width: 768px) { @content; }
+  }
+}
+@mixin m960 {
+  @if not $old-ie {
+    @media all and (max-width: 960px) { @content; }
+  }
+}
+@mixin m1000 {
+  @if not $old-ie {
+    @media all and (max-width: 1000px) { @content; }
+  }
+}
+@mixin link($normal, $hover){
+  color:$normal;
+  &:link{color:$normal;};
+  &:visited{color:$normal;};
+  &:hover{color:$hover;};
+  &:active{color:$normal;}; 
+  //&:focus{color:$normal;}; 
+}
+@mixin clearfix{
+  &:before,
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after{
+    clear: both;
+  }
+  @include old-ie{
+    *zoom: 1;
+  }
+}
 @mixin respond($media) {
   @if not $old-ie {
     @if $media == mobile {

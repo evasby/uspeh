@@ -1,9 +1,17 @@
 .contacts{
   @include clearfix();
   padding: 8px 0px 88px 0px;
+  @include m1000{
+    padding: 8px 10px 15px 10px;
+  }
   &_item{
     width: 25%;
     float: left;
+    @include m1000{
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
   }
   &_image{
     padding: 0px 0px 17px 0px;

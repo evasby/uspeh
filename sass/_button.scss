@@ -122,6 +122,9 @@
         //animation-timing-function: cubic-bezier(.15,1.12,.49,.84);
       }
     }
+    @include m1000{
+      margin: 15px auto 0px auto;
+    }
   }
   &__tariforder{
     width: 158px;
@@ -162,6 +165,11 @@
         //animation-timing-function: cubic-bezier(.15,1.12,.49,.84);
       }
     }
+    @include m1000{
+      float: none;
+      width: 158px;
+      margin: 0 auto 15px auto;
+    }
   }
 	&__phone{
 		background-color: #e74c3c;
@@ -200,6 +208,9 @@
 	      animation-timing-function: linear;
 			}
 		}
+    @include m1000{
+      margin: 10px auto;
+    }
 	}
 }
 @-ms-keyframes spin {

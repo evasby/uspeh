@@ -1,9 +1,18 @@
 .tarif{
   @include clearfix();
   padding: 0px 0px 72px 0px;
+  @include m1000{
+    padding: 0px 10px 25px 10px;
+  }
   &_image{
     float: left;
     margin: 0px 20px 0px 0px;
+    @include m1000{
+      float: none;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
   }
   ul{
     padding: 0px 0px 0px 15px;
@@ -61,6 +70,16 @@
         animation-timing-function: linear;
         //animation-timing-function: cubic-bezier(.15,1.12,.49,.84);
       }
+    }
+    @include m1000{
+      display: none;
+      float: none;
+      box-sizing: border-box;
+      //display: block;
+      width: 100%;
+      max-width: 347px;
+      margin: 0 auto;
+      padding-bottom: 45px;
     }
   }
   &_body{

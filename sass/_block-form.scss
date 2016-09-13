@@ -1,4 +1,8 @@
 .block-form{
+  @include m1000{
+    height: auto;
+    padding-bottom: 15px;
+  }
   .messages{
     display: none;
   }
@@ -36,6 +40,15 @@
       width: 44px;
       height: 2px;
       background-color: #ffffff;
+      @include m1000{
+        top: 10px;
+      }
+    }
+    @include m1000{
+      font-size: 22px;
+      padding: 16px 0 15px 0;
+      width: 100%;
+      max-width: 675px;
     }
   }
   &_bac{
@@ -50,6 +63,9 @@
   &_wrap{
     position: relative;
     z-index: 2;
+    @include m1000{
+      z-index: 1;
+    }
   }
   &_top{
     @include clearfix();
@@ -61,12 +77,24 @@
     width: 675px;
     float: left;
     padding: 0px 0px 0px 0px;
+    @include m1000{
+      float: none;
+      width: 100%;
+      max-width: 675px;
+      margin: 0 auto;
+    }
   }
   &_right{
     float: right;
     width: 230px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 50px;
+    @include m1000{
+      float: none;
+      width: 100%;
+      max-width: 230px;
+      margin: 0 auto;
+    }
   }
   &_descr{
     font-family: $light;
@@ -77,6 +105,9 @@
     padding: 46px 0px 37px 0px;
     float: right;
     width: 240px;
+    @include m1000{
+      display: none;
+    }
   }
   &_inner{
     padding: 0px 0px 11px 0px;
@@ -97,6 +128,10 @@
       border: 1px solid #c2c2c2;
       margin: 0px;
       padding: 11px 22px 0px 22px;
+      @include m1000{
+        box-sizing: border-box;
+        width: 100%;
+      }
     }
     .error{
       border: 1px solid #ff0000;

@@ -1,5 +1,8 @@
 .user-content{
 	padding: 0px 0px 54px 0px;
+	@include m1000{
+		padding: 0 10px 20px 10px;
+	}
 	h1, h2{
 		font-family: $bold;
 		font-size: 18px;

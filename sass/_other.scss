@@ -1,6 +1,9 @@
 .other{
 	@include clearfix();
 	margin-bottom: 84px;
+  @include m1000{
+    margin-bottom: 15px;
+  }
 	&_item{
 		display: block;
     width: 300px;  
@@ -13,6 +16,15 @@
     }
     &:hover .other_image:before{
       @include def-opacity(0.5);
+    }
+    @include m1000{
+      float: none;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 15px auto;
+      &:first-child{
+        margin: 0 auto 15px auto;
+      }
     }
 	}
 	&_image{
@@ -38,6 +50,15 @@
       background-color: #3498db;
       @include def-opacity(0);
     }
+    @include m1000{
+      height: auto;
+      margin: 0 0 5px 0;
+      img{
+        display: block!important;
+        width: 100%!important;
+        height: auto!important;
+      }
+    }
 	}
 	&_title{
     display: block;
@@ -45,5 +66,8 @@
     font-size: 18px;
     line-height: 1.1;
     text-transform: uppercase;
+    @include m1000{
+      text-align: center;
+    }
   }
 }

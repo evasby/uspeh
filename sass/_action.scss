@@ -1,4 +1,7 @@
 .action{
+  @include m1000{
+    margin-bottom: 15px;
+  }
   &_title{
     font-size: 38px;
     padding: 17px 0px 5px 0px;
@@ -15,11 +18,17 @@
       height: 2px;
       background-color: #ffffff;
     }
+    @include m1000{
+      font-size: 22px;
+    }
   }
   &_descr{
     font-size: 24px;
     color: #ffffff;
     line-height: 1.2;
+    @include m1000{
+      font-size: 18px;
+    }
     span{
       color: #e74c3c;
       background: url('../image/action.png') no-repeat;

@@ -1,5 +1,9 @@
 .tarifs{
 	padding: 15px 0px 6px 0px;
+	@include m1000{
+		padding: 15px 10px 6px 10px;
+		overflow: hidden;
+	}
 	&_item{
 		width: 470px;
 		height: 760px;
@@ -8,6 +12,17 @@
 		background-color: #ededed;
 		&:nth-child(2n){
 			margin: 0px 0px 49px 20px;
+		}
+		@include m1000{
+			float: none;
+			width: 100%;
+			max-width: 470px;
+			margin: 0 auto 10px auto;
+			padding-bottom: 15px;
+			height: auto;
+			&:nth-child(2n){
+				margin: 0 auto 10px auto;
+			}
 		}
 	}
 	&_title{
@@ -25,6 +40,9 @@
 			background-color: #3498db;
 			width: 40px;
 			height: 3px; 
+		}
+		@include m1000{
+			text-align: center;
 		}
 	}
 	&_footer{
@@ -76,10 +94,25 @@
         //animation-timing-function: cubic-bezier(.15,1.12,.49,.84);
       }
     }
+    @include m1000{
+    	position: absolute;
+    	left: 50%;
+    	width: 100%;
+    	max-width: 297px;
+    	bottom: 0;
+    	margin: 0 0 0 -174px;
+    }
 	}
 	&_wrap{
 		@include clearfix();
 		padding: 0px 0px 35px 0px;
+		@include m1000{
+			position: relative;
+			&:first-child{
+				padding-bottom: 50px;
+				margin-bottom: 10px;
+			}
+		}
 	}
 }
 @-ms-keyframes mymove {
