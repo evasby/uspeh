@@ -52,6 +52,7 @@ textarea{
 input{
   box-shadow: none;
   @include def-border-radius(0px);
+  -webkit-appearance: none;
 }
 button, input[type="reset"], input[type="button"], input[type="submit"] {
   box-shadow: none;

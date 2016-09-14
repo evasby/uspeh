@@ -173,6 +173,7 @@ input {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
+  -webkit-appearance: none;
 }
 
 button, input[type="reset"], input[type="button"], input[type="submit"] {
@@ -626,6 +627,7 @@ textarea:focus {
   font-size: 18;
   font-family: proximanova_bold;
   color: #ffffff;
+  -webkit-appearance: none;
 }
 .button:visited {
   color: #ffffff;

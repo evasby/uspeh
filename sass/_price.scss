@@ -67,10 +67,17 @@
       &:nth-child(2n){
         font-family: $lightit;
         font-size: 14px;
+        @include m380{
+          font-size: 12px;
+        }
       }
       @include m1000{
         min-width: 0;
         padding: 5px;
+      }
+      @include m380{
+        padding: 2px;
+        font-size: 12px;
       }
     }
     tr{
