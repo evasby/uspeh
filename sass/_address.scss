@@ -70,11 +70,24 @@
       height: 15px;
       background: url('../image/phone.png') -13px 0px no-repeat;
 		}
+    &:after{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: -1px;
+      bottom: 3px;
+      width: 15px;
+      height: 11px;
+      background: url('../image/mail.png') no-repeat;
+    }
     &__footer{
       padding: 0px 0px 0px 21px;
       &:before{
         background-position: -26px 0px;
         top: 0px;
+      }
+      &:after{
+        display: none;
       }
     }
     @include m1000{

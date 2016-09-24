@@ -441,6 +441,10 @@ textarea:focus {
   background: url("../image/title-price-1920.jpg") 50% no-repeat;
   background-size: cover;
 }
+.title__actions {
+  background: url("../image/title-actions-1920.jpg") 50% no-repeat;
+  background-size: cover;
+}
 @media all and (max-width: 1000px) {
   .title {
     padding: 15px 0 8px;
@@ -502,6 +506,21 @@ textarea:focus {
     line-height: 1;
     margin: 0;
   }
+}
+.title_descr a {
+  color: #fff;
+}
+.title_descr a:visited {
+  color: #fff;
+}
+.title_descr a:hover {
+  color: #fff;
+}
+.title_descr a:active {
+  color: #fff;
+}
+.title_descr a:focus {
+  color: #fff;
 }
 .title_descr__main {
   width: 630px;
@@ -1037,7 +1056,7 @@ textarea:focus {
   padding: 0px;
   position: absolute;
   z-index: 5;
-  top: 55px;
+  top: 58px;
   left: 0px;
   width: 100%;
   min-width: 1000px;
@@ -1155,11 +1174,12 @@ textarea:focus {
   text-transform: uppercase;
   color: #fefefe;
   display: block;
-  height: 36px;
+  height: 33px;
   text-align: center;
   text-decoration: none;
-  padding: 16px 12px 0px 12px;
+  padding: 19px 12px 0px 12px;
   border-top: 3px solid #19254b;
+  border-bottom: 3px solid #19254b;
   position: relative;
   z-index: 6;
 }
@@ -1174,6 +1194,9 @@ textarea:focus {
 }
 .menutop_link:focus {
   color: #fefefe;
+}
+.menutop_link__action {
+  background-color: #E74C3C;
 }
 @media all and (max-width: 1000px) {
   .menutop_link {
@@ -1393,12 +1416,25 @@ textarea:focus {
   height: 15px;
   background: url("../image/phone.png") -13px 0px no-repeat;
 }
+.address_right:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: -1px;
+  bottom: 3px;
+  width: 15px;
+  height: 11px;
+  background: url("../image/mail.png") no-repeat;
+}
 .address_right__footer {
   padding: 0px 0px 0px 21px;
 }
 .address_right__footer:before {
   background-position: -26px 0px;
   top: 0px;
+}
+.address_right__footer:after {
+  display: none;
 }
 @media all and (max-width: 1000px) {
   .address_right {
@@ -2967,7 +3003,7 @@ textarea:focus {
   visibility: hidden;
 }
 .form-action_confirmation {
-  padding: 50px 50px 0px 50px;
+  padding: 16px 0 0;
 }
 .form-action_confirmation p {
   text-align: center;
@@ -3569,6 +3605,7 @@ textarea:focus {
   text-decoration: none;
   font-size: 14px;
   margin: 0px 0px 0px 23px;
+  padding-right: 1px;
 }
 .mybreadcrumb_link:visited {
   color: #373737;
@@ -4742,6 +4779,7 @@ textarea:focus {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   display: block;
+  margin-bottom: 51px;
 }
 .price:after {
   clear: both;
@@ -4957,7 +4995,7 @@ textarea:focus {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   display: block;
-  padding: 68px 0px 33px 0px;
+  padding: 17px 0px 33px 0px;
   overflow: hidden;
 }
 .tarifs-block:after {

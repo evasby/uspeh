@@ -48,7 +48,7 @@
     padding: 0px;
     position: absolute;
     z-index: 5;
-    top: 55px;
+    top: 58px;
     left: 0px;
     width: 100%;
     min-width: 1000px;
@@ -167,12 +167,16 @@
     text-transform: uppercase;
     @include link(#fefefe, #fefefe);
     display: block;
-    height: 36px;
+    height: 33px;
     text-align: center;
     text-decoration: none;
-    padding: 16px 12px 0px 12px;
+    padding: 19px 12px 0px 12px;
     border-top: 3px solid #19254b;
+    border-bottom: 3px solid #19254b;
     //@include def-transition(border-color, 0.2s);
+    &__action{
+      background-color: #E74C3C;
+    }
     @include m1000{
       height: auto;
       border: none;

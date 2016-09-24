@@ -48,6 +48,10 @@
     background: url('../image/title-price-1920.jpg') 50% no-repeat;
     background-size: cover;
   }
+  &__actions{
+    background: url('../image/title-actions-1920.jpg') 50% no-repeat;
+    background-size: cover;
+  }
   @include m1000{
     padding: 15px 0 8px;
     height: auto;
@@ -100,6 +104,9 @@
         line-height: 1;
         margin: 0;
       }
+    }
+    a{
+      @include link(#fff, #fff);
     }
     &__main{
       width: 630px;
