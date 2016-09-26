@@ -1770,6 +1770,11 @@ textarea:focus {
   height: 18px;
   margin: 13px auto 51px auto;
   background: url(../image/arrow-bb.png) no-repeat;
+  display: block;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 13px auto 51px;
 }
 
 .app {
