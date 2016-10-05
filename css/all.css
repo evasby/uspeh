@@ -481,6 +481,10 @@ textarea:focus {
     font-size: 22px;
   }
 }
+.title__actions .title_h1 {
+  color: #000;
+  border-left: 5px solid #000;
+}
 @media all and (max-width: 1000px) {
   .title_h1 {
     width: 100%;
@@ -500,6 +504,9 @@ textarea:focus {
   color: #ffffff;
   font-size: 20px;
   line-height: 1.2;
+}
+.title__actions .title_descr p {
+  color: #000;
 }
 @media all and (max-width: 1000px) {
   .title_descr p {
