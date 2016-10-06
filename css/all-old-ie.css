@@ -450,6 +450,10 @@ textarea:focus {
   border-left: 5px solid #ffffff;
   line-height: 0.77;
   height: 26px;
+  /*.title__actions &{
+  	color: #000;
+  	border-left: 5px solid #000;
+  }*/
 }
 .title_h1__main {
   width: 640px;
@@ -459,10 +463,6 @@ textarea:focus {
   line-height: 1.2;
   font-size: 35px;
 }
-.title__actions .title_h1 {
-  color: #000;
-  border-left: 5px solid #000;
-}
 .title_descr {
   width: 480px;
   padding: 0px 0px 0px 38px;
@@ -471,9 +471,9 @@ textarea:focus {
   color: #ffffff;
   font-size: 20px;
   line-height: 1.2;
-}
-.title__actions .title_descr p {
-  color: #000;
+   /*.title__actions &{
+ 		color: #000;
+		}*/
 }
 .title_descr a {
   color: #fff;
