@@ -7,7 +7,8 @@
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
-  margin: 13px auto 51px;
+  margin: -29px auto 51px;
+  position: relative;
   @include m1000{
   	margin: 13px auto 20px auto;
   }

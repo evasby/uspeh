@@ -1,0 +1,121 @@
+.form-action-new{
+  padding: 15px 0;
+  &_title{
+    text-transform: uppercase;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 26px;
+    position: relative;
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 0px;
+      width: 44px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+    @include m1000{
+      font-size: 20px;
+    }
+  }
+  .messages{
+    display: none;
+  }
+  &_wrap{
+    @include clearfix();
+  }
+  &_clear{
+    @include clearfix();
+  }
+  &_confirmation{
+    padding: 16px 0 0;
+    
+    p{
+      text-align: center;
+      color: #ffffff!important;
+      font-size: 17px!important;;
+    }
+  }
+  &_inner{
+    padding: 0px 0px 12px 0px;
+    margin: 0 auto;
+    width: 230px;
+    @include m1000{
+      width: 230px;
+    }
+    input{
+      font-size: 16px;
+      width: 198px;
+      height: 46px;
+      border: none;
+      margin: 0px;
+      padding: 0px 16px 0px 16px;
+    } 
+    .error{
+      -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,0,0,1);
+      -moz-box-shadow: inset 0px 0px 0px 1px rgba(255,0,0,1);
+      box-shadow: inset 0px 0px 0px 1px rgba(255,0,0,1);
+    }
+    
+  }
+  &_button{
+    padding: 0px 0px 0px 0px;
+    width: 230px;
+    margin: 0 auto;
+    //margin: 0px 0px 0px 123px;
+    position: relative;
+    input{
+      width: 100%;
+      height: 54px;
+      //border: 2px solid #ffffff;
+      border: none;
+      background-color: #e74c3c;
+      font-family: $bold;
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 1px 0px 0px 0px;
+      &:hover{
+        cursor: pointer;
+        border: 2px solid #3498db;
+        background-color: #3498db;
+      }
+      @include m1000{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .ajax-progress{
+      position: absolute;
+      //top: 10px;
+      //left: -6px;
+      bottom: 20px;
+      right: -23px;
+      .throbber {
+        background: transparent url('../image/loader-ajax-blue2.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+        float: left;
+        height: 16px; /* tweak this according to your gif */
+        width: 16px; /* tweak this according to your gif */
+        margin: 0px;
+      }
+    }
+  }
+  &_descr{
+    font-family: $light;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 15px 0px 15px;
+    text-align: center;
+    line-height: 1.2;
+    p{
+      font-family: $light;
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
+}

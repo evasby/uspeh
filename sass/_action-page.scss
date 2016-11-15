@@ -1,0 +1,26 @@
+.action-page{
+	@include clearfix;
+	&_left{
+		float: left;
+		width: 643px;
+		padding-right: 15px;
+		@include m1000{
+			float: none;
+			width: 100%;
+			padding: 0
+		}
+	}
+  &_right{
+  	background: url('../image/action-1920.jpg') 0% 0% no-repeat;
+  	background-size: cover;
+  	float: left;
+  	width: 300px;
+  	margin: -70px 2px 0 0;
+  	@include m1000{
+			float: none;
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto;
+		}
+  }
+}

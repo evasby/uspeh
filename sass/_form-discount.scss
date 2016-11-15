@@ -1,17 +1,31 @@
 .form-discount{
+  &, & *{
+    box-sizing: border-box;
+  }
   .messages{
     display: none;
   }
-  width: 300px;
-  height: 405px;
+  
   position: absolute;
-  top: -43px;
-  right: 0px;
+  top: 0px;
+  right: 53px;
   z-index: 2;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+  &_shadow{
+    -webkit-box-shadow: -10px 0px 15px 0px rgba(0,41,66,1);
+    -moz-box-shadow: -10px 0px 15px 0px rgba(0,41,66,1);
+    box-shadow: -10px 0px 15px 0px rgba(0,41,66,1);
+    background: transparent url('../image/form-discount-bac.jpg') 50% top no-repeat;
+    background-size: cover;
+    
+    width: 300px;
+    height: 400px;
+  }
   &_wrap{
     position: relative;
     z-index: 2;
-    padding: 22px 23px 0px 35px;
+    padding: 0px 23px 0px 46px;
   }
   &_transp{
     height: 100%;
@@ -23,32 +37,37 @@
     left: 0px;
     z-index: 1;
   }
-  &_title{
+  &_head{
+    font-family: SegoeUIBold;
+    color: #fff1f1;
+    font-size: 26px;
+    text-transform: uppercase;
     text-align: center;
-    color: #373737;
-    font-size: 24px;
+    height: 67px;
+    padding: 10px 0 0;
+  }
+  &_title{
+    font-family: SegoeUIRegular;
+    color: #fff1f1;
+    text-align: center;
+    position: relative;
+    left: -8px;
+    padding: 0 0 16px;
     p{
-      text-align: center;
-      color: #373737;
-      font-size: 24px;
-    }
-    span{
-      display: block;
-      text-align: center;
-      //color: #373737;
-      font-size: 56px;
-      padding: 4px 0px 10px 0px;
+      color: #fff1f1;
     }
   }
   &_confirmation{
-    padding: 0px 22px 0px 22px;
+    padding: 0;
     text-align: center;
   }
   &_inner{
-    padding: 0px 0px 18px 0px;
+    padding: 0px 0px 21px;
+    width: 231px;
+    margin: 0 auto;
     input{
+      width: 100%;
       font-size: 16px;
-      width: 198px;
       height: 46px;
       border: none;
       margin: 0px;
@@ -64,25 +83,36 @@
     padding: 9px 0px 0px 0px;
     position: relative;
     z-index: 5;
+    width: 231px;
+    margin: 0 auto;
     input{
-      width: 231px;
-      height: 56px;
+      width: 100%;
+      height: 47px;
       border: none;
-      background-color: #e74c3c;
+      //background-color: #e74c3c;
       //border: 1px solid #3498db;
-      font-family: $bold;
+      font-family: SegoeUIBold;
       color: #ffffff;
       font-size: 20px;
       text-transform: uppercase;
-      padding: 1px 0px 0px 0px;
+      padding: 0 0 2px;
+      background: #e74d3c;
+      background: -moz-linear-gradient(top, #e74d3c 0%, #d8321f 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #e74d3c), color-stop(100%, #d8321f));
+      background: -webkit-linear-gradient(top, #e74d3c 0%, #d8321f 100%);
+      background: -o-linear-gradient(top, #e74d3c 0%, #d8321f 100%);
+      background: -ms-linear-gradient(top, #e74d3c 0%, #d8321f 100%);
+      background: linear-gradient(to bottom, #e74d3c 0%, #d8321f 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74d3c', endColorstr='#d8321f', GradientType=0 );
+      @include def-transition(box-shadow, 0.2s);
       &:hover{
         cursor: pointer;
         //border: 1px solid #19254B;
         //background-color: #E74C3C;
         //@include def-v-gradient(#E74C3C, #E74C3C);
-        -webkit-box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
--moz-box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
-box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(231,77,60,.5);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(231,77,60,.5);
+        box-shadow: 5px 5px 5px 0px rgba(231,77,60,.5);
       }
       //@include def-v-gradient(#3498db, #3498db);
     }
@@ -90,8 +120,8 @@ box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
       position: absolute;
       //top: 10px;
       //left: -6px;
-      top: 29px;
-      right: 25px;
+      top: 25px;
+      right: -20px;
       .throbber {
         background: transparent url('../image/loader-ajax-blue.gif') no-repeat 0px 0px; /* tweak this according to your gif */
         float: left;
@@ -102,27 +132,58 @@ box-shadow: 5px 5px 5px 0px rgba(231,77,60,1);
     }
   }
   &_descr{
-    font-family: $light;
-    color: #666666;
-    font-size: 14px;
-    padding: 15px 0px 0px 0px;
-    line-height: 1.2;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 17px 0px 0px 0px;
+    line-height: 14px;
+    font-family: SegoeUIRegular;
+    text-align: center;
     p{
-      font-family: $light;
-      color: #666666;
-      font-size: 14px;
-      line-height: 1.2;
+      color: #ffffff;
+      font-size: 11px;
+      line-height: 14px;
+      font-family: SegoeUIRegular;
     }  
   }
   &_confirmation{
     p{
       padding: 80px 0px 0px 0px;
-      color: #666666;
-      font-size: 16px;
       line-height: 1.2;
+      color: #fff1f1;
+      font-size: 18px;
     }
   }
   @include m1000{
     display: none;
+  }
+  ::-webkit-input-placeholder {
+    font-family: SegoeUIRegular;
+    color: #717171;
+    font-size: 12px;
+  }
+  :-moz-placeholder {
+    font-family: SegoeUIRegular;
+    color: #717171;
+    font-size: 12px;
+  }
+  ::-moz-placeholder {
+    font-family: SegoeUIRegular;
+    color: #717171;
+    font-size: 12px;
+  }
+  :-ms-input-placeholder {
+    font-family: SegoeUIRegular;
+    color: #717171;
+    font-size: 12px;
+  }
+  ::-ms-input-placeholder {
+    font-family: SegoeUIRegular;
+    color: #717171;
+    font-size: 12px;
+  }
+  :placeholder-shown {
+    font-family: SegoeUIRegular;
+    color: #717171;
+    font-size: 12px;
   }
 }

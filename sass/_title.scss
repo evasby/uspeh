@@ -3,20 +3,31 @@
   min-height: 259px;
   padding: 61px 0px 61px 0px;
   position: relative;
+  
   //overflow: hidden;
   /*&.bg-loaded{
     @include def-opacity(1);
   }*/
-
+  @include m1000{
+    padding: 15px 0 8px;
+    height: auto;
+    min-height: 0;
+  }
   &_wrap{
     position: relative;
+    height: 100%;
   }
   &__main{
-    height: 319px;
-    border-bottom: 1px solid #ededee;
-    padding: 43px 0px 43px 0px;
-    background: url('../image/title-main-1920.jpg') 50% no-repeat;
-    background-size: cover;
+    height: 442px;
+    //border-bottom: 1px solid #ededee;
+    padding: 0;
+    background: url('../image/title-main2-2400.png') 50% bottom no-repeat;
+    background-size: auto 442px;
+    @include m1000{
+      background-position: right bottom;
+      height: 90px;
+      padding: 20px 0 0;
+    }
   }
   &__info{
     background: url('../image/title-info-1920.jpg') 50% no-repeat;
@@ -49,14 +60,14 @@
     background-size: cover;
   }
   &__actions{
-    background: url('../image/title-actions-1920.jpg') 50% no-repeat;
-    background-size: cover;
-  }
-  @include m1000{
-    padding: 15px 0 8px;
+    //background: url('../image/title-actions-1920.jpg') 50% no-repeat;
+    //background-size: cover;
     height: auto;
+    background: none;
     min-height: 0;
+    padding: 0;
   }
+  
   &_h1{
     font-family: $bold;
     font-size: $font_size_h1;
@@ -68,19 +79,16 @@
     line-height: 0.77;
     height: 26px;
     &__main{
-      width: 640px;
+      font-family: SegoeUIRegular;
+      text-transform: none;
+      font-size: 25px;
+      line-height: 1;
+      color: #fff1f1;
       border: none;
-      padding: 0px 0px 0px 9px;
-      margin: 0px 0px 77px 0px;
-      line-height: 1.2;
-      font-size: 35px;
+      padding: 18px 0 0 2px;
+      margin: 0;
       @include m1000{
-        width: 100%;
-        max-width: 640px;
-        margin: 0 auto 5px auto;
-        text-align: center;
-        height: auto;
-        font-size: 22px;
+        
       }
     }
     /*.title__actions &{
@@ -96,10 +104,31 @@
       height: auto;
       font-size: 22px;
     }
+    .title__actions &{
+      color: #000;
+      border-left: 5px solid #000;
+      margin: 0;
+    }
+  }
+  &_exdescr{
+    padding: 24px 0 0 100px;
+    @include m1000{
+      display: none;
+    }
+    p{
+      font-family: SegoeUIBold;
+      color: #ffffff;
+      font-size: 36px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
   }
   &_descr{
     width: 480px;
     padding: 0px 0px 0px 38px;
+    @include m1000{
+      display: none;
+    }
     p{
       color: #ffffff;
       font-size: $font_size20;
@@ -116,16 +145,17 @@
       @include link(#fff, #fff);
     }
     &__main{
-      width: 630px;
-      padding: 0px 0px 0px 26px; 
-      border-left: 3px solid #ffffff;
+      width: auto;
+      padding: 13px 0 0 129px; 
+      border: none;
       p{
-        font-size: $font_size24;
-        line-height: 0.6;
-        margin: 0px 0px 15px 0px;
+        font-size: SegoeUIRegular;
+        color: #fff1f1;
+        font-size: 18px;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
         @include m1000{
-          line-height: 1;
-          margin: 0;
         }
       }
     }
@@ -141,6 +171,22 @@
         line-height: 1;
         margin: 0;
       }
+    }
+    .title__actions &{
+      display: none;
+    }
+  }
+  &_girl{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: -42px;
+    background: transparent url('../image/title-girl.png') left top no-repeat;
+    background-size: contain;
+    width: 144px;
+    height: 360px;
+    @include m1000{
+      display: none;
     }
   }
 }

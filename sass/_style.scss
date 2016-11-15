@@ -214,7 +214,7 @@ textarea{
     visibility: visible;
   }
 }
-.fadeIn, .fadeInUp, .fadeOut, .fadeOutUp, .flipInX, .flipOutX, .flipInY, .flipOutY, .zoomIn, .zoomOut, .slideInLeft, .rollIn, .rollOut, .bounce, .pulse, .tada, .bounceInDown{
+.fadeIn, .fadeInUp, .fadeOut, .fadeOutUp, .flipInX, .flipOutX, .flipInY, .flipOutY, .zoomIn, .zoomOut, .slideInLeft, .rollIn, .rollOut, .bounce, .pulse, .tada, .bounceInDown, .fadeInRight{
   visibility: visible;
 }
 //**********************************************************/
@@ -278,3 +278,6 @@ textarea{
 @import "social";
 @import "dev";
 @import "menu-toggle";
+@import "actions";
+@import "action-page";
+@import "form-action-new";
