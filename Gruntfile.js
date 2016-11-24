@@ -27,9 +27,9 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'css/all.css': 'sass/all.scss',
-                    'C:/OS2/OpenServer/domains/buh/sites/all/themes/uspeh/css/all.css': 'sass/all.scss',
+                    'C:/OS2/OpenServer/domains/buh2/sites/all/themes/uspeh/css/all.css': 'sass/all.scss',
                     'css/all-old-ie.css': 'sass/all-old-ie.scss',
-                    'C:/OS2/OpenServer/domains/buh/sites/all/themes/uspeh/css/all-old-ie.css': 'sass/all-old-ie.scss',
+                    'C:/OS2/OpenServer/domains/buh2/sites/all/themes/uspeh/css/all-old-ie.css': 'sass/all-old-ie.scss',
                 }
             }
         },

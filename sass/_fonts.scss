@@ -1,4 +1,22 @@
 @font-face {
+    font-family: "sans";
+    src: url("fonts/OpenSansRegular.eot");
+    src: url("fonts/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OpenSansRegular.woff") format("woff"),
+    url("fonts/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "sanslight";
+    src: url("fonts/OpenSansLight.eot");
+    src: url("fonts/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OpenSansLight.woff") format("woff"),
+    url("fonts/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: "SegoeUIRegular";
     src: url("fonts/SegoeUIRegular.eot");
     src: url("fonts/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),

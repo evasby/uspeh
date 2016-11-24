@@ -1,5 +1,12 @@
 .mybreadcrumb{
 	padding: 31px 0px 52px 0px;
+	.page-actions2 &,
+	.page-actions &{
+		padding: 15px  0px 6px;
+	}
+	.node-type-actions-type &{
+		padding: 36px 0px 32px 0px;
+	}
 	@include m1000{
 		padding: 15px 10px 15px 10px;
 	}
@@ -11,7 +18,7 @@
 		margin: 0px 0px 0px 23px;
 		padding-right: 1px;
 		&:before{
-			background: url("../image/bread.png") -18px 0px no-repeat #fff;
+			background: url("../image/bread.png") -18px 0px no-repeat transparent;
 			content: "";
 			display: block;
 			width: 18px;
@@ -29,7 +36,7 @@
 				margin-right: 15px;
 			}
 			.breadcrumb_before{
-				background: url("../image/bread.png")no-repeat #fff;
+				background: url("../image/bread.png")no-repeat transparent;
 				width: 18px;
 				height: 15px;
 				position: absolute;
@@ -45,7 +52,7 @@
 			overflow: hidden;
 			width: 18px;
 			height: 15px;
-			background: url("../image/bread.png") 0px 0px no-repeat #fff;
+			background: url("../image/bread.png") 0px 0px no-repeat transparent;
 		}
 		&:first-child:before {
 			display: none; 
@@ -62,7 +69,7 @@
    font-size: 14px;
    margin: 0px 0px 0px 23px;
    &:before{
-      background: url("../image/bread.png") -18px 0px no-repeat #fff;
+      background: url("../image/bread.png") -18px 0px no-repeat transparent;
       content: "";
       display: block;
 			width: 18px;
@@ -80,7 +87,7 @@
         margin-right: 15px;
       }
       .breadcrumb_before{
-        background: url("../image/bread.png")no-repeat #fff;
+        background: url("../image/bread.png")no-repeat transparent;
 				width: 18px;
 				height: 15px;
 				position: absolute;

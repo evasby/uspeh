@@ -44,6 +44,11 @@ body{
   //min-width: $min_width;
   position: relative;
 }
+body.page-actions,
+body.page-actions2,
+body.node-type-actions-type{
+  background: transparent url('../image/bac.png') left top;
+}
 textarea{
   resize: none;
   box-shadow: none;
@@ -281,3 +286,5 @@ textarea{
 @import "actions";
 @import "action-page";
 @import "form-action-new";
+@import "newactions";
+@import "newother";

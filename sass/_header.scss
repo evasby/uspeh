@@ -1,5 +1,9 @@
 .header{
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
   position: relative;
+  background-color: #fff;
   @include m1000{
     padding-top: 35px;
   }
@@ -11,5 +15,11 @@
   	@include m1000{
     	float: none;
   	}
+    &:nth-child(3){
+      float: right;
+      @include m1000{
+        float: none;
+      }
+    }
   }
 }
