@@ -10,9 +10,17 @@
 		text-transform: uppercase;
 		text-align: right;
 		margin-bottom: 17px;
+		@include m1000{
+			text-align: left;
+			font-size: 22px;
+			margin-bottom: 10px;
+		}
 	}
 	&_inner{
 		@include clearfix;
+		@include m1000{
+			margin-bottom: 15px;
+		}
 	}
 	&_item{
 		float: left;
@@ -23,11 +31,30 @@
 		-webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.29);
 		-moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.29);
 		box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.29);
+		@include def-transition(box-shadow, 0.2s);
 		&:nth-child(3n-2){
 			margin-left: 0;
+			@include m1000{
+				margin: 0 auto 10px auto;
+			}
 		}
 		&:nth-child(3n){
 			margin-right: 0;
+			@include m1000{
+				margin: 0 auto 10px auto;
+			}
+		}
+		&:hover{
+			-webkit-box-shadow: -5px -5px 3px 0px rgba(0,0,0,0.3);
+			-moz-box-shadow: -5px -5px 3px 0px rgba(0,0,0,0.3);
+			box-shadow: -5px -5px 3px 0px rgba(0,0,0,0.3);
+		}
+		@include m1000{
+			float: none;
+			display: block;
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto 10px auto;
 		}
 	}
 	&_image{
@@ -35,6 +62,10 @@
 		overflow: hidden;
 		img{
 			display: block;
+			@include m1000{
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 	&_descr{
@@ -47,6 +78,10 @@
 		font-weight: bold;
 		text-align: center;
 		padding: 30px 50px 0;
+		@include m1000{
+			height: auto;
+			padding: 20px;
+		}
 	}
 	&_bottom{
 		background-color: #1a2541;

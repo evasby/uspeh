@@ -1,12 +1,12 @@
 .logo{
-	margin: 30px 50px 33px 0px;
+	margin: 30px 49px 33px 0px;
 	@include m1000{
     margin: 0;
     text-align: center;
     padding-top: 15px;
   }
 	&__footer{
-		margin: 33px 65px 0px 0px;
+		margin: 33px 56px 0px 0px;
 		@include m1000{
 	    margin: 0;
 	    text-align: center;
@@ -19,11 +19,12 @@
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
-		width: 221px;
+		width: 222px;
 		height: 70px;
-		background: url('../image/logo.png') no-repeat;
+		background: url('../image/logo2.png') no-repeat;
 		&__footer{
-			background: url('../image/logo-f.png') no-repeat;
+			width: 230px;
+			background: url('../image/logo-f2.png') no-repeat;
 		}
 		@include m1000{
     	margin: 0 auto;

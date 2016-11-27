@@ -1374,7 +1374,7 @@ textarea:focus {
 }
 
 .logo {
-  margin: 30px 50px 33px 0px;
+  margin: 30px 49px 33px 0px;
 }
 @media all and (max-width: 1000px) {
   .logo {
@@ -1384,7 +1384,7 @@ textarea:focus {
   }
 }
 .logo__footer {
-  margin: 33px 65px 0px 0px;
+  margin: 33px 56px 0px 0px;
 }
 @media all and (max-width: 1000px) {
   .logo__footer {
@@ -1399,12 +1399,13 @@ textarea:focus {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 221px;
+  width: 222px;
   height: 70px;
-  background: url("../image/logo.png") no-repeat;
+  background: url("../image/logo2.png") no-repeat;
 }
 .logo_link__footer {
-  background: url("../image/logo-f.png") no-repeat;
+  width: 230px;
+  background: url("../image/logo-f2.png") no-repeat;
 }
 @media all and (max-width: 1000px) {
   .logo_link {
@@ -3916,6 +3917,9 @@ textarea:focus {
     }
   }*/
 }
+.block-form, .block-form * {
+  box-sizing: border-box;
+}
 @media all and (max-width: 1000px) {
   .block-form {
     height: auto;
@@ -3934,12 +3938,16 @@ textarea:focus {
   font-size: 26px;
 }
 .block-form_title {
-  width: 675px;
-  float: left;
-  padding: 68px 0px 35px 0px;
+  height: 70px;
+  padding: 22px 0px 22px 0px;
   color: #ffffff;
-  font-size: 26px;
+  font-family: sans;
+  font-size: 24px;
   position: relative;
+}
+.block-form_title p {
+  font-family: sans;
+  font-size: 24px;
 }
 .block-form_title:before {
   content: " ";
@@ -3947,9 +3955,9 @@ textarea:focus {
   position: absolute;
   left: 18px;
   margin: 0px 0px 0px -17px;
-  top: 47px;
-  width: 44px;
-  height: 2px;
+  top: 6px;
+  width: 42px;
+  height: 3px;
   background-color: #ffffff;
 }
 @media all and (max-width: 1000px) {
@@ -3981,6 +3989,18 @@ textarea:focus {
 .block-form_wrap {
   position: relative;
   z-index: 2;
+  display: inline-block;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  display: block;
+}
+.block-form_wrap:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
 }
 @media all and (max-width: 1000px) {
   .block-form_wrap {
@@ -4016,23 +4036,28 @@ textarea:focus {
   visibility: hidden;
 }
 .block-form_left {
-  width: 675px;
+  width: 630px;
+  height: 290px;
+  margin: 30px 30px 0 0;
   float: left;
-  padding: 0px 0px 0px 0px;
+  padding: 0;
 }
 @media all and (max-width: 1000px) {
   .block-form_left {
     float: none;
     width: 100%;
-    max-width: 675px;
+    height: auto;
     margin: 0 auto;
   }
 }
 .block-form_right {
-  float: right;
-  width: 230px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 50px;
+  float: left;
+  width: 300px;
+  height: 290px;
+  padding: 0;
+  border: 1px solid #fff;
+  margin-top: 30px;
+  padding: 23px 35px 0px;
 }
 @media all and (max-width: 1000px) {
   .block-form_right {
@@ -4040,17 +4065,17 @@ textarea:focus {
     width: 100%;
     max-width: 230px;
     margin: 0 auto;
+    height: auto;
+    padding-bottom: 15px;
   }
 }
 .block-form_descr {
-  font-family: proximanova_light;
-  font-size: 14px;
+  font-family: sans;
+  font-size: 12px;
+  line-height: 16px;
   color: #ffffff;
   text-align: center;
-  line-height: 1.1;
-  padding: 46px 0px 37px 0px;
-  float: right;
-  width: 240px;
+  margin-bottom: 32px;
 }
 @media all and (max-width: 1000px) {
   .block-form_descr {
@@ -4058,59 +4083,74 @@ textarea:focus {
   }
 }
 .block-form_inner {
-  padding: 0px 0px 11px 0px;
-  text-align: center;
+  padding: 0;
+  -webkit-box-shadow: inset 1px 1px 0px 0px #bfbfbf, -1px -1px 0px 0px #404040;
+  -moz-box-shadow: inset 1px 1px 0px 0px #bfbfbf, -1px -1px 0px 0px #404040;
+  box-shadow: inset 1px 1px 0px 0px #bfbfbf, -1px -1px 0px 0px #404040;
+}
+@media all and (max-width: 1000px) {
+  .block-form_inner {
+    margin-bottom: 15px;
+  }
+}
+.block-form_right .block-form_inner {
+  margin-bottom: 20px;
 }
 .block-form_inner input {
   font-size: 16px;
-  width: 184px;
-  height: 44px;
-  border: 1px solid #c2c2c2;
+  width: 100%;
+  height: 34px;
   margin: 0px;
-  padding: 0px 22px 0px 22px;
+  padding: 0px 16px 0px 16px;
+  border: none;
 }
 .block-form_inner textarea {
-  box-sizing: content-box;
   font-size: 16px;
-  width: 629px;
-  height: 164px;
-  border: 1px solid #c2c2c2;
+  width: 100%;
+  height: 220px;
+  border: none;
   margin: 0px;
   padding: 11px 22px 0px 22px;
 }
 @media all and (max-width: 1000px) {
   .block-form_inner textarea {
-    box-sizing: border-box;
     width: 100%;
+    height: 100px;
   }
 }
 .block-form_inner .error {
-  border: 1px solid #ff0000;
+  -webkit-box-shadow: inset 0px 0px 0px 1px red;
+  -moz-box-shadow: inset 0px 0px 0px 1px red;
+  box-shadow: inset 0px 0px 0px 1px red;
 }
 .block-form_button {
   padding: 9px 0px 0px 0px;
   position: relative;
 }
 .block-form_button input {
-  width: 230px;
-  height: 54px;
-  border: 2px solid #ffffff;
-  background-color: transparent;
+  width: 100%;
+  height: 46px;
+  border: none;
+  background-color: #e74c3c;
   font-family: proximanova_bold;
   color: #ffffff;
   font-size: 20px;
   text-transform: uppercase;
   padding: 1px 0px 0px 0px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .block-form_button input:hover {
   cursor: pointer;
-  border: 2px solid #3498db;
-  background-color: #3498db;
+  background-color: #ed7669;
 }
 .block-form_button .ajax-progress {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 16px;
+  right: -23px;
 }
 .block-form_button .ajax-progress .throbber {
   background: transparent url("../image/loader-ajax-blue2.gif") no-repeat 0px 0px;
@@ -4121,6 +4161,36 @@ textarea:focus {
   width: 16px;
   /* tweak this according to your gif */
   margin: 0px;
+}
+.block-form ::-webkit-input-placeholder {
+  font-family: sans;
+  color: #727272;
+  font-size: 12px;
+}
+.block-form :-moz-placeholder {
+  font-family: sans;
+  color: #727272;
+  font-size: 12px;
+}
+.block-form ::-moz-placeholder {
+  font-family: sans;
+  color: #727272;
+  font-size: 12px;
+}
+.block-form :-ms-input-placeholder {
+  font-family: sans;
+  color: #727272;
+  font-size: 12px;
+}
+.block-form ::-ms-input-placeholder {
+  font-family: sans;
+  color: #727272;
+  font-size: 12px;
+}
+.block-form :placeholder-shown {
+  font-family: sans;
+  color: #727272;
+  font-size: 12px;
 }
 
 .contacts {
@@ -5362,6 +5432,50 @@ textarea:focus {
   font-size: 15px;
   color: #ffffff;
 }
+.gmap_inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.gmap_bubble {
+  position: absolute;
+  left: -9px;
+  top: -476px;
+  width: 435px;
+  height: 406px;
+  background: transparent url("../image/bubble-bac.png") left top no-repeat;
+}
+.gmap_close {
+  position: absolute;
+  top: 168px;
+  right: 53px;
+  width: 32px;
+  height: 32px;
+  background: transparent url("../image/bubble-close.png") left top no-repeat;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.gmap_close:hover {
+  opacity: 0.8;
+}
+.gmap_form {
+  border: 1px solid #fff;
+  position: absolute;
+  right: 0;
+  top: -412px;
+  background: url("../image/action-page-right-bac.jpg") 0% 0% no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 345px;
+  margin: 0;
+}
+.gmap_form, .gmap_form * {
+  box-sizing: border-box;
+}
 @media all and (max-width: 1000px) {
   .gmap {
     display: none;
@@ -5729,6 +5843,12 @@ textarea:focus {
   margin-right: 30px;
   position: relative;
 }
+@media all and (max-width: 1000px) {
+  .action-page_left {
+    margin-bottom: 15px;
+    height: auto;
+  }
+}
 .action-page_left:before {
   content: '';
   position: absolute;
@@ -5741,6 +5861,11 @@ textarea:focus {
   border-style: solid;
   border-width: 22.5px 0 22.5px 23px;
   border-color: transparent transparent transparent #17a0da;
+}
+@media all and (max-width: 1000px) {
+  .action-page_left:before {
+    display: none;
+  }
 }
 @media all and (max-width: 1000px) {
   .action-page_left {
@@ -5797,7 +5922,13 @@ textarea:focus {
   padding: 28px 31px 0;
   height: 250px;
   background: transparent url("../image/action-page-middle-bac.png") left top no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+}
+@media all and (max-width: 1000px) {
+  .action-page_middle {
+    height: auto;
+    padding-bottom: 10px;
+  }
 }
 .action-page_middle p {
   font-family: Tahoma;
@@ -5937,7 +6068,7 @@ textarea:focus {
   width: 100%;
   height: 46px;
   border: none;
-  background-color: #e93d3e;
+  background-color: #e74c3c;
   font-family: proximanova_bold;
   color: #ffffff;
   font-size: 20px;
@@ -5951,7 +6082,7 @@ textarea:focus {
 }
 .form-action-new_button input:hover {
   cursor: pointer;
-  background-color: #3498db;
+  background-color: #ed7669;
 }
 @media all and (max-width: 1000px) {
   .form-action-new_button input {
@@ -6034,6 +6165,13 @@ textarea:focus {
   text-align: right;
   margin-bottom: 17px;
 }
+@media all and (max-width: 1000px) {
+  .newactions_head {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
 .newactions_inner {
   display: inline-block;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
@@ -6048,6 +6186,11 @@ textarea:focus {
   line-height: 0;
   visibility: hidden;
 }
+@media all and (max-width: 1000px) {
+  .newactions_inner {
+    margin-bottom: 15px;
+  }
+}
 .newactions_item {
   float: left;
   width: 31.25%;
@@ -6057,6 +6200,11 @@ textarea:focus {
   -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.29);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.29);
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .newactions_item:visited {
   color: #fff;
@@ -6073,8 +6221,32 @@ textarea:focus {
 .newactions_item:nth-child(3n-2) {
   margin-left: 0;
 }
+@media all and (max-width: 1000px) {
+  .newactions_item:nth-child(3n-2) {
+    margin: 0 auto 10px auto;
+  }
+}
 .newactions_item:nth-child(3n) {
   margin-right: 0;
+}
+@media all and (max-width: 1000px) {
+  .newactions_item:nth-child(3n) {
+    margin: 0 auto 10px auto;
+  }
+}
+.newactions_item:hover {
+  -webkit-box-shadow: -5px -5px 3px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -5px -5px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px -5px 3px 0px rgba(0, 0, 0, 0.3);
+}
+@media all and (max-width: 1000px) {
+  .newactions_item {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 10px auto;
+  }
 }
 .newactions_image {
   border: 1px solid #fff;
@@ -6082,6 +6254,12 @@ textarea:focus {
 }
 .newactions_image img {
   display: block;
+}
+@media all and (max-width: 1000px) {
+  .newactions_image img {
+    width: 100%;
+    height: auto;
+  }
 }
 .newactions_descr {
   height: 105px;
@@ -6093,6 +6271,12 @@ textarea:focus {
   font-weight: bold;
   text-align: center;
   padding: 30px 50px 0;
+}
+@media all and (max-width: 1000px) {
+  .newactions_descr {
+    height: auto;
+    padding: 20px;
+  }
 }
 .newactions_bottom {
   background-color: #1a2541;
@@ -6166,6 +6350,11 @@ textarea:focus {
   /*&:hover .other_image:before{
     @include def-opacity(0.5);
   }*/
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .newother_item:visited {
   color: #fff;
@@ -6181,6 +6370,11 @@ textarea:focus {
 }
 .newother_item:first-child {
   margin: 0px;
+}
+.newother_item:hover {
+  -webkit-box-shadow: -5px -5px 3px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -5px -5px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px -5px 3px 0px rgba(0, 0, 0, 0.3);
 }
 @media all and (max-width: 1000px) {
   .newother_item {
@@ -6220,7 +6414,6 @@ textarea:focus {
 @media all and (max-width: 1000px) {
   .newother_image {
     height: auto;
-    margin: 0 0 5px 0;
   }
   .newother_image img {
     display: block !important;

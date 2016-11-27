@@ -21,6 +21,46 @@
       color: #ffffff;
     }
   }
+  &_inner{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+  &_bubble{
+    position: absolute;
+    left: -9px;
+    top: -476px;
+    width: 435px;
+    height: 406px;
+    background: transparent url('../image/bubble-bac.png') left top no-repeat;
+  }
+  &_close{
+    position: absolute;
+    top: 168px;
+    right: 53px;
+    width: 32px;
+    height: 32px;
+    background: transparent url('../image/bubble-close.png') left top no-repeat;
+    cursor: pointer;
+    @include def-transition(opacity, 0.2s);
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  &_form{
+    &, & *{
+      box-sizing: border-box;
+    }
+    border: 1px solid #fff;
+    position: absolute;
+    right: 0;
+    top: -412px;
+    background: url('../image/action-page-right-bac.jpg') 0% 0% no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 345px;
+    margin: 0;
+  }
   @include m1000{
     display: none;
   }

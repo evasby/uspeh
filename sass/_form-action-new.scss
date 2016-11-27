@@ -75,7 +75,7 @@
       height: 46px;
       //border: 2px solid #ffffff;
       border: none;
-      background-color: #e93d3e;
+      background-color: #e74c3c;
       font-family: $bold;
       color: #ffffff;
       font-size: 20px;
@@ -84,7 +84,7 @@
       @include def-transition(background-color, 0.2s);
       &:hover{
         cursor: pointer;
-        background-color: #3498db;
+        background-color: lighten(#e74c3c, 10%);
       }
       @include m1000{
         display: block;
